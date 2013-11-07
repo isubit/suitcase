@@ -6,6 +6,8 @@ cache/
 files/
 sites/*/files
 sites/*/private
+.svn
+*/.svn
 
 # Ignore default text files
 .htaccess
