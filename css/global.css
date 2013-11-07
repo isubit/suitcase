@@ -1,4 +1,3 @@
-
 /*============Begin default site styling=================*/
 /*===================Typography =========================*/
 
@@ -58,7 +57,7 @@ a, a:link, a:visited{
 color: #FFFFFF;
     font-size: 20px;
     line-height: 1em;
-    margin-bottom:;}
+}
 .site-name {
     margin-top:0 ;
     padding-bottom: 10px;
