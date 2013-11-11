@@ -14,7 +14,6 @@
 }
 .tb-megamenu .nav > li {
     border-left: 1px solid #7E0E19;
-    border-right: 1px solid #7E0E19;
     float: left;
     margin-left: 0;
     text-align: center;
@@ -1376,7 +1375,7 @@
     height: 32px;
 }
 .tb-megamenu .btn-navbar {
-	display: block;
+	display: block!important;
     margin-bottom: 0;
     width: 50%;
 
