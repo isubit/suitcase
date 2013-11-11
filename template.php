@@ -10,15 +10,3 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
-
-/**
- * Implements hook_css_alter().
- */
-//function suitcase_css_alter(&$css) {
-//  if (isset($css['sites/all/modules/tb_megamenu/css/default.css'])) {
-//    unset($css['sites/all/modules/tb_megamenu/css/default.css']);
-//  }
-//  if (isset($css['sites/all/modules/tb_megamenu/css/base.css'])) {
-//    unset($css['sites/all/modules/tb_megamenu/css/base.css']);
-//  }
-//}
