@@ -405,7 +405,7 @@
 	-webkit-appearance: none;
 }
 .tb-megamenu .btn {
-	display: inline-block;
+	display: none;
 	*display: inline;
 	*zoom: 1;
 	padding: 7px 14px;
@@ -918,8 +918,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', end
 		display: none;
 	}
 .tb-megamenu .btn {
-		font-size: 11px;
-		padding: 1px 4px 2px 4px;
+		font-size: 14px;
 	}
 .tb-megamenu .navbar .btn {
 		margin: 0;
