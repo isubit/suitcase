@@ -1,23 +1,27 @@
 /*============Begin default site styling=================*/
-/*===================Typography =========================*/
-
 /*======================Hide the user region=================================*/
 #zone-user-wrapper{
 
   display:none;
 }
+/*======================body and page defaults=================================*/
 
 
 body {
   font: 14px/20px arial, sans-serif
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
-/*=======header specific for lab sites=======*/
-/*-------------------------------------------------------*/
-/*-- Header ---------------------------------------------*/
-/*-------------------------------------------------------*/
+  
+  .page {
+    min-width: 480px;
+}
+/*------------header specific for itcbase---------------*/
+/*------------------------------------------------------*/
+/*--------------------Header----------------------------*/
+/*------------------------------------------------------*/
 
-/*-- ISU-header-ribbon --*/
+/*---------------ISU-header-ribbon----------------------*/
+/*--all content is defined by isu and not isuitc--------*/
 .wd-l-Ribbon, .isu-red-ribbon {
   background-color: #cb1a2a;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABVCAYAAACICo5oAAAAI0lEQVQoz2NhAAIWfAQLXi42gpUU80hSTIRt1DaPvq7HrQMAVaYBmH7x3TUAAAAASUVORK5CYII=");
@@ -43,8 +47,14 @@ body {
     max-width: 100%;
     width: 100%;
 }
-/*-- end---ISU-header-ribbon --*/
-
+.logo-img {
+    float: right;
+    margin-right: 20px;
+}
+logo-img .active > img {
+    opacity: 0.5;
+    padding-top: 13px;
+}
 
 a, a:link, a:visited{
   color: #900;
@@ -102,7 +112,7 @@ a:hover {
 }
     /*=======end header========*/
 
-/*========================content region============================*/
+/*==========================content region============================*/
 /*========================default typography============================*/
 
 
@@ -191,14 +201,15 @@ address {
   font-style: normal; }
 
 blockquote {
-  border: 3px solid #ddd;
+  border: 3px solid #DFBD00;
   border-width: 0 0 0 3px;
   color: #555;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding: 8px 16px 0 13px; }
-  blockquote.wd-u-PullRight {
+  
+blockquote.wd-u-PullRight {
     border-width: 0 3px 0 0;
     padding-left: 16px;
     padding-right: 13px; }
@@ -262,6 +273,8 @@ a img {
 
 
 
+/*-----ISUITC-footer --*/
+
 
 .footer.mark {
     height: auto !important;
@@ -296,12 +309,42 @@ a img {
     
 }
 
-/*-- Buttons --*/
+/*-- People Specific Styling --*/
+view.view-people.view-id-people.view-display-id-people.profile-wrapper {
+    min-width: 480px;
+}
 
+.view.view-people.view-id-people, table {
+    border: medium none !important;
+    max-width: 740px;
+    min-width: 480px;
+}
+.view.view-people.view-id-people, table {
+    border: medium none !important;
+}
+.views-field.views-field-title.profile-title.h2 {
+    font-size: 1.4em;
+}
+.views-field.views-field-field-people-bio.profile-about {
+    float: right;
+    margin-top: 12px;
+    width: 75%;
+}
 
+.views-field.views-field-field-people-position.profile-position {
+    width: 50%;
+}
+views-field.views-field-field-people-image.profile-img, .field-content img {
+    height: auto;
+}
+.views-field.views-field-field-people-position.profile-position {
+    font-size: 1.1em;
+}
+.views-view-grid tbody tr {
+    border-bottom: 2px solid #CCCCCC;
+}
 
-
-/*-- Figure --*/
+/*-- Figure--added for future use in flexslider --*/
 
 .figure{
   background-color: #fff;
@@ -368,7 +411,7 @@ a img {
   min-width: 980px;
 }
 
-/*------------------isu search form-----------------------*/
+/*------------------isu search form---not used ------------*/
 .isu-search-form{
   float: right;
   font-size: 0;
@@ -539,7 +582,7 @@ a img {
 
 .isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a{
   border-radius: 2px;
-  padding: 0 3px;
+  padding: 0 2px;
   min-width: 7px;
   text-align: center;
 }
@@ -1788,4 +1831,8 @@ background-color: #CEC9BB;
     margin-right: 0;
   }
 
+}
+
+.container-12 .grid-2 {
+    width: 140px;
 }

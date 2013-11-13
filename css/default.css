@@ -1395,6 +1395,7 @@
     box-shadow: 0 1px 3px #333333;
     margin-left: 6px;
     width: 48%;
+	z-index: 100;
 }
 .tb-megamenu .nav-collapse .nav {
     margin: 0;
