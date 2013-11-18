@@ -170,7 +170,8 @@ p, ul, ol, dl, table, blockquote, pre, .wd-Alert, .wd-Alert--info, .wd-Alert--wa
   margin-bottom: 16px; }
 
 ul, ol {
-  margin-left: 0;
+  margin-left: 30px;
+
  }
   ul ul, ul ol, ol ul, ol ol {
     margin-bottom: 0; }
@@ -314,16 +315,16 @@ a img {
     min-width: 480px;
 }
     .view-content > h3 {
-background-color: #E9E8DD;
+    background-color: #E9E8DD;
     background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
     border: 1px solid #CCCCCC;
-    border-radius: 2px 2px 2px 2px;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 2px #DADACD;
     color: #4F4F4F;
     font-family: inherit;
     font-weight: 600;
     padding: 2px;
-    text-align: center;
-  }
+    text-align: center;  }
 .view.view-people.view-id-people, table {
     border: medium none !important;
     max-width: 740px;
@@ -336,26 +337,35 @@ background-color: #E9E8DD;
     font-size: 1.1em;
 }
 .views-field.views-field-field-people-bio.profile-about {
-    float: right;
-    width: 65%;
+float: right;
     padding-bottom: 10px;
-}
+    padding-right: 5px;
+    padding-top: 5px;
+    width: 65%;
+
+  }
 
 .views-field.views-field-field-people-email {
     background-color: #E9E8DD;
     background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
-    border: 1px solid #CCCCCC;
+    border-color: #CEC9BB #CEC9BB #CEC9BB #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-style: solid;
+    border-width: 1px;
     color: #FFFFFF;
     float: right;
-    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
-    font-size: 16px;
+    font-family: arial;
+    font-size: 12px;
     font-weight: bold;
     height: 70px;
+    line-height: 0.5em;
     padding: 0 5px;
+    text-align: center;
     width: 30%;
-}
+
+    }
 .first{
-  line-height: .5;
+    line-height: .5;
 }
 .contact.h2{
     border-bottom: 1px solid #C8C2A7;
@@ -375,25 +385,29 @@ background-color: #E9E8DD;
 }
 
 .views-field.views-field-field-people-website {
-     background-color: #E9E8DD;
+    background-color: #E9E8DD;
     background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
-    border: 1px solid #CCCCCC;
+    border-color: #CEC9BB #CCCCCC #CEC9BB #CEC9BB;
+    border-left: 1px solid #CEC9BB;
+    border-right: 1px solid #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
     color: #FFFFFF;
     float: right;
-    height: 70px;
-    padding: 0 5px;
-    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
-    font-size: 16px;
+    font-family: arial;
+    font-size: 12px;
     font-weight: bold;
-    width: 30%;
-}
+    height: 70px;
+    width: 30%;}
 
 .views-field.views-field-field-people-position.profile-position {
     width: 50%;
 }
-views-field.views-field-field-people-image.profile-img, .field-content img {
+.views-field-field-people-image.profile-img, .field-content img {
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 2px #ABABAB;
     height: auto;
-}
+    padding: 5px;}
 .views-field.views-field-field-people-position {
 }
 
@@ -401,12 +415,16 @@ views-field.views-field-field-people-image.profile-img, .field-content img {
     font-size: 1.1em;
 }
 .people-profile {
-    border-bottom: 1px solid #CCCCCC;
+    background: none repeat scroll 0 0 #EDEDED;
+    border-bottom: 1px double #9E9E9E;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 2px #CCCCCC;
     margin-bottom: 20px;
-    padding-bottom: 10px;
     min-width: 525px;
-}
-.views-view-grid tbody tr {
+    padding: 10px;
+
+  }
+    .views-view-grid tbody tr {
     border-bottom: 2px solid #CCCCCC;
 }
 
@@ -470,7 +488,7 @@ views-field.views-field-field-people-image.profile-img, .field-content img {
 }
 
 
-/*-- Page -----------------------------------------------*/
+/*------------------ Page --------------------------------*/
 /*-------------------------------------------------------*/
 
 .pwrapper-wrapper{
