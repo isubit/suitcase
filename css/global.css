@@ -11,7 +11,11 @@ body {
   font: 14px/20px arial, sans-serif
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
-  
+
+  /*-------set section height and width-------*/
+  section {
+    min-height: 550px;
+}
   .page {
     min-width: 480px;
 }
@@ -170,8 +174,7 @@ p, ul, ol, dl, table, blockquote, pre, .wd-Alert, .wd-Alert--info, .wd-Alert--wa
   margin-bottom: 16px; }
 
 ul, ol {
-  margin-left: 30px;
-
+  margin-left: 0;
  }
   ul ul, ul ol, ol ul, ol ol {
     margin-bottom: 0; }
@@ -243,7 +246,28 @@ pre {
   a {
     color: blue; } }
   
-\
+/*-------------------news------------------------------*/
+.view.view-news.view-id-news.view-display-id-page.view-dom-id-190079887bbc7e77b645b0d83eced1b5 {
+    border-bottom: 0 none !important;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 2px #9D9D9D;
+    padding-top: 5px;
+}
+views-field.views-field-field-people-image.profile-img, .field-content img {
+    box-shadow: 0 0 2px #A2A2A2;
+    height: auto;
+    border-radius: 4px
+}
+.views-field.views-field-field-news-images {
+    float: left;
+    padding-right: 25px;
+}
+.views-field.views-field-field-announcement-image {
+    border-radius: 4px;
+    box-shadow: 0 0 2px #757575;
+    padding: 6px;
+    width: 160px;
+}
 /*-- Layout ---------------------------------------------*/
 /*-------------------------------------------------------*/
 button,
@@ -315,16 +339,16 @@ a img {
     min-width: 480px;
 }
     .view-content > h3 {
-    background-color: #E9E8DD;
+background-color: #E9E8DD;
     background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
     border: 1px solid #CCCCCC;
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 0 2px #DADACD;
+    border-radius: 2px 2px 2px 2px;
     color: #4F4F4F;
     font-family: inherit;
     font-weight: 600;
     padding: 2px;
-    text-align: center;  }
+    text-align: center;
+  }
 .view.view-people.view-id-people, table {
     border: medium none !important;
     max-width: 740px;
@@ -337,35 +361,26 @@ a img {
     font-size: 1.1em;
 }
 .views-field.views-field-field-people-bio.profile-about {
-float: right;
-    padding-bottom: 10px;
-    padding-right: 5px;
-    padding-top: 5px;
+    float: right;
     width: 65%;
-
-  }
+    padding-bottom: 10px;
+}
 
 .views-field.views-field-field-people-email {
     background-color: #E9E8DD;
     background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
-    border-color: #CEC9BB #CEC9BB #CEC9BB #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #CCCCCC;
     color: #FFFFFF;
     float: right;
-    font-family: arial;
-    font-size: 12px;
+    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+    font-size: 16px;
     font-weight: bold;
     height: 70px;
-    line-height: 0.5em;
     padding: 0 5px;
-    text-align: center;
     width: 30%;
-
-    }
+}
 .first{
-    line-height: .5;
+  line-height: .5;
 }
 .contact.h2{
     border-bottom: 1px solid #C8C2A7;
@@ -385,29 +400,22 @@ float: right;
 }
 
 .views-field.views-field-field-people-website {
-    background-color: #E9E8DD;
+     background-color: #E9E8DD;
     background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
-    border-color: #CEC9BB #CCCCCC #CEC9BB #CEC9BB;
-    border-left: 1px solid #CEC9BB;
-    border-right: 1px solid #CCCCCC;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #CCCCCC;
     color: #FFFFFF;
     float: right;
-    font-family: arial;
-    font-size: 12px;
-    font-weight: bold;
     height: 70px;
-    width: 30%;}
+    padding: 0 5px;
+    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+    font-size: 16px;
+    font-weight: bold;
+    width: 30%;
+}
 
 .views-field.views-field-field-people-position.profile-position {
     width: 50%;
 }
-.views-field-field-people-image.profile-img, .field-content img {
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 0 2px #ABABAB;
-    height: auto;
-    padding: 5px;}
 .views-field.views-field-field-people-position {
 }
 
@@ -415,16 +423,12 @@ float: right;
     font-size: 1.1em;
 }
 .people-profile {
-    background: none repeat scroll 0 0 #EDEDED;
-    border-bottom: 1px double #9E9E9E;
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 0 2px #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
     margin-bottom: 20px;
+    padding-bottom: 10px;
     min-width: 525px;
-    padding: 10px;
-
-  }
-    .views-view-grid tbody tr {
+}
+.views-view-grid tbody tr {
     border-bottom: 2px solid #CCCCCC;
 }
 
@@ -488,7 +492,7 @@ float: right;
 }
 
 
-/*------------------ Page --------------------------------*/
+/*-- Page -----------------------------------------------*/
 /*-------------------------------------------------------*/
 
 .pwrapper-wrapper{
