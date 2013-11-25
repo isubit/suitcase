@@ -10,3 +10,17 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
+
+// theme_preprocess_html
+function suitcase_preprocess_html(&$vars) {
+//  ISU Bar responsive classes added to body
+  $vars['attributes_array']['class'][] = 'responsive';
+  $vars['attributes_array']['class'][] = 'wd-show-sidebar';
+}
+
+function suitecase_preprocess_block(&$variables) {
+  dd($variables);
+  if ($variables['block_id'] === 'simple_block_announcement') {
+//    if ($variables)
+  }
+}

@@ -86,14 +86,17 @@
   border-top: 1px solid #eee;
   padding: 5px 20px;
   text-shadow: none;
+  color: #444 !important;
 }
 .tb-megamenu .dropdown-menu li:first-child > a {
   border-top: 0;
+  color: #444 !important;
 }
 .tb-megamenu .mega-nav > li:first-child > a, 
 .tb-megamenu .dropdown-menu .mega-nav > li:first-child > a {
   margin-top: 0;
   padding-top: 0;
+  color: #444 !important;
 }
 .tb-megamenu .nav > li > .dropdown-menu:before {
   display: none;
@@ -109,8 +112,8 @@
   background-color: transparent;
 }
 .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
-  background-color: #fff; 
-  color: #e54e4b;
+	background-color: transparent;
+	color: #FFFFFF;
 }
 .tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
 .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
@@ -279,8 +282,8 @@
 .tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
 .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle,
 .tb-megamenu .nav > li.dropdown.open.active > a:hover {
-  background-color: #e54e4b; 
-  border-color: #444;
+  background-color: transparent; 
+  border-color: transparent;
   color: #eee;
 }
 .tb-megamenu .nav li.dropdown > .dropdown-toggle .caret {
