@@ -17,10 +17,3 @@ function suitcase_preprocess_html(&$vars) {
   $vars['attributes_array']['class'][] = 'responsive';
   $vars['attributes_array']['class'][] = 'wd-show-sidebar';
 }
-
-function suitecase_preprocess_block(&$variables) {
-  dd($variables);
-  if ($variables['block_id'] === 'simple_block_announcement') {
-//    if ($variables)
-  }
-}

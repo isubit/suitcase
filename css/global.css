@@ -246,7 +246,7 @@ pre {
 @media print {
   a {
     color: blue; } }
-  
+
 /*------------------taxomonmy display-------------------------*/
 .field-name-field-keywords {
 	background-color: #E9E8DD;
@@ -274,12 +274,16 @@ pre {
 }
 
 .views-field.views-field-term-node-tid {
-    background: none repeat scroll 0 0 #E4E4E4;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 0 2px #B5B5B5;
-    color: #333333;
+    background: none repeat scroll 0 0 #CEC9BB;
+    border-radius: 4px 4px 4px 4px;
+    color: #990000;
     float: right;
+    margin-right: 25px;
+    margin-top: 14%;
+    min-width: 55%;
+    padding: 8px;
     text-align: center;
+    text-shadow: 0 0 1px #CCCCCC;
 }
 .view-id-news td {
     background: none repeat scroll 0 0 #EEEEEE;
@@ -305,18 +309,18 @@ pre {
     box-shadow: 0 0 2px #9D9D9D;
     padding-top: 5px;
 }
-.views-field-field-people-image .field-content img {
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 0 2px #737373;
-    padding: 5px;
+views-field.views-field-field-people-image.profile-img, .field-content img {
+    box-shadow: 0 0 2px #A2A2A2;
+    height: auto;
+    border-radius: 4px
 }
 .views-field.views-field-field-news-images {
-    border-radius: 4px 4px 4px 4px;
+ border-radius: 4px 4px 4px 4px;
     box-shadow: 0 0 2px;
     float: left;
-    margin-right: 20px;
     padding: 10px;
     width: 220px;
+    margin-right: 20px;
 }
 .views-field.views-field-field-announcement-image {
     border-radius: 4px;
@@ -406,8 +410,8 @@ a img {
     view.view-people.view-id-people.view-display-id-people.profile-wrapper {
     min-width: 480px;
 }
-    .view-content > h3 {
-	background-color: #E9E8DD;
+.view-content > h3 {
+    background-color: #E9E8DD;
     background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
     border: 1px solid #CCCCCC;
     border-radius: 2px 2px 2px 2px;
@@ -436,7 +440,20 @@ a img {
 }
 
 .views-field.views-field-field-people-email {
+    background-color: #E9E8DD;
+    background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
     float: right;
+    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+    padding: 0 5px;
+    width: 30%;
+}
+.first{
+  line-height: .5;
 }
 
 .contact.h2{
@@ -457,7 +474,17 @@ a img {
 }
 
 .views-field.views-field-field-people-website {
+    background-color: #E9E8DD;
+    background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0));
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
     float: right;
+    height: 70px;
+    padding: 0 5px;
+    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+    font-size: 16px;
+    font-weight: bold;
+    width: 30%;
 }
 
 .views-field.views-field-field-people-position.profile-position {
@@ -475,13 +502,14 @@ a img {
     padding-bottom: 10px;
     min-width: 525px;
 }
-
-
 .view-display-id-people .views-row {
     background: none repeat scroll 0 0 #EEEEEE;
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0 0 2px #C6C6C6;
     padding: 10px;
+}
+.views-view-grid tbody tr {
+    border-bottom: 2px solid #CCCCCC;
 }
 
 /*-- Figure--added for future use in flexslider --*/
@@ -1531,11 +1559,11 @@ table.cream tbody tr td.ops a + a{
   }
 
   /*-- Footer --*/
-background-color: #CEC9BB;
-    color: #444444;
-    margin-top: 6px;
-    padding-bottom: 12px;
-    padding-top: 12px;
+/*background-color: #CEC9BB;*/
+    /*color: #444444;*/
+    /*margin-top: 6px;*/
+    /*padding-bottom: 12px;*/
+    /*padding-top: 12px;*/
 
   .responsive .fwrapper{
     border-top-style: solid;
