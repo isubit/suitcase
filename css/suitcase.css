@@ -1,3 +1,7 @@
+img {
+  height: auto;
+}
+
 /*============Begin default site styling=================*/
 /*======================Hide the user region=================================*/
 #zone-user-wrapper{
