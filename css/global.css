@@ -1218,8 +1218,9 @@ table.cream tbody tr td.ops a + a{
   .responsive .isu-red-ribbon{
     border-bottom-width: 4px;
     border-top: 0;
+    /* Bug Fix: https://dailyreport.ent.iastate.edu/redmine/issues/162
     -webkit-perspective: 600px;
-    perspective: 600px;
+    perspective: 600px;*/
     background-color: #CB1A2A;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.28));
     background-position: center bottom;
