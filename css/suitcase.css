@@ -1169,6 +1169,7 @@ table.cream tbody tr td.ops a + a {
 
 .table th,
 .table td {
+  vertical-align: inherit;
   border: none;
   padding: 2px 6px;
   text-align: left;
