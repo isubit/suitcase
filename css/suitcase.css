@@ -1161,18 +1161,18 @@ table.cream tbody tr td.ops a + a {
 }
 
 .table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 }
 
 .table th,
 .table td {
-    border: 1px solid #ccc;
-    border-width: 1px 0 0;
-    padding: 2px 6px;
-    text-align: left;
-    vertical-align: top;
+  border: none;
+  padding: 2px 6px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .table th {
