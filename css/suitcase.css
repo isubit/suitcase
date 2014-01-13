@@ -1875,3 +1875,12 @@ table.cream tbody tr td.ops a + a {
 .container-12 .grid-2 {
     width: 140px;
 }
+
+/*-------tags-------*/
+.field-name-field-tags {
+  opacity:0.4;
+}
+
+.field-name-field-tags .field-item{
+  padding-right: .7em;
+}
