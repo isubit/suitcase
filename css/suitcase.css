@@ -43,6 +43,7 @@ section {
     border-top: 1px solid #888;
     border-bottom: 6px solid #dfbd00;
     box-shadow: 0 0 10px;
+    margin-bottom: 14px;
 }
 
 .wd-l-Ribbon a, .isu-red-ribbon a {
@@ -347,6 +348,10 @@ a:hover {
     .tb-megamenu .nav-collapse .dropdown-menu a:hover,
     {
         color: #680001;
+    }
+
+    .isu-red-ribbon {
+        margin-bottom: 0;
     }
 
 }
