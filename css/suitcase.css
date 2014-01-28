@@ -1889,3 +1889,8 @@ table.cream tbody tr td.ops a + a {
 .node-page .field-name-field-tags .field-item{
   padding-right: .7em;
 }
+
+/*--------Publications--------*/
+.pager li.pager-previous a {
+    width: 70px;
+}
