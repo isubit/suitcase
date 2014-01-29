@@ -17,3 +17,8 @@ function suitcase_preprocess_html(&$vars) {
   $vars['attributes_array']['class'][] = 'responsive';
   $vars['attributes_array']['class'][] = 'wd-show-sidebar';
 }
+
+// template_preprocess_region
+function suitcase_preprocess_region(&$vars) {
+  $vars['dept_url'] = variable_get('dept_url', $default = NULL);
+}
