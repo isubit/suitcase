@@ -1,4 +1,4 @@
-iv<?php print $attributes; ?>>
+<div<?php print $attributes; ?>>
 <div<?php print $content_attributes; ?>>
   <?php if ($linked_logo_img || $site_name || $site_slogan): ?>
     <div class="branding-data clearfix">
