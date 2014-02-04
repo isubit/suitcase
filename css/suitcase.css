@@ -1882,14 +1882,16 @@ table.cream tbody tr td.ops a + a {
 }
 
 /*-------tags-------*/
-.node-page .field-name-field-tags,
-.page-node .field-name-field-tags{
+.field-name-field-tags {
   opacity:0.4;
 }
 
-.node-page .field-name-field-tags .field-item,
-.page-node .field-name-field-tags .field-item {
+.field-name-field-tags .field-item {
   padding-right: .7em;
+}
+
+.page-node-edit .field-name-field-tags {
+  opacity:1;
 }
 
 /*--------Publications--------*/
