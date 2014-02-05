@@ -1894,3 +1894,13 @@ table.cream tbody tr td.ops a + a {
 .pager li.pager-previous a {
     width: 70px;
 }
+
+/*        Don't show this stuff        */
+
+.tabledrag-toggle-weight-wrapper {
+  display:none;
+}
+
+#edit-field-people-bio-und-0-format {
+  display:none;
+}
