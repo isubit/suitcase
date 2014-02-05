@@ -1892,7 +1892,7 @@ table.cream tbody tr td.ops a + a {
   padding-right: .7em;
 }
 
-.page-node-edit .field-name-field-tags {
+#edit-field-tags {
   opacity:1;
 }
 
