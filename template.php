@@ -22,3 +22,18 @@ function suitcase_preprocess_html(&$vars) {
 function suitcase_preprocess_region(&$vars) {
   $vars['dept_url'] = variable_get('dept_url', $default = NULL);
 }
+
+// Setting breadcrumb to include current title
+// https://drupal.org/node/743366
+function suitcase_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  if (!empty($breadcrumb)) {
+    // Adding the title of the current page to the breadcrumb.
+    $breadcrumb[] = drupal_get_title();
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+    $output .= '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
+    return $output;
+  }
+}
