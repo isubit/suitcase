@@ -392,7 +392,8 @@ section h1 {
     text-shadow: 0 0.5px 1px #CCCCCC;
 }
 
-section h2 {
+section h2.node-title {
+    font-family: arial;
     color: inherit;
     font-size: 1.429em;
     line-height: 1.4;
