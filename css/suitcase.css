@@ -369,6 +369,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
     margin-top: 0;
     margin-bottom: 8px;
+    font-family: arial;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -381,6 +382,10 @@ h1 {
     font-size: 1.857em;
     line-height: 1.125;
     margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.429em;
 }
 
 section h1 {
