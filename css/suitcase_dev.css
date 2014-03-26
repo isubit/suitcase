@@ -1,0 +1,13 @@
+.isu-red-ribbon {
+    background-color: #CB1A2A;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.28));
+    background-position: center bottom;
+    background-repeat: repeat-x, repeat;
+    border-bottom: 6px solid #DFBD00;
+    border-top: 1px solid #888888;
+    box-shadow: 0 0 10px;
+}
+
+body {
+    background-color: #f4f3e8;
+}
