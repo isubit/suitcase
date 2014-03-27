@@ -98,10 +98,20 @@ ul.menu li a:hover {
 /*////////////////////////////////////*/
 /* Main menu mobile */
 .zone-menu-wrapper ul.menu {
+}
+
+#block-system-main-menu {
     display: none;
 }
 
 .zone-menu-wrapper form#search-form {
+}
+
+#block-luggage-solr-luggage-solr-search {
+    display: none;
+}
+
+.zone-menu-wrapper form#search-form input[type="submit"] {
     display: none;
 }
 
@@ -116,6 +126,11 @@ ul.menu li a:hover {
 .zone-menu-wrapper div#main-menu-search-toggle {
     float: right;
 
+
+}
+
+.main-menu-toggle-buttons-container {
+    height: 3.8em;
 }
 
 .mobile-menu-item {
@@ -126,7 +141,6 @@ ul.menu li a:hover {
     -webkit-box-shadow: 0 0 0.1em #000;
     -moz-box-shadow: 0 0 0.1em #000;
     box-shadow: 0 0 0.1em #000;
-
 }
 
 .mobile-menu-item:hover {

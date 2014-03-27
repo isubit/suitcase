@@ -9,7 +9,12 @@
     Drupal.behaviors.suitcaseMenu = {
         attach: function (context) {
             $('body', context).once('suitcaseMenu', function() {
-
+                console.log($('.region-menu-inner'));
+                $('.mobile-menu-item').each(function() {
+                    $(this).click(function() {
+                        $('.region-menu-inner').children().eq($(this).index()).slideToggle(200);
+                    });
+                });
             });
 //            $('body', context).once('omega-equalheights', function () {
 //                $(window).bind('resize.omegaequalheights', function () {
