@@ -404,3 +404,9 @@ settings[alpha_region_footer_second_css] = ''
 settings[alpha_region_footer_second_equal_height_element] = '0'
 settings[alpha_region_footer_second_equal_height_container] = '0'
 settings[breadcrumb_delimiter] = ' » '
+
+; Add on Libraries
+libraries[suitcase_menu][name] = Suitcase Menu
+libraries[suitcase_menu][description] = Provides a tiny JavaScript library that is used to build a drop-down menu.
+libraries[suitcase_menu][js][0][file] = suitcase_menu.js
+libraries[suitcase_menu][js][0][options][weight] = -20

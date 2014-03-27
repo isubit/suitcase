@@ -37,3 +37,15 @@ function suitcase_breadcrumb($variables) {
     return $output;
   }
 }
+
+//function suitcase_menu_link(array $variables) {
+//  $element = $variables['element'];
+//
+////<?php print theme('links__system_main_menu', array(
+////  'links' => $main_menu,
+////  'attributes' => array(
+////    'id' => 'main-menu-links',
+////    'class' => array('links', 'clearfix'),
+////  ),
+////));
+//}
