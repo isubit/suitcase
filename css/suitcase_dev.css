@@ -36,6 +36,24 @@ input[type="text"] {
     padding: 0;
 }
 
+input[type=text], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px #DFBD00;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DFBD00;
+}
+
 input[type="password"] {
     height: 3em;
     font-size: 1em;
@@ -135,23 +153,18 @@ ul.menu li a:hover {
 .zone-menu-wrapper div#main-menu-menu-toggle:hover {
 }
 
-.zone-menu-wrapper div#main-menu-search-toggle {
-    float: right;
-}
 
-.main-menu-toggle-buttons-container {
-    height: 4em;
-    margin-bottom: 1em;
-}
 
 .mobile-menu-item {
     color: #fff;
     height: 100%;
     padding: 0.2em 1em;
-    border: 0.1em solid rgba(100, 100, 100, 0.5);
-    -webkit-box-shadow: 0 0 0.1em #000;
+    border-right: 0.1em solid rgba(100, 100, 100, 0.5);
+    border-left: 0.1em solid rgba(100, 100, 100, 0.5);
+    -webkit-box-shadow: 0.1em 0 0.1em #000;
     -moz-box-shadow: 0 0 0.1em #000;
     box-shadow: 0 0 0.1em #000;
+    width: 3em;
 }
 
 .mobile-menu-item:hover {
@@ -185,3 +198,46 @@ ul.menu li a:hover {
 .mobile-menu-item a:active {
     color: #fff;
 }
+
+/*////////////////////////////////////*/
+/* Main menu container */
+#region-menu {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.main-menu-container {
+    height: 3em;
+    /*margin-bottom: 1em;*/
+}
+
+/*////////////////////////////////////*/
+/* Main menu search */
+.main-menu-search-input {
+    width: 100%;
+    float: right;
+}
+
+#main-menu-search-toggle {
+    height: 3em;
+    width: 1em;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+}
+
+#main-menu-facets-toggle {
+    float: left;
+    width: 2em;
+}
+
+#main-menu-facets-toggle a {
+    font-size: 2em;
+}
+
+#main-menu-search-container {
+    float: right;
+    width: 60%;
+    height: 95%;
+}
+
