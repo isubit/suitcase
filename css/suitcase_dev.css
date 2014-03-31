@@ -327,17 +327,17 @@ ul.menu li a:hover {
 
 /*////////////////////////////////////*/
 /* Sidebar Facets */
-.contextual-links-region {
+.block-facetapi.contextual-links-region {
     background-color: rgba(255, 255, 255, 0.5);
     border: solid 1px rgba(200, 200, 200, 0.9);
     margin-bottom: 1em;
 }
 
-.contextual-links-region .block-title {
+.block-facetapi.contextual-links-region .block-title {
     cursor: pointer;
 }
 
-.contextual-links-region .facetapi-facetapi-links {
+.block-facetapi.contextual-links-region .item-list {
     display: none;
 }
 
