@@ -1,17 +1,10 @@
 <div<?php print $attributes; ?>>
   <div class="main-menu-container">
-    <div class="main-menu-toggle mobile-menu-item js-enabled" id="main-menu-facets-toggle">
+    <div class="main-menu-toggle mobile-menu-item js-enabled" id="main-menu-categories-toggle">
       <a>≡</a>
     </div>
     <div class="main-menu-toggle mobile-menu-item js-enabled" id="main-menu-menu-toggle">
       <a>Menu</a>
-    </div>
-    <div class="main-menu-container mobile-menu-container" id="main-menu-search-container">
-      <input type="text" class="main-menu-search-input" id="main-menu-search-input" placeholder="Search...">
-      <div class="main-menu-search-toggle mobile-menu-item js-enabled" id="main-menu-search-toggle">
-        <a>Go</a>
-      </div>
-
     </div>
   </div>
 

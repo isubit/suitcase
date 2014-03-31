@@ -12,6 +12,10 @@
                 $('#main-menu-menu-toggle').click(function() {
                     $('#block-system-main-menu').slideToggle(200);
                 });
+
+                $('#main-menu-categories-toggle').click(function() {
+                    $('#block-menu-menu-categories').slideToggle(200);
+                });
 //                $('.mobile-menu-item').each(function() {
 //                    $(this).click(function() {
 ////                        $('.region-menu-inner').children().eq($(this).index()).slideToggle(200);

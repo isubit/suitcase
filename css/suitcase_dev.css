@@ -136,6 +136,7 @@ ul.menu li a:hover {
 }
 
 .zone-menu-wrapper form#search-form {
+    width: 100%;
 }
 
 #block-luggage-solr-luggage-solr-search {
@@ -226,18 +227,38 @@ ul.menu li a:hover {
     background-color: #333;
 }
 
-#main-menu-facets-toggle {
-    float: left;
-    width: 2em;
-}
-
-#main-menu-facets-toggle a {
-    font-size: 2em;
-}
-
 #main-menu-search-container {
     float: right;
     width: 60%;
     height: 95%;
 }
 
+/*////////////////////////////////////*/
+/* Main menu categories */
+#main-menu-categories-toggle {
+    float: left;
+    width: 2em;
+}
+
+#main-menu-categories-toggle a {
+    font-size: 2em;
+}
+
+#block-menu-menu-categories {
+    width: 20em;
+    position: fixed;
+    left: 0;
+    background-color: #333;
+    z-index: 1;
+    display: none;
+}
+
+/*////////////////////////////////////*/
+/* Side menu */
+#zone-side-menu-wrapper {
+    width: 15em;
+    /*height: 100em;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*float: left;*/
+}
