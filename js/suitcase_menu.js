@@ -14,25 +14,29 @@
                 });
 
                 $('#main-menu-categories-toggle').click(function() {
-                    console.log(parseInt($('#zone-side-menu-wrapper').css('left')));
+                    var togglePos = $(this).offset(),
+                        sidebar_offset = parseFloat($('#zone-side-menu-wrapper').width()),
+                        slide_time = 200;
+
                     if(parseInt($('#zone-side-menu-wrapper').css('left')) == 0) {
                         // Hide Menu
                         $('#zone-side-menu-wrapper').animate({
-                            left: '-15em'
-                        }, 200);
+                            left: -sidebar_offset
+                        }, slide_time);
+
 
                         $('.page').animate({
                             left: 0
-                        }, 200);
+                        }, slide_time);
                     } else {
                         // Show Menu
                         $('#zone-side-menu-wrapper').animate({
                             left: 0
-                        }, 200);
+                        }, slide_time);
 
                         $('.page').animate({
-                            left: '15em'
-                        }, 200);
+                            left: sidebar_offset - togglePos.left
+                        }, slide_time);
                     }
 //                    $('#block-menu-menu-categories').slideToggle(200);
 
