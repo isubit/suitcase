@@ -245,12 +245,12 @@ ul.menu li a:hover {
 }
 
 #block-menu-menu-categories {
-    width: 20em;
-    position: fixed;
-    left: 0;
-    background-color: #333;
-    z-index: 1;
-    display: none;
+    width: 15em;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*background-color: #333;*/
+    /*z-index: 1;*/
+    /*display: none;*/
 }
 
 /*////////////////////////////////////*/
@@ -258,7 +258,58 @@ ul.menu li a:hover {
 #zone-side-menu-wrapper {
     width: 15em;
     /*height: 100em;*/
-    /*position: absolute;*/
-    /*left: 0;*/
+    position: fixed;
+    left: -15em;
+    top: 0;
+    bottom: 0;
+    background-color: #333;
     /*float: left;*/
+    /*padding-top: 2em;*/
+    z-index: 1;
 }
+
+#zone-side-menu {
+    width: 0;
+    margin-left: 0;
+}
+
+#zone-side-menu-wrapper .region-side-menu {
+    margin-left: 0;
+    margin-right: 0;
+    width: 0;
+}
+
+#zone-side-menu-wrapper ul.menu li {
+    width: 13em;
+    height: 2em;
+    /*border-bottom: 0.1em solid rgba(100, 100, 100, 0.5);*/
+    /*margin-left: 0;*/
+}
+
+#zone-side-menu-wrapper ul.menu li>a {
+}
+
+#zone-side-menu-wrapper ul.menu a:hover {
+    cursor: pointer;
+    color: yellow;
+    -webkit-box-shadow: inset 0 0 0.1em #555;
+    -moz-box-shadow: inset 0 0 0.1em #555;
+    box-shadow: inset 0 0 0.1em #555;
+}
+
+.region-side-menu-inner {
+    width: 0;
+}
+
+.page {
+    position: relative;
+    left: 0;
+}
+
+/*#zone-side-menu-wrapper:after {*/
+    /*position: absolute;*/
+/*}*/
+
+/*#zone-content-wrapper {*/
+    /*position: fixed;*/
+/*}*/

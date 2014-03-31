@@ -14,7 +14,28 @@
                 });
 
                 $('#main-menu-categories-toggle').click(function() {
-                    $('#block-menu-menu-categories').slideToggle(200);
+                    console.log(parseInt($('#zone-side-menu-wrapper').css('left')));
+                    if(parseInt($('#zone-side-menu-wrapper').css('left')) == 0) {
+                        // Hide Menu
+                        $('#zone-side-menu-wrapper').animate({
+                            left: '-15em'
+                        }, 200);
+
+                        $('.page').animate({
+                            left: 0
+                        }, 200);
+                    } else {
+                        // Show Menu
+                        $('#zone-side-menu-wrapper').animate({
+                            left: 0
+                        }, 200);
+
+                        $('.page').animate({
+                            left: '15em'
+                        }, 200);
+                    }
+//                    $('#block-menu-menu-categories').slideToggle(200);
+
                 });
 //                $('.mobile-menu-item').each(function() {
 //                    $(this).click(function() {
