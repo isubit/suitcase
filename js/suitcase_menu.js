@@ -30,7 +30,11 @@
                         }, slide_time);
                     } else {
                         // Show Menu
-                        $('#zone-side-menu-wrapper').animate({
+                        if(togglePos.left > sidebar_offset) sidebar_offset = togglePos.left;
+                        $('#zone-side-menu-wrapper')
+                            .width(sidebar_offset)
+                            .css("left", -sidebar_offset)
+                            .animate({
                             left: 0
                         }, slide_time);
 
