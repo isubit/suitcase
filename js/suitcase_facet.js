@@ -14,6 +14,12 @@
                         $(this).find('.item-list').slideToggle(200);
                     }
                 });
+
+                $('.block-apachesolr-search').click(function(e) {
+                    if(!$(e.target).is('a')) {
+                        $(this).find('.item-list').slideToggle(200);
+                    }
+                });
             });
         }
     };
