@@ -313,11 +313,7 @@ ul.menu li a:hover {
 
 /*////////////////////////////////////*/
 /* Search Form */
-.solr-search-form-title {
-    color: red;
-}
-
-.solr-search-form input#edit-keys {
+.page-search input#edit-keys {
     width: 75%;
     /*float: left;*/
     /*margin-right: 63px;*/
