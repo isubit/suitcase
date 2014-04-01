@@ -318,26 +318,45 @@ ul.menu li a:hover {
 }
 
 .solr-search-form input#edit-keys {
-    width: 100%;
+    width: 75%;
+    /*float: left;*/
+    /*margin-right: 63px;*/
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*right: 63px;*/
 }
 
-.search-form {
+.page-search .search-form input#edit-submit {
+    /*float: right;*/
+    /*position: relative;*/
+    /*right: 0;*/
+}
 
+.page-search #page-title {
+    font-size: .9em;
+    float: left;
+    margin: 0.5em 3px 0 0;
+    position: absolute;
+    left: 0;
+    z-index: -1;
 }
 
 /*////////////////////////////////////*/
 /* Sidebar Facets */
-.block-facetapi.contextual-links-region {
+.block-facetapi {
     background-color: rgba(255, 255, 255, 0.5);
     border: solid 1px rgba(200, 200, 200, 0.9);
     margin-bottom: 1em;
+    padding-left: 1em;
 }
 
-.block-facetapi.contextual-links-region .block-title {
+.block-facetapi:hover {
     cursor: pointer;
+    /*border: solid 1px rgba(223, 189, 0, 0.9);*/
+    box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
 }
 
-.block-facetapi.contextual-links-region .item-list {
+.block-facetapi .item-list {
     display: none;
 }
 
