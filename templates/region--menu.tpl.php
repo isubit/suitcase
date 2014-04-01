@@ -3,9 +3,9 @@
     <div class="main-menu-toggle mobile-menu-item js-enabled" id="main-menu-categories-toggle">
       <a>≡</a>
     </div>
-    <div class="main-menu-toggle mobile-menu-item js-enabled" id="main-menu-menu-toggle">
-      <a>Menu</a>
-    </div>
+<!--    <div class="main-menu-toggle mobile-menu-item js-enabled" id="main-menu-menu-toggle">-->
+<!--      <a>Menu</a>-->
+<!--    </div>-->
   </div>
 
   <div<?php print $content_attributes; ?>>
