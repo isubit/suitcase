@@ -232,11 +232,15 @@ input[type="submit"] {
     border-radius: 0;
 }
 
+.section-header {
+    margin-bottom: 1em;
+}
+
 /*////////////////////////////////////*/
 /* Site Name/Slogan */
 
 .site-name, .site-slogan {
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
     font-size: 1em;
     line-height: 1em;
 }
@@ -592,4 +596,63 @@ ul.menu li a:hover {
 
 .views-row.views-row-even {
     background-color: rgba(175, 174, 166, 0.2);
+}
+
+/*////////////////////////////////////*/
+/* A Tag Mobile Styling */
+.field-label-inline {
+    /*display: inline-block;*/
+}
+
+.field-name-field-tags .field-item {
+    /*float: left;*/
+    text-align: center;
+}
+
+.field-items a {
+    display: inline-block;
+    /*height: 2.5em;*/
+    padding: 0.5em;
+    /*padding-left: 0.5em;*/
+    /*padding-right: 0.5em;*/
+    /*line-height: 2.5em;*/
+    border: solid 1px rgba(200, 200, 200, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0.2em;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    /*-webkit-hyphens: auto;*/
+    /*-moz-hyphens: auto;*/
+    /*hyphens: auto;*/
+}
+
+.field-items a:hover {
+    box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
+}
+
+.item-list a {
+    display: block;
+    /*height: 2.5em;*/
+    padding: 0.5em;
+    /*padding-left: 0.5em;*/
+    /*padding-right: 0.5em;*/
+    /*line-height: 2.5em;*/
+    border: solid 1px rgba(200, 200, 200, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0.2em;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+.item-list a:hover {
+    box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
+}
+
+.item-list ul li.leaf {
+    list-style-image: none;
+    list-style-type: none;
 }
