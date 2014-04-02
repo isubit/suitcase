@@ -232,19 +232,28 @@ input[type="submit"] {
     border-radius: 0;
 }
 
+/*////////////////////////////////////*/
+/* Site Name/Slogan */
+
+.site-name, .site-slogan {
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 1em;
+}
+
 .site-name {
     font-family: lucida grande, lucida sans unicode, arial, sans-serif;
-    font-size: 18px;
+    /*font-size: 18px;*/
     font-weight: normal;
-    line-height: 1.25;
+    /*line-height: 1.25;*/
     margin-top: 0;
     text-shadow: 0 1px 3px #333333;
 }
 
 .site-name a {
-    color: #fff;
-    font-size: 0.5em;
-    text-shadow: 0 0 0.1em #333;
+    /*color: #fff;*/
+    font-size: 60%;
+    /*text-shadow: 0 0 0.1em #333;*/
 }
 
 .site-name a:hover {
@@ -254,13 +263,13 @@ input[type="submit"] {
 
 .site-name-slogan a {
     color: #fff;
-    font-size: 0.5em;
+    /*font-size: 0.5em;*/
 }
 
 .site-slogan a {
     color: #FFFFFF;
     font-family: lucida grande, lucida sans unicode, arial, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: normal;
     line-height: 1.25;
     margin-top: 0;
@@ -470,11 +479,24 @@ ul.menu li a:hover {
 .page-search input#edit-keys {
     width: 75%;
     padding-left: 2em;
+    border: none;
+    font-size: 1.3em;
+}
+
+.page-search input#edit-keys:focus {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .page-search .search-form input#edit-submit {
     margin-top: 2px;
     margin-left: -7px;
+    border: none;
+    background: #fff;
+    height: 4.2em;
+    border-left: 1px solid rgba(200, 200, 200, 0.6);
 }
 
 .page-search #page-title {
