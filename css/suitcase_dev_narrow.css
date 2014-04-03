@@ -1,0 +1,25 @@
+@media all and (min-width: 741px) {
+    #block-system-main-menu {
+        width: auto;
+    }
+
+    #main-menu-categories-toggle {
+        width: auto;
+        position: relative;
+        margin-left: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+/*@media all and (min-width: 741px) and (max-width: 979px) {*/
+    /*.block-menu.block-main-menu div.content.clearfix {*/
+        /*width: inherit;*/
+    /*}*/
+
+    /*#block-system-main-menu {*/
+        /*width: auto;*/
+    /*}*/
+
+
+/*}*/

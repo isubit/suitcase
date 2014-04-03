@@ -351,13 +351,6 @@ ul.menu li a:hover {
 
 #block-system-main-menu .menu>li {
     margin: 0;
-    width: 48%;
-    float: left;
-    text-align: center;
-}
-
-#block-system-main-menu .menu .first {
-    margin-left: 50%;
 }
 
 #block-system-main-menu .menu>li a {
@@ -408,6 +401,18 @@ ul.menu li a:hover {
 #main-menu-categories-toggle:hover a {
     color: #fff;
     /*border-bottom: 0.2em solid rgba(153, 0, 0, 1);*/
+}
+
+@media all and (max-width: 740px) {
+    #block-system-main-menu .menu .first {
+        margin-left: 50%;
+    }
+
+    #block-system-main-menu .menu>li {
+        width: 48%;
+        float: left;
+        text-align: center;
+    }
 }
 
 /*////////////////////////////////////*/
