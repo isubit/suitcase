@@ -1,4 +1,4 @@
-@media all and (min-width: 741px) {
+@media all and (min-width: 740px) {
     #block-system-main-menu {
         width: auto;
     }
@@ -12,14 +12,16 @@
     }
 }
 
-/*@media all and (min-width: 741px) and (max-width: 979px) {*/
-    /*.block-menu.block-main-menu div.content.clearfix {*/
-        /*width: inherit;*/
+@media all and (min-width: 740px) and (max-width: 979px) {
+    /*.zone.zone-content {*/
+        /*width: 95%;*/
     /*}*/
 
-    /*#block-system-main-menu {*/
-        /*width: auto;*/
-    /*}*/
+    .zone.zone-content aside {
+        width: 580px;
+    }
 
-
-/*}*/
+    .container-12 .grid-8.region {
+        width: 100%;
+    }
+}

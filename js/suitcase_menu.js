@@ -16,6 +16,7 @@
                 $('#main-menu-categories-toggle').click(function() {
                     var togglePos = $(this).offset(),
                         sidebar_offset = parseFloat($('#zone-side-menu-wrapper').width()),
+                        sticky_menu_offset = $('#zone-menu').offset().left,
                         slide_time = 200;
 
                     if(parseInt($('#zone-side-menu-wrapper').css('left')) == 0) {
@@ -24,8 +25,11 @@
                             left: -sidebar_offset
                         }, slide_time);
 
-
                         $('.page').animate({
+                            left: 0
+                        }, slide_time);
+
+                        $('#zone-menu').animate({
                             left: 0
                         }, slide_time);
                     } else {
@@ -39,6 +43,10 @@
                         }, slide_time);
 
                         $('.page').animate({
+                            left: sidebar_offset - togglePos.left
+                        }, slide_time);
+
+                        $('#zone-menu').animate({
                             left: sidebar_offset - togglePos.left
                         }, slide_time);
                     }
