@@ -183,8 +183,11 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-.zone-content-wrapper {
+.section-content {
     background-color: #f4f3e8;
+}
+
+.zone-content-wrapper {
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -323,6 +326,14 @@ ul.menu li a:hover {
 
 .item-list a:hover {
     text-decoration: underline;
+}
+
+article.odd {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+article.even {
+    background-color: rgba(175, 174, 166, 0.2);
 }
 
 /*////////////////////////////////////*/
@@ -510,21 +521,24 @@ ul.menu li a:hover {
 
 /*////////////////////////////////////*/
 /* Search Form */
-.page-search input#edit-keys {
-    width: 75%;
+.page-search input#edit-keys,
+.page form#search-block-form .form-item-search-block-form input.form-text {
+    width: calc(100% - 4em);
     padding-left: 2em;
     border: none;
     font-size: 1.3em;
 }
 
-.page-search input#edit-keys:focus {
+.page-search input#edit-keys:focus,
+.page form#search-block-form .form-item-search-block-form input.form-text {
     border: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
 }
 
-.page-search .search-form input#edit-submit {
+.page-search .search-form input#edit-submit,
+.page form#search-block-form .form-actions input#edit-submit {
     margin-top: 2px;
     margin-left: -7px;
     border: none;

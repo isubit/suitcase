@@ -10,6 +10,12 @@
         padding-left: 1em;
         padding-right: 1em;
     }
+
+
+
+    .region-banner#region-banner {
+        width: 100%;
+    }
 }
 
 @media all and (min-width: 740px) and (max-width: 979px) {
