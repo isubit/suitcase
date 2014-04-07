@@ -1,0 +1,21 @@
+@media all and (min-width: 740px) {
+    #block-system-main-menu {
+        width: auto;
+    }
+
+    #main-menu-categories-toggle {
+        width: auto;
+        position: relative;
+        margin-left: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .region-banner#region-banner {
+        width: 100%;
+    }
+
+    .flexslider {
+        display: block;
+    }
+}
