@@ -330,20 +330,17 @@ ul.menu li a:hover {
 
 /*////////////////////////////////////*/
 /* Views */
-.views-row,
-.page-search article {
+.views-row {
     border: 1px solid rgba(100, 100, 100, 0.1);
     padding: 0.5em;
     margin-bottom: 1em;
 }
 
-.views-row.views-row-odd,
-.page-search article.odd {
+.views-row.views-row-odd {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.views-row.views-row-even,
-.page-search article.even {
+.views-row.views-row-even {
     background-color: rgba(175, 174, 166, 0.1);
 }
 
@@ -485,23 +482,6 @@ ul.menu li a:hover {
     /*margin-left: 0;*/
 }
 
-/*::-webkit-scrollbar {*/
-    /*width: 12px;*/
-/*}*/
-
-/*::-webkit-scrollbar-track {*/
-    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
-    /*background: rgba(51, 51, 51, 0.8);*/
-/*}*/
-
-/*::-webkit-scrollbar-thumb {*/
-    /*background: rgba(203,26,42,0.8);*/
-    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
-/*}*/
-/*::-webkit-scrollbar-thumb:window-inactive {*/
-    /*background: rgba(153,0,0,0.4);*/
-/*}*/
-
 #zone-side-menu-wrapper ul.menu li>a {
     display: block;
     width: 100%;
@@ -547,7 +527,7 @@ ul.menu li a:hover {
 /* Search Form */
 .page-search input#edit-keys,
 .page form#search-block-form .form-item-search-block-form input.form-text {
-    width: calc(100% - 4em);
+    width: calc(100% - 62px);
     padding-left: 2em;
     border: none;
     font-size: 1.3em;
@@ -570,7 +550,10 @@ ul.menu li a:hover {
     background: #fff;
     height: 4.2em;
     border-left: 1px solid rgba(200, 200, 200, 0.6);
+    margin-right: 0;
 }
+
+
 
 .page-search #page-title,
 .pane-search-form .pane-title {
@@ -620,8 +603,12 @@ ul.menu li a:hover {
     padding: 0.5em;
 }
 
+.page-search .content article {
+    margin-bottom: 1em;
+}
+
 .page-search .content article .content {
-    opacity: 0.8;
+    margin-left: 1.5em;
 }
 
 /*////////////////////////////////////*/
@@ -745,6 +732,7 @@ ul.menu li a:hover {
     -webkit-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
+    margin: 0 0 1em;
 }
 
 .flexslider .flex-caption {
@@ -767,4 +755,18 @@ ul.menu li a:hover {
     margin-bottom: 0;
     color: rgba(0, 0, 0, 0.8);
     font-size: 1em;
+}
+
+.flexslider .flex-prev,
+.flexslider .flex-next {
+    color: rgba(0, 0, 0, 0.5);
+    height: inherit;
+}
+
+
+
+/*////////////////////////////////////*/
+/* Panels */
+.panel-panel {
+    padding-top: 1em;
 }
