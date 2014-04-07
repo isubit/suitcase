@@ -547,7 +547,8 @@ article.even {
     border-left: 1px solid rgba(200, 200, 200, 0.6);
 }
 
-.page-search #page-title {
+.page-search #page-title,
+.pane-search-form .pane-title {
     font-size: .9em;
     float: left;
     margin: 0.5em 3px 0 0;
@@ -721,4 +722,29 @@ article.even {
     .item-list {
         display: none;
     }
+}
+
+/*////////////////////////////////////*/
+/* Flexslider */
+.flexslider {
+    border: none;
+    -webkit-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
+}
+
+.flexslider .flex-caption {
+    position: absolute;
+    left: 3em;
+    top: 3em;
+    background: rgba(255, 255, 255, 0.3);
+    width: 30%;
+    padding: 1em;
+    -webkit-box-shadow: 0 0 0.2em rgba(100, 100, 100, 0.5);
+    -moz-box-shadow: 0 0 0.2em rgba(100, 100, 100, 0.5);
+    box-shadow: 0 0 0.2em rgba(100, 100, 100, 0.5);
+}
+
+.flexslider .flex-caption p {
+    margin-bottom: 0;
 }
