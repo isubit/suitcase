@@ -412,6 +412,7 @@ ul.menu li a:hover {
     position: absolute;
     left: 0;
     z-index: 1;
+    display: none;
 }
 
 #main-menu-categories-toggle {
@@ -718,10 +719,6 @@ ul.menu li a:hover {
     .field-items a:hover {
         box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
     }
-
-    .item-list {
-        display: none;
-    }
 }
 
 /*////////////////////////////////////*/
@@ -769,4 +766,10 @@ ul.menu li a:hover {
 /* Panels */
 .panel-panel {
     padding-top: 1em;
+}
+
+/*////////////////////////////////////*/
+/* Suitcase JS Styles */
+.item-list-js-enabled {
+    display: none;
 }

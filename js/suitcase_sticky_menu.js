@@ -65,7 +65,7 @@
 
                     if(scrollTop > menu_offset_top) {
                         $('#zone-menu-wrapper').css('height', $('#zone-menu-wrapper').height());
-                        $menu.css({ 'position': 'fixed', 'top': admin_menu_height, 'padding-left': menu_offset_left, 'background': '#333', 'width': '100%', 'z-index': 1});
+                        $menu.css({ 'position': 'fixed', 'top': admin_menu_height, 'padding-left': menu_offset_left, 'background': '#333', 'width': '100%', 'z-index': 3});
                     }
                     else {
                         $menu.css({ 'position': '', 'top': '', 'padding-left': '', 'background': '', 'width': '', 'z-index': ''});

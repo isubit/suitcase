@@ -50,7 +50,7 @@
                             left: sidebar_offset - togglePos.left
                         }, slide_time);
                     }
-                });
+                }).show();
             });
         }
     };
