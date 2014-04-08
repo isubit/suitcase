@@ -674,6 +674,12 @@ ul.menu li a:hover {
         float: left;
         text-align: center;
     }
+
+    .item-list a {
+        /*border: solid 1px rgba(200, 200, 200, 0.9);*/
+        /*background-color: rgba(255, 255, 255, 0.5);*/
+        /*margin: 0.2em;*/
+    }
 }
 
 @media all and (max-width: 979px) {
@@ -684,9 +690,7 @@ ul.menu li a:hover {
         /*padding-left: 0.5em;*/
         /*padding-right: 0.5em;*/
         /*line-height: 2.5em;*/
-        border: solid 1px rgba(200, 200, 200, 0.9);
-        background-color: rgba(255, 255, 255, 0.5);
-        margin: 0.2em;
+
         word-wrap: break-word;
         -ms-word-break: break-all;
         word-break: break-all;
@@ -771,5 +775,5 @@ ul.menu li a:hover {
 /*////////////////////////////////////*/
 /* Suitcase JS Styles */
 .item-list-js-enabled {
-    display: none;
+    /*display: none;*/
 }
