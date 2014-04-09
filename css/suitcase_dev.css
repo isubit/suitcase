@@ -535,14 +535,14 @@ ul.menu li a:hover {
 .page form#search-block-form .form-item-search-block-form input.form-text {
     width: calc(100% - 62px);
     padding-left: 2em;
-    border: none;
+    /*border: none;*/
     font-size: 1.3em;
     color: rgba(50, 50, 50, 0.9);
 }
 
 .page-search input#edit-keys:focus,
 .page form#search-block-form .form-item-search-block-form input.form-text {
-    border: none;
+    /*border: none;*/
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -552,14 +552,16 @@ ul.menu li a:hover {
 .page form#search-block-form .form-actions input.form-submit {
     margin-top: 2px;
     margin-left: -7px;
-    border: none;
+    border: 1px solid #dddddd;
     background: #fff;
     height: 4.2em;
-    border-left: 1px solid rgba(200, 200, 200, 0.6);
     margin-right: 0;
 }
 
-
+.page-search .search-form input#edit-submit:hover,
+.page form#search-block-form .form-actions input.form-submit:hover {
+    border: 1px solid #DFBD00;
+}
 
 .page-search #page-title,
 .pane-search-form .pane-title {
