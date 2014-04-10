@@ -628,6 +628,11 @@ ul.menu li a:hover {
     margin-left: 1.5em;
 }
 
+.field-item.odd,
+.field-item.even {
+    margin-right: 0.5em;
+}
+
 /*////////////////////////////////////*/
 /* People */
 .view-display-id-people .views-row {
@@ -675,9 +680,9 @@ ul li.expanded {
 .flexslider {
     display: none;
     border: none;
-    -webkit-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
+    /*-webkit-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
+    /*-moz-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
+    /*box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
     margin: 0 0 1em;
 }
 
@@ -713,8 +718,16 @@ ul li.expanded {
 
 /*////////////////////////////////////*/
 /* Panels */
-.panel-panel {
-    padding-top: 1em;
+.panel-panel.grid-12 {
+    margin-bottom: 1em;
+}
+
+.panel-pane > h2.pane-title {
+    color: #DFBD00;
+    background-color: #333;
+    margin-bottom: 0;
+    padding-left: 0.5em;
+    border-bottom: 4px solid #990000;
 }
 
 /*////////////////////////////////////*/
