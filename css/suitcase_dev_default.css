@@ -18,4 +18,14 @@
     .flexslider {
         display: block;
     }
+
+    .logo-img {
+        float: none;
+        position: absolute;
+        right: 0;
+    }
+
+    .logo-img img {
+        height: 7em;
+    }
 }

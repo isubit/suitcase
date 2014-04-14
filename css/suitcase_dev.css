@@ -779,6 +779,10 @@ ul li.expanded {
         float: left;
         text-align: center;
     }
+
+    .logo-img {
+        display: none;
+    }
 }
 
 @media all and (max-width: 979px) {

@@ -10,4 +10,8 @@
     .container-12 .grid-8.region {
         width: 100%;
     }
+
+    .logo-img {
+        margin-right: 0;
+    }
 }
