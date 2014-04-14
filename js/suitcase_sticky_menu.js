@@ -65,10 +65,12 @@
 
                     if(scrollTop > menu_offset_top) {
                         $('#zone-menu-wrapper').css('height', $('#zone-menu-wrapper').height());
-                        $menu.css({ 'position': 'fixed', 'top': admin_menu_height, 'padding-left': menu_offset_left, 'background': '#333', 'width': '100%', 'z-index': 3});
+                        $menu.css({ 'position': 'fixed', 'top': admin_menu_height, 'padding-left': menu_offset_left, 'background': '#CB1A2A', 'background-image': 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.28))',
+                            'background-position': 'center bottom', 'background-repeat': 'repeat-x, repeat', 'width': '100%', 'z-index': 3});
                     }
                     else {
-                        $menu.css({ 'position': '', 'top': '', 'padding-left': '', 'background': '', 'width': '', 'z-index': ''});
+                        $menu.css({ 'position': '', 'top': '', 'padding-left': '', 'background': '', 'background-image': '',
+                            'background-position': '', 'background-repeat': '', 'width': '', 'z-index': ''});
                         $('#zone-menu-wrapper').css('height', '');
                     }
                 }
