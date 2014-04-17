@@ -38,26 +38,6 @@
                     $('#zone-menu-wrapper').css('height', '');
                 })
 
-//                window.addEventListener('scroll', function(e) {
-//                    if(!touch_flag) {
-////                        console.log("Scrolling");
-//                        updateStickyMenuPosition();
-//                    }
-////                    e.preventDefault();
-//                }, false);
-//
-//                window.addEventListener('touchmove', function(e) {
-////                    console.log("Moving");
-//                    touch_flag = true;
-//
-//                    updateStickyMenuPosition();
-////                    e.preventDefault();
-//                }, false);
-//
-//                window.addEventListener('touchend', function(e) {
-//                    updateStickyMenuPosition();
-//                });
-
                 function updateStickyMenuPosition() {
                     if($(this).width() < 740) return;
 
@@ -66,19 +46,14 @@
                     if(scrollTop > menu_offset_top) {
                         $('#zone-menu-wrapper').css('height', $('#zone-menu-wrapper').height());
                         $menu.css({ 'position': 'fixed', 'top': admin_menu_height, 'padding-left': menu_offset_left, 'background': '#CB1A2A', 'background-image': 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.28))',
-                            'background-position': 'center bottom', 'background-repeat': 'repeat-x, repeat', 'width': '100%', 'z-index': 3});
+                            'background-position': 'center bottom', 'background-repeat': 'repeat-x, repeat', 'width': '100%', 'z-index': 3, 'box-shadow': '0 0.1em 0.25em #333'});
                     }
                     else {
                         $menu.css({ 'position': '', 'top': '', 'padding-left': '', 'background': '', 'background-image': '',
-                            'background-position': '', 'background-repeat': '', 'width': '', 'z-index': ''});
+                            'background-position': '', 'background-repeat': '', 'width': '', 'z-index': '', 'box-shadow': 'none'});
                         $('#zone-menu-wrapper').css('height', '');
                     }
                 }
-
-//                window.addEventListener('focusin', function() {
-//                    console.log("Here");
-//                    updateStickyMenuPosition();
-//                });
             });
         }
     };
