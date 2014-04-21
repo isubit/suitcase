@@ -16,6 +16,10 @@
                 $(window).resize(function() {
                     if($(this).width() > 979) {
                         $('.item-list').removeClass('item-list-js-enabled');
+                    } else {
+                        if(!$('.item-list').hasClass('item-list-js-enabled')) {
+                            $('.item-list').addClass('item-list-js-enabled');
+                        }
                     }
                 });
 

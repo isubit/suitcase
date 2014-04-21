@@ -176,8 +176,145 @@ pre {
     border-top: 1px solid #888888;
 }
 
+/*////////////////////////////////////*/
+/* Dark Ribbon */
+
 .isu-dark-ribbon {
+    background-color: #444;
+    color: #fff;
+}
+
+.isu-dark-ribbon .wd-ribbon-menu {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 4px 0;
+}
+
+.isu-dark-ribbon .isu-signons {
+    float: left;
+}
+
+.isu-dark-ribbon .isu-directory-info {
+    float: right;
+}
+
+.isu-dark-ribbon .isu-alpha-index {
+    float: right;
+    margin-right: 3px;
+}
+
+.isu-dark-ribbon .wd-ribbon-menu-stack li,
+.isu-dark-ribbon .wd-ribbon-menu li {
+    float: left;
+}
+
+.isu-dark-ribbon .wd-ribbon-menu li a {
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 6px;
+    text-decoration: none;
+}
+
+.isu-dark-ribbon .wd-ribbon-menu li a:hover {
+    text-decoration: underline;
+}
+
+.isu-dark-ribbon .isu-directory-info.wd-ribbon-menu li a,
+.isu-dark-ribbon .isu-signons.wd-ribbon-menu li a {
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+
+.isu-dark-ribbon .isu-directory-info.wd-ribbon-menu li + li a,
+.isu-dark-ribbon .isu-signons.wd-ribbon-menu li + li a {
+    border-left: 0;
+}
+
+.isu-dark-ribbon .isu-signons.wd-ribbon-menu li.first a {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.isu-dark-ribbon .isu-directory-info.wd-ribbon-menu li.last a,
+.isu-dark-ribbon .isu-signons.wd-ribbon-menu li.last a {
+    border-right: 0;
+    padding-right: 0;
+}
+
+.isu-dark-ribbon .isu-alpha-index li a {
+    border-radius: 2px;
+    padding: 0 3px;
+    min-width: 7px;
+    text-align: center;
+}
+
+.isu-dark-ribbon .isu-alpha-index li a:hover {
+    background: #777;
+    text-decoration: none;
+}
+
+.isu-dark-ribbon .isu-responsive-toggles {
     display: none;
+}
+
+.isu-dark-ribbon .wd-ribbon-menu-group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.isu-dark-ribbon .wd-ribbon-menu-header {
+    display: none;
+}
+
+.isu-dark-ribbon .isu-directory-info .wd-ribbon-menu li a,
+.isu-dark-ribbon .isu-signons .wd-ribbon-menu li a {
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+
+.isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a {
+    border-radius: 2px;
+    padding: 0 2px;
+    min-width: 7px;
+    text-align: center;
+}
+
+.isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a:hover {
+    background: #777;
+    text-decoration: none;
+}
+
+.isu-dark-ribbon .hlist.borders.left > li > a {
+    border-right: 0;
+}
+
+.isu-dark-ribbon .isu-directory-info .wd-ribbon-menu li + li a,
+.isu-dark-ribbon .isu-signons .wd-ribbon-menu li + li a {
+    border-left: 0;
+}
+
+.isu-dark-ribbon .isu-directory-info .wd-ribbon-menu li.last a,
+.isu-dark-ribbon .isu-signons .wd-ribbon-menu li.last a {
+    border-right: 0;
+    padding-right: 0;
+}
+
+.isu-dark-ribbon .isu-signons .wd-ribbon-menu li.first a {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.isu-dark-ribbon .isu-directory-info + .isu-alpha-index .wd-ribbon-menu {
+    margin-right: 3px;
+}
+
+.isu-dark-ribbon {
+    /*display: none;*/
 }
 
 body {
@@ -530,8 +667,8 @@ ul.menu li a:hover {
 #zone-side-menu-wrapper .block-menu>.block-inner>.block-title {
     color: #fff;
     display: block;
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    /*width: 100%;*/
+    /*border-bottom: 1px solid rgba(255, 255, 255, 1);*/
 }
 
 .region-side-menu-inner {
@@ -759,9 +896,7 @@ ul li.expanded {
 
 /*////////////////////////////////////*/
 /* Suitcase JS Styles */
-.item-list-js-enabled {
-    /*display: none;*/
-}
+
 
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
@@ -821,5 +956,9 @@ ul li.expanded {
         display: block;
         width: 100%;
         /*height: 100%;*/
+    }
+
+    .item-list-js-enabled {
+        display: none;
     }
 }

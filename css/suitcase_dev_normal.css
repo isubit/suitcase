@@ -16,3 +16,9 @@
         margin: inherit;
     }
 }
+
+@media all and (min-width: 980px) {
+    .item-list-js-enabled {
+        display: block;
+    }
+}
