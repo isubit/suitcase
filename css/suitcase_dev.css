@@ -719,6 +719,10 @@ ul.menu li a:hover {
 
 /*////////////////////////////////////*/
 /* Sidebar Facets */
+.js-enabled-facet h2.block-title:hover {
+    cursor: pointer;
+}
+
 .block-facetapi {
     background-color: rgba(255, 255, 255, 0.5);
     border: solid 1px rgba(200, 200, 200, 0.9);
@@ -726,7 +730,6 @@ ul.menu li a:hover {
 }
 
 .block-facetapi:hover {
-    cursor: pointer;
     /*border: solid 1px rgba(223, 189, 0, 0.9);*/
     box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
 }
@@ -740,7 +743,7 @@ ul.menu li a:hover {
 }
 
 .block-apachesolr-search:hover {
-    cursor: pointer;
+    /*cursor: pointer;*/
     /*border: solid 1px rgba(223, 189, 0, 0.9);*/
     box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
 }
@@ -757,7 +760,7 @@ ul.menu li a:hover {
     border-bottom: 1px solid rgba(100, 100, 100, 0.5);
 }
 
-h2.block-title {
+.zone-content h2.block-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
     margin-bottom: 0;
@@ -1039,7 +1042,7 @@ ul li.expanded {
         /*height: 100%;*/
     }
 
-    .item-list-js-enabled {
+    .js-enabled-collapsed {
         display: none;
     }
 

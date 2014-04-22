@@ -14,4 +14,12 @@
     .logo-img {
         margin-right: 0;
     }
+
+    .zone.zone-content aside {
+        width: 100%;
+    }
+
+    .zone-content .region.region-content {
+        width: 100%;
+    }
 }

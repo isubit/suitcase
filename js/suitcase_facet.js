@@ -9,31 +9,49 @@
     Drupal.behaviors.suitcaseFacet = {
         attach: function (context) {
             $('body', context).once('suitcaseFacet', function() {
+                $('.region-sidebar-first').find('.block-facetapi').addClass('js-enabled-facet');
+                $('.region-sidebar-first').find('.block-apachesolr-search').addClass('js-enabled-facet');
+                console.log($('.region-sidebar-first').find('.block-apachesolr-search'));
+
+                var $itemList = $('.js-enabled-facet .item-list'),
+                    collapsed = 'js-enabled-collapsed',
+                    isTouchedAlready = false;
+
                 if($(window).width() < 980) {
-                    $('.item-list').addClass('item-list-js-enabled');
+                    $itemList.addClass(collapsed);
                 }
 
                 $(window).resize(function() {
                     if($(this).width() > 979) {
-                        $('.item-list').removeClass('item-list-js-enabled');
+                        $itemList.removeClass(collapsed);
                     } else {
-                        if(!$('.item-list').hasClass('item-list-js-enabled')) {
-                            $('.item-list').addClass('item-list-js-enabled');
+                        if(!$itemList.hasClass(collapsed)) {
+                            $itemList.addClass(collapsed);
                         }
                     }
                 });
 
-                $('.block-facetapi').click(function(e) {
+                $('.js-enabled-facet h2.block-title').bind('click touchend', function(e) {
                     if(!$(e.target).is('a')) {
-                        $(this).find('.item-list').slideToggle(200);
+                        $(this).parent().find('.item-list').slideToggle(200);
                     }
+                    if(!isTouchedAlready) {
+
+                    } else {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }
+                    console.log(e.type);
+                    isTouchedAlready = (e.type == 'touchend');
+                }).bind('touchstart', function(e) {
+                    e.preventDefault();
                 });
 
-                $('.block-apachesolr-search').click(function(e) {
-                    if(!$(e.target).is('a')) {
-                        $(this).find('.item-list').slideToggle(200);
-                    }
-                });
+//                $('.block-apachesolr-search').click(function(e) {
+//                    if(!$(e.target).is('a')) {
+//                        $(this).find('.item-list').slideToggle(200);
+//                    }
+//                });
             });
         }
     };

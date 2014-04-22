@@ -62,7 +62,6 @@
                 }
 
                 function resetStickyMenuPosition() {
-                    console.log('reset');
                     $menu.css({ 'position': '', 'top': '', 'padding-left': '', 'background': '', 'background-image': '',
                         'background-position': '', 'background-repeat': '', 'width': '', 'z-index': '', 'box-shadow': 'none'});
                     $('#zone-menu-wrapper').css('height', '');
