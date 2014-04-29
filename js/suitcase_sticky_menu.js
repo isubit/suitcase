@@ -14,7 +14,8 @@
                     menu_offset_top = (admin_menu_height > 0) ? $menu.offset().top - admin_menu_height : $menu.offset().top,
                     menu_offset_left = $menu.offset().left,
                     MIN_WINDOW_WIDTH = 740,
-                    sticky_class = 'sticky_top';
+                    sticky_class = 'sticky_top',
+                    classNotSticky = true;
 
                 $(window).resize(function() {
                     admin_menu_height = ($('#admin-menu').length) ? $('#admin-menu').height() : 0;
@@ -45,11 +46,16 @@
                         var scrollTop = $(window).scrollTop();
 
                         if(scrollTop > menu_offset_top) {
-                            $('#zone-menu-wrapper').css('height', $('#zone-menu-wrapper').height());
-                            $menu.addClass(sticky_class).css({ 'top': admin_menu_height, 'padding-left': menu_offset_left});
+                            if(classNotSticky) {
+                                console.log('here');
+                                $('#zone-menu-wrapper').css('height', $('#zone-menu-wrapper').height());
+                                $menu.addClass(sticky_class).css({ 'top': admin_menu_height, 'padding-left': menu_offset_left});
+                                classNotSticky = false;
+                            }
                         }
                         else {
                             resetStickyMenuPosition();
+                            classNotSticky = true;
                         }
                     }
                 }
