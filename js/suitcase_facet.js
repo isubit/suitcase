@@ -34,9 +34,7 @@
                     if(!$(e.target).is('a')) {
                         $(this).parent().find('.item-list').toggleClass(collapsed);
                     }
-                    if(!isTouchedAlready) {
-
-                    } else {
+                    if(isTouchedAlready) {
                         e.preventDefault();
                         e.stopPropagation();
                     }
