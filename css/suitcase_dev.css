@@ -846,11 +846,11 @@ ul li.expanded {
     position: absolute;
     left: 1em;
     top: 1em;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.85);
     padding: 1em;
-    -webkit-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.75);
-    -moz-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.75);
-    box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.75);
+    -webkit-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
+    -moz-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
+    box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
 }
 
 .flexslider img {
@@ -859,7 +859,7 @@ ul li.expanded {
 
 .flexslider .flex-caption p {
     margin-bottom: 0;
-    color: rgba(0, 0, 0, .8);
+    color: rgba(0, 0, 0, .85);
     font-size: 1em;
 }
 
