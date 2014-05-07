@@ -848,7 +848,7 @@ ul li.expanded {
     width: 100%;
 }
 
-#zone-menu.sticky_top {
+#zone-menu.sticky-top {
     position: fixed;
     top: 0;
     background: #CB1A2A;
@@ -859,7 +859,7 @@ ul li.expanded {
     z-index: 3;
     -webkit-box-shadow: 0 0.1em 0.25em #333;
     -moz-box-shadow: 0 0.1em 0.25em #333;
-    box-shadow: 0 0.1em 0.25em #333;
+    box-shadow: 0 0.25em 0.5em #333;
 }
 
 /*////////////////////////////////////*/

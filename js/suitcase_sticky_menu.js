@@ -14,7 +14,7 @@
                     menu_offset_top = (admin_menu_height > 0) ? $menu.offset().top - admin_menu_height : $menu.offset().top,
                     menu_offset_left = $menu.offset().left,
                     MIN_WINDOW_WIDTH = 740,
-                    sticky_class = 'sticky_top',
+                    sticky_class = 'sticky-top',
                     classNotSticky = true;
 
                 $(window).resize(function() {

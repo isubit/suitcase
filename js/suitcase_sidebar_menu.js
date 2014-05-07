@@ -17,7 +17,7 @@
                         isTouchedAlready = false;
                         return;
                     }
-                    
+
                     var togglePos = $(this).offset(),
                         sidebar_offset = parseFloat($('#zone-side-menu-wrapper').width());
 
