@@ -58,7 +58,7 @@
                         }, slide_time);
 
                     $('.page').stop().animate({
-                        left: sidebar_offset - togglePos.left
+                        left: sidebar_offset - togglePos.left + 7
                     }, slide_time);
 
                     $('#zone-menu').stop().animate({
