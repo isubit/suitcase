@@ -547,6 +547,10 @@ ul.menu li a:hover {
     border-bottom: 0.2em solid #DFBD00;
 }
 
+#block-system-main-menu .menu>li a.active {
+    border-bottom: 0.2em solid #DFBD00;
+}
+
 #block-system-main-menu ul.menu ul.menu {
     display: none;
 }
