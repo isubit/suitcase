@@ -17,13 +17,14 @@
                     isTouchedAlready = false,
                     arrow_dir,
                     dwnimg = '/sites/all/themes/suitcase/images/white-arrow-down.gif',
-                    upimg = '/sites/all/themes/suitcase/images/white-arrow-up.gif';
-
-                console.log($itemList.parent().parent());
-                console.log(!$(this).find('#collapsed-indicator-img'));
+                    upimg = '/sites/all/themes/suitcase/images/white-arrow-up.gif',
+                    arrowimg = 'collapsed-indicator-img',
+                    arrowclass = '.' + arrowimg;
 
                 if($(window).width() < 980) {
                     addCollapse($itemList);
+                } else {
+                    removeCollapse($itemList);
                 }
 
                 $(window).resize(function() {
@@ -52,10 +53,10 @@
                 function addCollapse($items) {
                     $items.addClass(collapsed);
                     $items.parent().parent().each(function() {
-                        if($(this).hasClass('block-inner clearfix') && $(this).find('#collapsed-indicator-img').length == 0) {
-                            $(this).find('h2').append('<img src="' + dwnimg + '" id="collapsed-indicator-img">');
-                        } else if($(this).find('#collapsed-indicator-img').length > 0) {
-                            $(this).find('#collapsed-indicator-img').attr('src', dwnimg);
+                        if($(this).hasClass('block-inner clearfix') && $(this).find(arrowclass).length == 0) {
+                            $(this).find('h2').append('<img src="' + dwnimg + '" class="' + arrowimg + '">');
+                        } else if($(this).find(arrowclass).length > 0) {
+                            $(this).find(arrowclass).attr('src', dwnimg);
                         }
                     });
                     arrow_dir = 'down';
@@ -64,10 +65,10 @@
                 function removeCollapse($items) {
                     $items.removeClass(collapsed);
                     $items.parent().parent().each(function() {
-                        if($(this).hasClass('block-inner clearfix') && $(this).find('#collapsed-indicator-img').length == 0) {
-                            $(this).find('h2').append('<img src="' + upimg + '" id="collapsed-indicator-img">');
-                        } else if($(this).find('#collapsed-indicator-img').length > 0) {
-                            $(this).find('#collapsed-indicator-img').attr('src', upimg);
+                        if($(this).hasClass('block-inner clearfix') && $(this).find(arrowclass).length == 0) {
+                            $(this).find('h2').append('<img src="' + upimg + '" class="' + arrowimg + '">');
+                        } else if($(this).find(arrowclass).length > 0) {
+                            $(this).find(arrowclass).attr('src', upimg);
                         }
                     });
                     arrow_dir = 'up';

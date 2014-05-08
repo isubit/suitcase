@@ -747,6 +747,12 @@ ul.menu li a:hover {
     display: none;
 }
 
+.collapsed-indicator-img {
+    float: right;
+    margin: 0 2% 0 0;
+    opacity: 0.9;
+}
+
 /*////////////////////////////////////*/
 /* Sidebar More Like This */
 .block-apachesolr-search {
@@ -1073,5 +1079,10 @@ ul li.expanded {
 
     .zone-content h2.block-title {
         line-height: 2em;
+    }
+
+    .collapsed-indicator-img {
+        margin-top: 0.5em;
+        height: 1em;
     }
 }

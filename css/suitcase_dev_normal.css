@@ -20,4 +20,9 @@
     .item-list-js-enabled {
         display: block;
     }
+
+    .collapsed-indicator-img {
+        margin-top: 0.25em;
+        height: 0.8em;
+    }
 }
