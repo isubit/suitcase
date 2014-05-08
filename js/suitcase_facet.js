@@ -14,25 +14,31 @@
 
                 var $itemList = $('.js-enabled-facet .item-list'),
                     collapsed = 'js-enabled-collapsed',
-                    isTouchedAlready = false;
+                    isTouchedAlready = false,
+                    arrow_dir,
+                    dwnimg = '/sites/all/themes/suitcase/images/white-arrow-down.gif',
+                    upimg = '/sites/all/themes/suitcase/images/white-arrow-up.gif';
+
+                console.log($itemList.parent().parent());
+                console.log(!$(this).find('#collapsed-indicator-img'));
 
                 if($(window).width() < 980) {
-                    $itemList.addClass(collapsed);
+                    addCollapse($itemList);
                 }
 
                 $(window).resize(function() {
                     if($(this).width() > 979) {
-                        $itemList.removeClass(collapsed);
+                        removeCollapse($itemList);
                     } else {
-                        if(!$itemList.hasClass(collapsed)) {
-                            $itemList.addClass(collapsed);
+                        if(!isCollapsed($itemList)) {
+                            addCollapse($itemList);
                         }
                     }
                 });
 
                 $('.js-enabled-facet h2.block-title').bind('click touchend', function(e) {
                     if(!$(e.target).is('a')) {
-                        $(this).parent().find('.item-list').toggleClass(collapsed);
+                        toggleCollapse($(this).parent().find('.item-list'));
                     }
                     if(isTouchedAlready) {
                         e.preventDefault();
@@ -43,11 +49,41 @@
                     e.preventDefault();
                 });
 
-//                $('.block-apachesolr-search').click(function(e) {
-//                    if(!$(e.target).is('a')) {
-//                        $(this).find('.item-list').slideToggle(200);
-//                    }
-//                });
+                function addCollapse($items) {
+                    $items.addClass(collapsed);
+                    $items.parent().parent().each(function() {
+                        if($(this).hasClass('block-inner clearfix') && $(this).find('#collapsed-indicator-img').length == 0) {
+                            $(this).find('h2').append('<img src="' + dwnimg + '" id="collapsed-indicator-img">');
+                        } else if($(this).find('#collapsed-indicator-img').length > 0) {
+                            $(this).find('#collapsed-indicator-img').attr('src', dwnimg);
+                        }
+                    });
+                    arrow_dir = 'down';
+                }
+
+                function removeCollapse($items) {
+                    $items.removeClass(collapsed);
+                    $items.parent().parent().each(function() {
+                        if($(this).hasClass('block-inner clearfix') && $(this).find('#collapsed-indicator-img').length == 0) {
+                            $(this).find('h2').append('<img src="' + upimg + '" id="collapsed-indicator-img">');
+                        } else if($(this).find('#collapsed-indicator-img').length > 0) {
+                            $(this).find('#collapsed-indicator-img').attr('src', upimg);
+                        }
+                    });
+                    arrow_dir = 'up';
+                }
+
+                function toggleCollapse($item) {
+                    if(arrow_dir == 'down') {
+                        removeCollapse($item);
+                    } else {
+                        addCollapse($item);
+                    }
+                }
+
+                function isCollapsed($items) {
+                    return $items.hasClass(collapsed);
+                }
             });
         }
     };
