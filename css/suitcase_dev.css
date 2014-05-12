@@ -438,7 +438,6 @@ ul.menu li {
 }
 
 ul.menu li a {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -523,10 +522,6 @@ ul.menu li a:hover {
     float: left;
 }
 
-#block-system-main-menu .menu {
-    /*float: left;*/
-}
-
 #block-system-main-menu .menu>li {
     margin: 0;
 }
@@ -536,10 +531,9 @@ ul.menu li a:hover {
     height: 3em;
     width: 100%;
     line-height: 3em;
-    /*padding: 0 1em;*/
     border: 0.2em solid rgba(255, 255, 255, 0);
     text-shadow: 0 1px 3px #333333;
-    /*border-right: 0.1em solid rgba(255, 255, 255, 0);*/
+    color: #fff;
 }
 
 #block-system-main-menu .menu>li a:hover {
@@ -552,11 +546,14 @@ ul.menu li a:hover {
 }
 
 #block-system-main-menu ul.menu ul.menu {
+    float: left;
+}
+
+#block-system-main-menu ul.menu li:not(.active-trail) ul.menu {
     display: none;
 }
 
 #main-menu-categories-toggle {
-    /*float: left;*/
     width: 48%;
     text-align: center;
     vertical-align: middle;
@@ -927,9 +924,51 @@ ul li.expanded {
     display: block;
 }
 
-/*////////////////////////////////////*/
-/* Suitcase JS Styles */
+/*/////////////////////////////////////*/
+.section h2.node-title,
+.page-node h1.title#page-title {
+    margin-left: 1.5em;
+}
 
+.content-type-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.2em 0;
+    width: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.5;
+    border: 0.1em solid rgba(0, 0, 0, 0.2);
+}
+
+.content-type-indicator.resource {
+    background: #cef;
+}
+
+.content-type-indicator.page {
+    background: #ffccf2;
+}
+
+.content-type-indicator.biblio {
+    background: #dcf;
+}
+
+.content-type-indicator.event {
+    background: #efc;
+}
+
+.content-type-indicator.people {
+    background: #fff6cc;
+}
+
+.content-type-indicator.news {
+    background: #fcc;
+}
+
+.content-type-indicator.announcement {
+    background: #ccffd4;
+}
 
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
