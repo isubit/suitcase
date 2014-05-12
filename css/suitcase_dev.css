@@ -730,13 +730,15 @@ ul.menu li a:hover {
     cursor: pointer;
 }
 
-.block-facetapi {
+.zone-content .block-facetapi,
+.zone-content .block-menu {
     background-color: rgba(255, 255, 255, 0.5);
     border: solid 1px rgba(200, 200, 200, 0.9);
     margin-bottom: 1em;
 }
 
-.block-facetapi:hover {
+.zone-content .block-facetapi:hover,
+.zone-content .block-menu:hover {
     box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
 }
 
