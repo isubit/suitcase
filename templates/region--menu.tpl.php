@@ -1,13 +1,4 @@
 <div<?php print $attributes; ?>>
-  <div class="main-menu-container">
-    <div class="main-menu-toggle mobile-menu-item js-enabled" id="main-menu-categories-toggle">
-      <a>≡</a>
-    </div>
-<!--    <div class="main-menu-toggle mobile-menu-item js-enabled" id="main-menu-menu-toggle">-->
-<!--      <a>Menu</a>-->
-<!--    </div>-->
-  </div>
-
   <div<?php print $content_attributes; ?>>
     <?php if ($main_menu || $secondary_menu): ?>
     <nav class="navigation">
@@ -17,6 +8,5 @@
     <?php endif; ?>
 
     <?php print $content; ?>
-
   </div>
 </div>

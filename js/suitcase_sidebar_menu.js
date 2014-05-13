@@ -10,9 +10,10 @@
         attach: function (context) {
             $('body', context).once('suitcaseSidebarMenu', function() {
                 var isTouchedAlready = false,
-                    slide_time = 200;
+                    slide_time = 200,
+                    $sidebar_button = $('nav.navigation ul li a:contains(≡)');
 
-                $('#main-menu-categories-toggle').bind('click touchend', function(e) {
+                $sidebar_button.bind('click touchend', function(e) {
                     if(isTouchedAlready) {
                         isTouchedAlready = false;
                         return;
@@ -30,7 +31,9 @@
                     isTouchedAlready = (e.type == 'touchend');
                 }).bind('touchstart', function(e) {
                     e.preventDefault();
-                }).show();
+                }).show()
+                    .removeAttr('href')
+                    .css('font-weight', 'bold');
 
                 function HideMenu(sidebar_offset) {
                     $('#zone-side-menu-wrapper').stop().animate({

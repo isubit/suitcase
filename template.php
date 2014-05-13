@@ -38,11 +38,11 @@ function suitcase_preprocess_region(&$vars) {
 //  }
 //}
 
-function suitcase_preprocess_block(&$vars) {
-  if($vars['block']->bid === '51' || $vars['block']->module === 'facetapi') {
-
-  }
-}
+//function suitcase_preprocess_block(&$vars) {
+//  if($vars['block']->bid === '51' || $vars['block']->module === 'facetapi') {
+//
+//  }
+//}
 
 //function suitcase_menu_link(array $variables) {
 //  $element = $variables['element'];
