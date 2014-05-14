@@ -16,8 +16,8 @@
                     collapsed = 'js-enabled-collapsed',
                     isTouchedAlready = false,
                     arrow_dir,
-                    dwnimg = '/sites/all/themes/suitcase/images/white-arrow-down.gif',
-                    upimg = '/sites/all/themes/suitcase/images/white-arrow-up.gif',
+                    dwnimg = Drupal.settings.basePath + 'sites/all/themes/suitcase/images/white-arrow-down.gif',
+                    upimg = Drupal.settings.basePath + 'sites/all/themes/suitcase/images/white-arrow-up.gif',
                     arrowimg = 'collapsed-indicator-img',
                     arrowclass = '.' + arrowimg;
 
