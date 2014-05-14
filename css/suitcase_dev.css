@@ -507,10 +507,10 @@ ul.menu li a:hover {
     padding-top: 0.5em;
 }
 
-#block-system-main-menu {
+nav.navigation .main-menu {
     /*display: none;*/
-    width: 100%;
     float: left;
+    margin-bottom: 0;
 }
 
 nav.navigation .main-menu>li {
@@ -539,7 +539,8 @@ nav.navigation .main-menu>li a {
     padding: 0 11px;
 }
 
-nav.navigation .main-menu>li a:hover {
+nav.navigation .main-menu>li a:hover,
+nav.navigation .secondary-menu>li a:hover {
     /*box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.3);*/
     border-bottom: 3px solid #DFBD00;
     cursor: pointer;
@@ -547,6 +548,25 @@ nav.navigation .main-menu>li a:hover {
 
 nav.navigation .main-menu>li a.active {
     border-bottom: 3px solid #DFBD00;
+}
+
+nav.navigation .secondary-menu {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+    background: rgba(52, 52, 52, 1);
+    float: left;
+}
+
+nav.navigation .secondary-menu>li {
+    height: 100%;
+    display: inline-block;
+}
+
+nav.navigation .secondary-menu>li a {
+    display: block;
+    line-height: 42px;
+    border: 3px solid rgba(255, 255, 255, 0);
 }
 
 /*////////////////////////////////////*/
@@ -974,6 +994,15 @@ ul li.expanded {
     nav.navigation .main-menu>li a {
         padding: 0;
         width: 100%;
+    }
+
+    nav.navigation .main-menu,
+    nav.navigation .secondary-menu {
+        float: none;
+    }
+
+    nav.navigation .secondary-menu {
+        margin-left: 0;
     }
 
     .logo-img {
