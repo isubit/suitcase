@@ -550,14 +550,6 @@ nav.navigation .main-menu>li a.active {
     border-bottom: 3px solid #DFBD00;
 }
 
-#block-system-main-menu ul.menu ul.menu {
-    float: left;
-}
-
-#block-system-main-menu ul.menu li:not(.active-trail) ul.menu {
-    display: none;
-}
-
 /*////////////////////////////////////*/
 /* Main menu container */
 #region-menu {
@@ -970,14 +962,19 @@ ul li.expanded {
 /*///////////////////////////////////////////////////////////////////////////////*/
 
 @media all and (max-width: 739px) {
-    #block-system-main-menu .menu .first {
-        margin-left: 50%;
+    nav.navigation .main-menu>li:first-child {
+        margin-left:0;
     }
 
-    #block-system-main-menu .menu>li {
-        width: 48%;
+    nav.navigation .main-menu>li {
+        width: 50%;
         float: left;
         text-align: center;
+    }
+
+    nav.navigation .main-menu>li a {
+        padding: 0;
+        width: 100%;
     }
 
     .logo-img {

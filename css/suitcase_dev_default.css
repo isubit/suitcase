@@ -3,14 +3,6 @@
         width: auto;
     }
 
-    #main-menu-categories-toggle {
-        width: auto;
-        position: relative;
-        margin-left: 0.5em;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
     .region-banner#region-banner {
         width: 100%;
     }
