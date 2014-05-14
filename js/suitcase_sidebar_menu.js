@@ -33,7 +33,8 @@
                     e.preventDefault();
                 }).show()
                     .removeAttr('href')
-                    .css('font-weight', 'bold');
+                    .css('font-weight', 'bold')
+                    .css('font-size', '1.5em');
 
                 function HideMenu(sidebar_offset) {
                     $('#zone-side-menu-wrapper').stop().animate({
