@@ -35,8 +35,7 @@
                 });
 
                 $(document).bind('focus', 'select, input, textarea', function(e) {
-                    $menu.css({ 'position': '', 'top': '', 'padding-left': '', 'background': '', 'width': '', 'z-index': ''});
-                    $('#zone-menu-wrapper').css('height', '');
+                    updateStickyMenuPosition();
                 })
 
                 function updateStickyMenuPosition() {
