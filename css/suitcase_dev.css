@@ -934,6 +934,24 @@ ul li.expanded {
     margin: 0;
 }
 
+.zone-footer strong {
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+.zone-footer .block-menu-footer {
+    float: right;
+    font-size: 1.1em;
+}
+
+.zone-footer a:hover {
+    text-decoration: underline;
+}
+
+.zone-footer .region-footer-first-inner .block:last-child {
+    float: left;
+}
+
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
 /* GLOBAL STYLING END */
