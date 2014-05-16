@@ -20,4 +20,14 @@
         margin-top: 0.25em;
         height: 0.8em;
     }
+
+    #block-menu-menu-footer .leaf a {
+        background: none;
+        font-size: 1.1em;
+    }
+
+    #block-menu-menu-footer .leaf a:hover {
+        text-decoration: underline;
+        background: none;
+    }
 }
