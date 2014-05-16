@@ -15,7 +15,6 @@
                 var $itemList = $('.js-enabled-facet .item-list'),
                     collapsed = 'js-enabled-collapsed',
                     isTouchedAlready = false,
-                    arrow_dir,
                     dwnimg = Drupal.settings.basePath + 'sites/all/themes/suitcase/images/white-arrow-down.gif',
                     upimg = Drupal.settings.basePath + 'sites/all/themes/suitcase/images/white-arrow-up.gif',
                     arrowimg = 'collapsed-indicator-img',
@@ -59,7 +58,6 @@
                             $(this).find(arrowclass).attr('src', dwnimg);
                         }
                     });
-                    arrow_dir = 'down';
                 }
 
                 function removeCollapse($items) {
@@ -71,11 +69,10 @@
                             $(this).find(arrowclass).attr('src', upimg);
                         }
                     });
-                    arrow_dir = 'up';
                 }
 
                 function toggleCollapse($item) {
-                    if(arrow_dir == 'down') {
+                    if(isCollapsed($item)) {
                         removeCollapse($item);
                     } else {
                         addCollapse($item);
