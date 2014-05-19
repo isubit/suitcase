@@ -22,4 +22,17 @@
     .zone-content .region.region-content {
         width: 100%;
     }
+
+    .view-display-id-people_grid .views-row {
+        width: 47%;
+        height: 215px;
+    }
+
+    .view-display-id-people_grid .views-row-odd {
+        float: left;
+    }
+
+    .view-display-id-people_grid .views-row-even {
+        float: right;
+    }
 }

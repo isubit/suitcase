@@ -9,6 +9,10 @@
         border: none;
         background-color: inherit;
     }
+
+    .view-display-id-people_grid .views-row {
+        width: 31.7%;
+    }
 }
 
 @media all and (min-width: 980px) {
@@ -29,5 +33,15 @@
     #block-menu-menu-footer .leaf a:hover {
         text-decoration: underline;
         background: none;
+    }
+
+    .view-display-id-people_grid .views-row {
+        float: left;
+    }
+}
+
+@media all and (min-width: 1220px) {
+    .view-display-id-people_grid .views-row {
+        width: 32%;
     }
 }

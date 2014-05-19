@@ -30,4 +30,8 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .view-display-id-people_grid .views-row-even {
+        background: rgba(255, 255, 255, 0.7);
+    }
 }
