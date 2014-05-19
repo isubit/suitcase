@@ -737,22 +737,6 @@ nav.navigation .secondary-menu>li a {
 }
 
 /*////////////////////////////////////*/
-/* People */
-.view-display-id-people .views-row {
-    border-radius: 0;
-    box-shadow: none;
-    -moz-box-shadow: none;
-}
-
-.view-display-id-people .view-content>h3 {
-    border-radius: 0;
-    background-color: rgba(175, 174, 166, 0.6);
-    /*border: 1px solid rgba(153, 0, 0, 0.5);*/
-    box-shadow: 0 0 0.1em #000;
-    -moz-box-shadow: 0 0 0.1em #000;
-}
-
-/*////////////////////////////////////*/
 /* A Tag Mobile Styling */
 .item-list ul li.leaf {
     list-style-image: none;
