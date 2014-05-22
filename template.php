@@ -22,11 +22,14 @@ function suitcase_preprocess_html(&$vars) {
 function suitcase_preprocess_region(&$vars) {
   $vars['dept_url'] = variable_get('dept_url', $default = NULL);
   if($vars['elements']['#region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1))) {
-    $arg0 = arg(0);
-
     $node = node_load(arg(1));
-    $tax = taxonomy_term_load($node->field_people_category[LANGUAGE_NONE][0]['tid']);
-    $arg1 = arg(1);
+    if($node->type == 'people') {
+      $vars['categories'] = array();
+      foreach($node->field_people_category[LANGUAGE_NONE] as $category) {
+        $tax = taxonomy_term_load($category['tid']);
+        array_push($vars['categories'], $tax->name);
+      }
+    }
   }
 }
 
