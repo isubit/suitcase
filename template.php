@@ -21,37 +21,15 @@ function suitcase_preprocess_html(&$vars) {
 // template_preprocess_region
 function suitcase_preprocess_region(&$vars) {
   $vars['dept_url'] = variable_get('dept_url', $default = NULL);
+  if($vars['elements']['#region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1))) {
+    $arg0 = arg(0);
+
+    $node = node_load(arg(1));
+    $tax = taxonomy_term_load($node->field_people_category[LANGUAGE_NONE][0]['tid']);
+    $arg1 = arg(1);
+  }
 }
 
-// Setting breadcrumb to include current title
-// https://drupal.org/node/743366
-//function suitcase_breadcrumb($variables) {
-//  $breadcrumb = $variables['breadcrumb'];
-//  if (!empty($breadcrumb)) {
-//    // Adding the title of the current page to the breadcrumb.
-//    $breadcrumb[] = drupal_get_title();
-//    // Provide a navigational heading to give context for breadcrumb links to
-//    // screen-reader users. Make the heading invisible with .element-invisible.
-//    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
-//    $output .= '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
-//    return $output;
-//  }
-//}
-
-//function suitcase_preprocess_block(&$vars) {
-//  if($vars['block']->bid === '51' || $vars['block']->module === 'facetapi') {
-//
-//  }
-//}
-
-//function suitcase_menu_link(array $variables) {
-//  $element = $variables['element'];
-//
-////<?php print theme('links__system_main_menu', array(
-////  'links' => $main_menu,
-////  'attributes' => array(
-////    'id' => 'main-menu-links',
-////    'class' => array('links', 'clearfix'),
-////  ),
-////));
-//}
+function suitcase_preprocess_content(&$vars) {
+  $vars['categories'] = variable_get('field_people_category', $default = NULL);
+}
