@@ -886,9 +886,37 @@ footer.section-footer {
 }
 
 /*////////////////////////////////////*/
-/* Forms */
+/* Forms - People, News, etc. */
 .view-display-id-people_grid .views-row {
     height: 215px;
+}
+
+.node-people-form .field-multiple-table thead th {
+    background: none;
+}
+
+.node-people-form .field-multiple-table tbody tr.odd,
+.node-people-form .field-multiple-table tbody tr.even {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.node-people-form .field-multiple-table tbody tr.odd td {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.node-people-form .field-multiple-table tbody tr.even td {
+    background-color: rgba(0,0,0,0.1);
+}
+
+/*////////////////////////////////////*/
+/* Taxonomy Views */
+.page-taxonomy .zone-content article {
+    margin-bottom: 1em;
+    border-bottom: 1px dashed rgba(100, 100, 100, 0.3);
+}
+
+.page-taxonomy .zone-content article .content {
+    margin-left: 1.5em;
 }
 
 /*///////////////////////////////////////////////////////////*/
