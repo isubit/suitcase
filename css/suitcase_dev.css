@@ -370,36 +370,25 @@ input[type="submit"] {
 /*////////////////////////////////////*/
 /* Site Name/Slogan */
 
-.site-name, .site-slogan {
-    /*color: #FFFFFF;*/
-    font-size: 1em;
-    line-height: 1em;
+h1.site-name {
+    font-size: 2.2em;
 }
 
 .site-name {
     font-family: lucida grande, lucida sans unicode, arial, sans-serif;
-    /*font-size: 18px;*/
     font-weight: normal;
-    /*line-height: 1.25;*/
     margin-top: 0;
     text-shadow: 0 1px 3px #333333;
 }
 
-.site-name a {
-    /*color: #fff;*/
-    font-size: 65%;
-    /*text-shadow: 0 0 0.1em #333;*/
-}
-
 .site-name-slogan a {
     color: #fff;
-    /*font-size: 0.5em;*/
 }
 
 .site-slogan a {
     color: #FFFFFF;
     font-family: lucida grande, lucida sans unicode, arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: normal;
     line-height: 1.25;
     margin-top: 0;
@@ -421,9 +410,6 @@ ul.menu li a {
     height: auto;
 }
 
-.flexslider {
-}
-
 .zone-menu .form-type-textfield label {
     display: none;
 }
@@ -433,7 +419,7 @@ ul.menu li a {
 }
 
 #isu_wordmark {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 /*////////////////////////////////////*/
