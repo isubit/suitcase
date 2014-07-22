@@ -13,7 +13,7 @@
                   <a class="wd-ribbon-menu-header" href="#">Sign-ons</a>
                   <ul class="wd-ribbon-menu">
                     <li class="first"><a href="http://cymail.iastate.edu/">CyMail</a></li>
-                    <li><a href="http://exchange.iastate.edu/">Outlook</a></li>
+                    <li><a href="http://outlook.iastate.edu/">Outlook</a></li>
                     <li><a href="http://bb.its.iastate.edu/">Blackboard</a></li>
                     <li class="last"><a href="http://accessplus.iastate.edu/">AccessPlus</a></li>
                   </ul>
