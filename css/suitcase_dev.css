@@ -724,6 +724,12 @@ nav.navigation .secondary-menu>li a {
 }
 
 /*////////////////////////////////////*/
+/* Fields */
+.field.field-name-body {
+    overflow: hidden;
+}
+
+/*////////////////////////////////////*/
 /* A Tag Mobile Styling */
 .item-list ul li.leaf {
     list-style-image: none;
@@ -1134,6 +1140,10 @@ nav.navigation .secondary-menu>li a:hover {
         -ms-word-break: break-all;
         word-break: break-all;
         word-break: break-word;
+    }
+
+    .field.field-name-body img {
+        float: none !important;
     }
 
     .view .field-content a {
