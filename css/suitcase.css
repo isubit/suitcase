@@ -312,6 +312,7 @@ body {
 
 }
 
+body.cke_editable,
 .section-content {
     background-color: #f4f3e8;
 }
