@@ -312,7 +312,6 @@ body {
 
 }
 
-body.cke_editable,
 .section-content {
     background-color: #f4f3e8;
 }
@@ -427,18 +426,18 @@ ul.menu li a {
 /*////////////////////////////////////*/
 /* Views */
 .views-row {
-    border: 1px solid rgba(100, 100, 100, 0.1);
+    /*border: 1px solid rgba(100, 100, 100, 0.1);*/
     padding: 0.5em;
     margin-bottom: 0.25em;
 }
 
 .views-row.views-row-odd {
-    background-color: rgba(255, 255, 255, 0.7);
+    /*background-color: rgba(255, 255, 255, 0.7);*/
 }
 
 .views-row.views-row-even {
     /*background-color: rgba(175, 174, 166, 0.1);*/
-    background-color: rgba(0, 0, 0, 0.1);
+    /*background-color: rgba(0, 0, 0, 0.1);*/
 }
 
 /*////////////////////////////////////*/
@@ -662,26 +661,8 @@ nav.navigation .secondary-menu>li a {
 }
 
 /*////////////////////////////////////*/
-/* Sidebar More Like This */
-.block-apachesolr-search {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: solid 1px rgba(200, 200, 200, 0.9);
-    margin-bottom: 1em;
-}
-
-.block-apachesolr-search .item-list > ul > li {
-    margin: 0 0.25em 0.25em 0.5em;
-}
-
-.block .content {
-    /*margin-left: 0.5em;*/
-}
-
-.block-apachesolr-search .item-list > ul > li:not(.last) {
-    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
-}
-
-.zone-content h2.block-title {
+/* Sidebar */
+aside h2.block-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
     margin-bottom: 0;
@@ -690,6 +671,24 @@ nav.navigation .secondary-menu>li a {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+}
+
+aside .block {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px rgba(200, 200, 200, 0.9);
+    margin-bottom: 1em;
+}
+
+aside .block .item-list > ul > li {
+    margin: 0 0.25em 0.25em 0.5em;
+}
+
+.block .content {
+    /*margin-left: 0.5em;*/
+}
+
+aside .block .item-list > ul > li:not(.last):not(.views-row-last) {
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
 }
 
 /*////////////////////////////////////*/
@@ -722,12 +721,6 @@ nav.navigation .secondary-menu>li a {
 .field-item.odd,
 .field-item.even {
     margin-right: 0.5em;
-}
-
-/*////////////////////////////////////*/
-/* Fields */
-.field.field-name-body {
-    overflow: hidden;
 }
 
 /*////////////////////////////////////*/
@@ -1001,19 +994,6 @@ nav.navigation .secondary-menu>li a:hover {
     background: #fff;
 }
 
-/* ////////////// */
-.facetapi-facetapi-links a.facetapi-active {
-    background-image: url("../images/facet_remove.png");
-    color: rgba(255,255,255,0);
-    background-size: 16px;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-}
-
-.facetapi-facetapi-links a.facetapi-active:hover {
-    opacity: 0.8;
-}
-
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
 /* GLOBAL STYLING END */
@@ -1154,10 +1134,6 @@ nav.navigation .secondary-menu>li a:hover {
         -ms-word-break: break-all;
         word-break: break-all;
         word-break: break-word;
-    }
-
-    .field.field-name-body img {
-        float: none !important;
     }
 
     .view .field-content a {
