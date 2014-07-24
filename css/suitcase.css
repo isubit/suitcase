@@ -662,6 +662,10 @@ nav.navigation .secondary-menu>li a {
 
 /*////////////////////////////////////*/
 /* Sidebar */
+aside {
+    margin-top: 20px;
+}
+
 aside h2.block-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
