@@ -38,6 +38,10 @@
     .view-display-id-people_grid .views-row {
         float: left;
     }
+
+    nav.navigation .main-menu>li a {
+        line-height: 42px;
+    }
 }
 
 @media all and (min-width: 1220px) {

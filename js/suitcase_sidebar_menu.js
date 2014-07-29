@@ -87,7 +87,18 @@
                 $(window).resize(function() {
                     if(parseInt($('#zone-side-menu-wrapper').css('left')) == 0) {
                         HideMenu(sidebar_offset);
+                        if($('#admin-menu')) {
+                            $('#side-menu-close-button').css('top', $('#admin-menu').height());
+                        }
                     }
+                });
+                console.log(Drupal);
+
+                // Close Button
+                var top = ($('#admin-menu')) ? $('#admin-menu').height() + 5 : 5;
+                $('#zone-side-menu-wrapper').append('<img src="' + Drupal.settings.basePath + 'sites/all/themes/suitcase/images/close-button-white.png" id="side-menu-close-button" style="top: ' + top + 'px">');
+                $('#side-menu-close-button').click(function() {
+                    HideMenu(sidebar_offset);
                 });
             });
         }
