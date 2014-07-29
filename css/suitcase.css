@@ -531,6 +531,9 @@ nav.navigation .secondary-menu>li a {
     z-index: 4;
     overflow-x: hidden;
     overflow-y: auto;
+    /*-moz-box-shadow:    inset 0 0 20px #000000;*/
+    /*-webkit-box-shadow: inset 0 0 20px #000000;*/
+    /*box-shadow:         inset 0 0 20px #000000;*/
 }
 
 #zone-side-menu {
@@ -563,12 +566,20 @@ nav.navigation .secondary-menu>li a {
 #zone-side-menu-wrapper .content>ul>li {
     width: 15em;
     border-bottom: 1px solid #67645d;
+    padding: 0;
 }
 
 #zone-side-menu-wrapper .content>ul>li>a {
     font-size: 110%;
     font-weight: 900;
     color: #f0eeea;
+    transition: background-color 0.3s ease;
+}
+
+#zone-side-menu-wrapper .content a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #67645d;
 }
 
 #zone-side-menu-wrapper .content>ul>li>ul>li {
@@ -955,12 +966,6 @@ nav.navigation .secondary-menu>li a:hover {
     /*box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.3);*/
     border-bottom: 3px solid #DFBD00;
     cursor: pointer;
-}
-
-#zone-side-menu-wrapper .content a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    background: #67645d;
 }
 
 .page-search .search-form input#edit-submit:hover,

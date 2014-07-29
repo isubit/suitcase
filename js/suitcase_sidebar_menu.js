@@ -73,7 +73,7 @@
                         left: sidebar_offset - togglePos.left
                     }, slide_time);
 
-                    $('#zone-side-menu-wrapper .content>ul>li').css('width', sidebar_offset - 15);
+                    $('#zone-side-menu-wrapper .content>ul>li').css('width', sidebar_offset);
 //                    setTimeout(function() {
 //                        $('body').bind('click touchstart', function(e) {
 //                            if(e.pageX > sidebar_offset) {
