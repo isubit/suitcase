@@ -12,6 +12,10 @@ small {
     font-size: 0.85em;
 }
 
+p {
+    color: #333;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     line-height: 1.4;
@@ -26,7 +30,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 h1 {
-    color: #222;
+    color: #333;
     font-size: 1.857em;
     line-height: 1.125;
     margin-bottom: 16px;
@@ -425,19 +429,23 @@ ul.menu li a {
 
 /*////////////////////////////////////*/
 /* Views */
-.views-row {
-    /*border: 1px solid rgba(100, 100, 100, 0.1);*/
+
+.zone-content .views-row {
     padding: 0.5em;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
 }
 
-.views-row.views-row-odd {
-    /*background-color: rgba(255, 255, 255, 0.7);*/
+.zone-content .content>.view .views-row {
+    border: 1px solid rgba(100, 100, 100, 0.1);
 }
 
-.views-row.views-row-even {
+.zone-content .content>.view .views-row.views-row-odd {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.zone-content .views-row.views-row-even {
     /*background-color: rgba(175, 174, 166, 0.1);*/
-    /*background-color: rgba(0, 0, 0, 0.1);*/
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*////////////////////////////////////*/
@@ -445,13 +453,6 @@ ul.menu li a {
 .view-highlights article {
     background-color: rgba(255, 255, 255, 0);
     border: none;
-}
-
-/*////////////////////////////////////*/
-/* Events */
-.view-events .views-row {
-    padding: 0.5em;
-    margin: 0 0 0.25em 0;
 }
 
 /*////////////////////////////////////*/
@@ -824,6 +825,11 @@ ul li.expanded {
     margin-bottom: 1em;
 }
 
+.panel-panel.grid-4 {
+    /*border: 1px solid rgba(100, 100, 100, 0.1);*/
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .panel-pane > h2.pane-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #333;
@@ -895,6 +901,11 @@ footer.section-footer {
 /* Forms - People, News, etc. */
 .view-display-id-people_grid .views-row {
     height: 215px;
+    transition: box-shadow 0.3s ease;
+}
+
+.view-display-id-people_grid .views-row:hover {
+    box-shadow: 0 0 10px rgba(52, 52, 52, 0.3);
 }
 
 .node-people-form .field-multiple-table thead th {
