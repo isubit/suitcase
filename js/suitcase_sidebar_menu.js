@@ -55,8 +55,6 @@
                 }
 
                 function ShowMenu(togglePos, sidebar_offset) {
-                    console.log(togglePos, sidebar_offset);
-//                    if(togglePos.left < sidebar_offset) sidebar_offset = togglePos.left;
                     $('#zone-side-menu-wrapper')
                         .width(sidebar_offset)
                         .css("left", -sidebar_offset)
