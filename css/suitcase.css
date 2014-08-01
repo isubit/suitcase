@@ -690,7 +690,7 @@ nav.navigation .secondary-menu>li a {
 /*////////////////////////////////////*/
 /* Sidebar */
 aside {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 aside h2.block-title {
@@ -710,7 +710,8 @@ aside .block {
     margin-bottom: 1em;
 }
 
-aside .block .item-list > ul > li {
+aside .block .item-list > ul > li,
+aside .block .view-content > .views-row {
     margin: 0 0.25em 0.25em 0.5em;
 }
 
@@ -718,7 +719,16 @@ aside .block .item-list > ul > li {
     /*margin-left: 0.5em;*/
 }
 
-aside .block .item-list > ul > li:not(.last):not(.views-row-last) {
+/* Views Specific overrides */
+aside .block .view-content > .views-row.views-row-odd,
+aside .block .view-content > .views-row.views-row-even {
+    border: none;
+    background: none !important;
+    padding: 0;
+}
+
+aside .block .item-list > ul > li:not(.last):not(.views-row-last),
+aside .block .view-content > .views-row:not(.views-row-last) {
     border-bottom: 1px solid rgba(100, 100, 100, 0.5);
 }
 
