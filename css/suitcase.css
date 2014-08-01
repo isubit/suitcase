@@ -955,6 +955,17 @@ footer.section-footer {
     margin-left: 1.5em;
 }
 
+/*////////////////////////////////////*/
+/* Throbber */
+html.js input.form-autocomplete.throbbing {
+    background-position: 100% -14px;
+}
+
+html.js input.form-autocomplete {
+    background-image: url('../images/throbber_lugg.gif');
+    background-position: 100% 12px;
+}
+
 /*///////////////////////////////////////////////////////////*/
 /*/////////////////// Hover Events //////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
