@@ -336,6 +336,10 @@ a, a:link, a:visited {
     text-decoration: none;
 }
 
+a:link:hover {
+    text-decoration: underline;
+}
+
 input[type="text"] {
     height: 3em;
     font-size: 1em;
@@ -722,6 +726,13 @@ aside .block {
 aside .block .item-list > ul > li,
 aside .block .view-content > .views-row {
     margin: 0 0.25em 0.25em 0.5em;
+}
+
+aside .block img {
+    max-width: 100%;
+    height: auto !important;
+    float: none !important;
+    margin: 0 !important;
 }
 
 .block .content {
