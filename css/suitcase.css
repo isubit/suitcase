@@ -485,10 +485,11 @@ nav.navigation .main-menu>li a {
     border: 3px solid rgba(255, 255, 255, 0);
     font-size: 1.3em;
     padding: 0 11px;
+    transition: background-color 0.3s ease;
 }
 
 nav.navigation .main-menu>li a.active {
-    border-bottom: 3px solid #DFBD00;
+    /*border-bottom: 3px solid #DFBD00;*/
 }
 
 nav.navigation .secondary-menu {
@@ -507,6 +508,14 @@ nav.navigation .secondary-menu>li a {
     display: block;
     line-height: 42px;
     border: 3px solid rgba(255, 255, 255, 0);
+}
+
+nav.navigation .main-menu>li a:hover,
+nav.navigation .secondary-menu>li a:hover {
+    /*box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.3);*/
+    background-color: rgba(0, 0, 0, 0.1);
+    /*border-bottom: 3px solid #DFBD00;*/
+    cursor: pointer;
 }
 
 /*////////////////////////////////////*/
@@ -1010,13 +1019,6 @@ ul.menu li a:hover {
 
 .item-list a:hover {
     text-decoration: underline;
-}
-
-nav.navigation .main-menu>li a:hover,
-nav.navigation .secondary-menu>li a:hover {
-    /*box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.3);*/
-    border-bottom: 3px solid #DFBD00;
-    cursor: pointer;
 }
 
 .page-search .search-form input#edit-submit:hover,
