@@ -768,6 +768,12 @@ aside .block .view-content > .views-row:not(.views-row-last) {
     margin-left: 1.5em;
 }
 
+/*////////////////////////////////////*/
+/* Fields */
+.field.field-name-body {
+    overflow: hidden;
+}
+
 .field-item.odd,
 .field-item.even {
     margin-right: 0.5em;
