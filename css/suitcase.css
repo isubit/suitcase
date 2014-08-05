@@ -790,6 +790,18 @@ aside .block .view-content > .views-row:not(.views-row-last) {
     margin-right: 0.5em;
 }
 
+.views-field-title a {
+    font-weight: bold;
+}
+
+.field-name-field-people-title-category a {
+    color: #336599;
+}
+
+.field .field-label {
+    color: #444;
+}
+
 /*////////////////////////////////////*/
 /* A Tag Mobile Styling */
 .item-list ul li.leaf {
