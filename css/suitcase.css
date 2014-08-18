@@ -405,15 +405,6 @@ h2.site-name {
     text-shadow: 0 1px 3px #333333;
 }
 
-/*ul.menu li {*/
-    /*display: inline-block;*/
-    /*list-style-type: none;*/
-/*}*/
-
-ul.menu li a {
-    text-decoration: none;
-}
-
 .nameplate img {
     width: 75%;
     height: auto;
