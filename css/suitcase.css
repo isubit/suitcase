@@ -1069,10 +1069,6 @@ code {
     text-decoration: underline;
 }
 
-ul.menu li a:hover {
-    text-decoration: none;
-}
-
 .item-list a:hover {
     text-decoration: underline;
 }
