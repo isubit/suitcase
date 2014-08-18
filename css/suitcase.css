@@ -1038,6 +1038,18 @@ html.js input.form-autocomplete {
     background-position: 100% 12px;
 }
 
+/*////////////////////////////////////*/
+/* Code tags */
+code {
+    margin: 10px;
+    padding: 10px;
+    background: #CEC9BB;
+    color: #333;
+    border: 1px solid #aaa;
+    display: block;
+    overflow: auto;
+}
+
 /*///////////////////////////////////////////////////////////*/
 /*/////////////////// Hover Events //////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
