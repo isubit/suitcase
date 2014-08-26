@@ -1111,11 +1111,11 @@ html.js input.form-autocomplete {
     box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
 }
 
-.block-apachesolr-search:hover {
-    /*cursor: pointer;*/
+/*.block-apachesolr-search:hover {*/
+    /*cursor: pointer;
     /*border: solid 1px rgba(223, 189, 0, 0.9);*/
-    box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
-}
+    /*box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);*/
+/*}*/
 
 .field-item a:hover {
     text-decoration: underline;
