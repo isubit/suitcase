@@ -707,7 +707,7 @@ aside section {
 }
 
 .js-enabled-collapsed {
-    display: none;
+    display: none !important;
 }
 
 .collapsed-indicator-img {

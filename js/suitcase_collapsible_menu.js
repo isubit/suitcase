@@ -9,8 +9,7 @@
         attach: function (context) {
             $('body', context).once('suitcaseCollapsibleMenu', function() {
             	var $mainmenu = $('#main-menu'), // <ul> that holds menu links
-            		li = '<li id="menu-dropdown-element"><a>...</a></li>',
-                    collapsed;
+            		li = '<li id="menu-dropdown-element"><a>...</a></li>';
             	CheckWindowSize();
 
             	$(window).resize(function() {
@@ -20,31 +19,24 @@
             	function CheckWindowSize() {
             		if($(window).width() < 740) {
                         // Add another clickable dropdown element
-                        if(!collapsed) {
+                        if(!$('#menu-dropdown-element').length) {
                             AddMenuDropdownButton();
-                            HideMenu();
-                            collapsed = true;
                         }
+                        HideMenu();
                     } else {
-                        if(collapsed) {
-                            $('#menu-dropdown-element').remove();
-                            ShowMenu();
-                            collapsed = false;
-                        }
+                        $('#menu-dropdown-element').remove();
+                        ShowMenu();
                     }
             	}
 
                 function AddMenuDropdownButton() {
                     $('#main-menu > li:first').after(li);
                     $('#menu-dropdown-element').click(function() {
-                        if(collapsed) {
-                            // Show dropdown
+                        console.log($('.js-enabled-collapsed').length);
+                        if($('.js-enabled-collapsed').length) {
                             ShowMenu();
-                            collapsed = false;
                         } else {
-                            // Hide dropdown
                             HideMenu();
-                            collapsed = true;
                         }
                     });
                 }
@@ -53,7 +45,7 @@
                     var hide=false;
                     $('#main-menu > li').each(function() {
                         if(hide) {
-                            $(this).hide();
+                            $(this).addClass('js-enabled-collapsed');
                         }
                         if($(this).attr('id') == 'menu-dropdown-element') {
                             hide = true;
@@ -62,7 +54,7 @@
                 }
 
                 function ShowMenu() {
-                    $('#main-menu > li').show();
+                    $('#main-menu > li').removeClass('js-enabled-collapsed');
                 }
             });
         }
