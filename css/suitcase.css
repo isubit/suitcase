@@ -578,6 +578,8 @@ nav.navigation .secondary-menu>li a:hover {
 
 #zone-side-menu-wrapper ul.menu li {
     margin-left: 0;
+    display: inline-block;
+    list-style-type: none;
 }
 
 #zone-side-menu-wrapper ul.menu li>a {
@@ -763,6 +765,10 @@ aside .block .view-content > .views-row.views-row-even {
     padding: 0;
 }
 
+aside ul li.expanded {
+    margin: 0 0 0.25em 1.5em !important;
+}
+
 /*aside .block .item-list > ul > li:not(.last):not(.views-row-last),
 aside .block .view-content > .views-row:not(.views-row-last) {
     border-bottom: 1px solid rgba(100, 100, 100, 0.5);
@@ -850,10 +856,6 @@ aside .block .view-content > .views-row:not(.views-row-last) {
 .item-list > ul > li {
     margin: 0 0 0.25em 0.5em;
     padding-right: 0.2em;
-}
-
-ul li.expanded {
-    margin: 0 0 0.25em 1.5em !important;
 }
 
 /*////////////////////////////////////*/
