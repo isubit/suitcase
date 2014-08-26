@@ -416,6 +416,19 @@ h2.site-name {
     text-shadow: 0 1px 3px #333333;
 }
 
+.zone-footer ul.menu li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.zone-footer ul.menu li a {
+    text-decoration: none;
+}
+
+.zone-footer ul.menu li a:hover {
+    text-decoration: none;
+}
+
 .nameplate img {
     width: 75%;
     height: auto;
