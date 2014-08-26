@@ -158,14 +158,25 @@ cite {
 }
 
 pre {
-    background: #f2f2f2;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    font-family: consolas, monospace;
-    font-size: 13px;
-    line-height: 20px;
+    background-color: rgba(102,128,153,0.1);
+    border: 0 solid rgba(102,128,153,0.075);
+    border-left: 10px solid rgba(102,128,153,0.075);
+    font-family: Menlo,Consolas,"Courier New",monospace;
+    font-size: 12px !important;
+    line-height: 1.428571429;
     overflow: auto;
-    padding: 6px 9px;
+    padding: 10px 15px;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+}
+
+code {
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+    white-space: pre-wrap;
+    color: inherit;
 }
 
 @media print {
@@ -1030,15 +1041,17 @@ html.js input.form-autocomplete {
 }
 
 /*////////////////////////////////////*/
-/* Code tags */
-code {
-    margin: 10px;
-    padding: 10px;
-    background: #CEC9BB;
-    color: #333;
-    border: 1px solid #aaa;
-    display: block;
-    overflow: auto;
+/* Alert Boxes */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.alert-note {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
 }
 
 /*///////////////////////////////////////////////////////////*/
