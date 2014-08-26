@@ -698,8 +698,7 @@ nav.navigation .secondary-menu>li a:hover {
 /*////////////////////////////////////*/
 /* Sidebar Facets */
 
-.zone-content .block-facetapi,
-.zone-content .block-menu {
+aside section {
     background-color: rgba(255, 255, 255, 0.5);
     border: solid 1px rgba(200, 200, 200, 0.9);
     margin-bottom: 1em;
