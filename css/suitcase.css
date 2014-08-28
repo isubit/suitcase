@@ -1068,23 +1068,32 @@ html.js input.form-autocomplete {
 
 /*////////////////////////////////////*/
 /* Book Outline Sidebar Block */
-.view-book-chapter-list .views-row.indent-level-2 {
+/*aside .book-outline-sidebar-block > .view-content > .views-row a {*/
+    /*font-family: "Overpass","Open Sans","Helvetica Neue",sans-serif;*/
+    /*color: #333;*/
+/*}*/
+
+aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
+    border-bottom: 1px solid #ddd;
+}
+
+.book-outline-sidebar-block .views-row.indent-level-2 {
     margin-left: 15px !important;
 }
 
-.view-book-chapter-list .views-row.indent-level-3 {
+.book-outline-sidebar-block .views-row.indent-level-3 {
     margin-left: 30px !important;
 }
 
-.view-book-chapter-list .views-row.indent-level-4 {
+.book-outline-sidebar-block .views-row.indent-level-4 {
     margin-left: 45px !important;
 }
 
-.view-book-chapter-list .views-row.indent-level-5 {
+.book-outline-sidebar-block .views-row.indent-level-5 {
     margin-left: 60px !important;
 }
 
-.view-book-chapter-list .views-row.indent-level-6 {
+.book-outline-sidebar-block .views-row.indent-level-6 {
     margin-left: 75px !important;
 }
 
