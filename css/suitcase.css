@@ -1066,6 +1066,28 @@ html.js input.form-autocomplete {
     border-color: #bce8f1;
 }
 
+/*////////////////////////////////////*/
+/* Book Outline Sidebar Block */
+.view-book-chapter-list .views-row.indent-level-2 {
+    margin-left: 15px !important;
+}
+
+.view-book-chapter-list .views-row.indent-level-3 {
+    margin-left: 30px !important;
+}
+
+.view-book-chapter-list .views-row.indent-level-4 {
+    margin-left: 45px !important;
+}
+
+.view-book-chapter-list .views-row.indent-level-5 {
+    margin-left: 60px !important;
+}
+
+.view-book-chapter-list .views-row.indent-level-6 {
+    margin-left: 75px !important;
+}
+
 /*///////////////////////////////////////////////////////////*/
 /*/////////////////// Hover Events //////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
