@@ -893,8 +893,8 @@ aside .block .view-content > .views-row:not(.views-row-last) {
 
 .flexslider .flex-caption {
     position: absolute;
-    left: 1em;
-    top: 1em;
+    right: 1em;
+    bottom: 1em;
     background: rgba(255, 255, 255, 0.85);
     padding: 1em;
     -webkit-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
