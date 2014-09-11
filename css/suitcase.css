@@ -392,6 +392,11 @@ h2.site-name {
     font-size: 2.2em;
 }
 
+.site-name,
+.site-slogan {
+  margin-bottom: 3px;
+}
+
 .site-name {
     font-family: lucida grande, lucida sans unicode, arial, sans-serif;
     font-weight: normal;
@@ -442,6 +447,7 @@ h2.site-name {
 
 #isu_wordmark {
     max-width: 300px;
+    margin-bottom: 5px;
 }
 
 /*////////////////////////////////////*/
