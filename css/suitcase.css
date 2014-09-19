@@ -951,6 +951,14 @@ aside .block .view-content > .views-row:not(.views-row-last) {
     margin-left: 20px;
 }
 
+.front .grid-4 .pane-content {
+  height: 350px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
 /*////////////////////////////////////*/
 /* Footer */
 .zone-footer ul.menu li:first-child {
