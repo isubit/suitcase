@@ -42,6 +42,13 @@
     nav.navigation .main-menu>li a {
         line-height: 42px;
     }
+
+    .caret {
+        border-top: 6px solid #fff;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+        margin-top: 10px;
+    }
 }
 
 @media all and (min-width: 1220px) {

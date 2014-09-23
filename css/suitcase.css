@@ -715,8 +715,12 @@ aside section {
     margin-bottom: 1em;
 }
 
-.js-enabled-collapsed {
-    display: none !important;
+.js-suitcase-facet .block-title:hover {
+    cursor: pointer;
+}
+
+.js-suitcase-facet .block-title:hover .caret {
+    opacity: 0.8;
 }
 
 .collapsed-indicator-img {
@@ -731,12 +735,12 @@ aside {
     padding-top: 20px;
 }
 
-aside h2.block-title,
+aside .block-title,
 .zone-postscript .block h2.block-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
     margin-bottom: 0;
-    padding-left: 0.5em;
+    padding: 0.25em 0.5em;
     border-bottom: 4px solid #DFBD00;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -750,11 +754,6 @@ aside .block,
     /*margin-bottom: 1em;*/
 }
 
-aside .block .item-list > ul > li,
-aside .block .view-content > .views-row {
-    margin: 0 0.25em 0.25em 0.5em;
-}
-
 aside .block img {
     max-width: 100%;
     height: auto !important;
@@ -762,8 +761,22 @@ aside .block img {
     margin: 0 !important;
 }
 
-.block .content {
-    /*margin-left: 0.5em;*/
+aside .block .content {
+    padding: 5px;
+}
+
+aside li.leaf {
+    display: block !important;
+}
+
+aside ul {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+aside .facetapi-limit-link {
+    display: none;
 }
 
 /* Views Specific overrides */
@@ -1152,9 +1165,6 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
 .page form#search-block-form .form-actions input.form-submit:hover {
     border: 1px solid #DFBD00;
 }
-.js-enabled-facet h2.block-title:hover {
-    cursor: pointer;
-}
 
 .zone-content .block-facetapi:hover,
 .zone-content .block-menu:hover {
@@ -1181,6 +1191,40 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
 
 .form-item input[type="submit"]:hover {
     background: #fff;
+}
+
+/*////////////////////////////////////*/
+/* Carets */
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 8px solid #fff;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    content: "";
+    opacity: 0.3;
+    margin-top: 14px;
+    filter: alpha(opacity=30);
+    position: absolute;
+    right: 12px;
+}
+
+/*////////////////////////////////////*/
+/* Webkit Scroll bar */
+
+aside ::-webkit-scrollbar {
+    width: 6px;
+}
+
+aside ::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+aside ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(51,51,51,0.2);
 }
 
 /*///////////////////////////////////////////////////////////////////////////////*/
@@ -1308,7 +1352,7 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
 
 @media all and (max-width: 979px) {
     .item-list a {
-        display: block;
+        /*display: block;*/
         word-wrap: break-word;
         -ms-word-break: break-all;
         word-break: break-all;
