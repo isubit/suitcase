@@ -8,54 +8,13 @@
     Drupal.behaviors.suitcaseCollapsibleMenu = {
         attach: function (context) {
             $('body', context).once('suitcaseCollapsibleMenu', function() {
-            	var $mainmenu = $('#main-menu'), // <ul> that holds menu links
-            		li = '<li id="menu-dropdown-element"><a>...</a></li>';
-            	CheckWindowSize();
+            	var li = '<li id="suitcase-main-menu-dropdown-toggle"><a>...</a></li>';
 
-            	$(window).resize(function() {
-                    CheckWindowSize();
-                });
+                $('#main-menu > li:first').after(li);
 
-            	function CheckWindowSize() {
-            		if($(window).width() < 740) {
-                        // Add another clickable dropdown element
-                        if(!$('#menu-dropdown-element').length) {
-                            AddMenuDropdownButton();
-                        }
-                        HideMenu();
-                    } else {
-                        $('#menu-dropdown-element').remove();
-                        ShowMenu();
-                    }
-            	}
-
-                function AddMenuDropdownButton() {
-                    $('#main-menu > li:first').after(li);
-                    $('#menu-dropdown-element').click(function() {
-                        console.log($('.js-enabled-collapsed').length);
-                        if($('.js-enabled-collapsed').length) {
-                            ShowMenu();
-                        } else {
-                            HideMenu();
-                        }
-                    });
-                }
-
-                function HideMenu() {
-                    var hide=false;
-                    $('#main-menu > li').each(function() {
-                        if(hide) {
-                            $(this).addClass('js-enabled-collapsed');
-                        }
-                        if($(this).attr('id') == 'menu-dropdown-element') {
-                            hide = true;
-                        }
-                    });
-                }
-
-                function ShowMenu() {
-                    $('#main-menu > li').removeClass('js-enabled-collapsed');
-                }
+                $('#suitcase-main-menu-dropdown-toggle').bind('click touchend', function(e) {
+                    $('.main-menu-dropdown-item').toggleClass('hide');
+                }).nextAll().addClass('main-menu-dropdown-item').addClass('hide');
             });
         }
     };

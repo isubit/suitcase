@@ -1348,6 +1348,10 @@ aside ::-webkit-scrollbar-thumb {
     .zone-footer .block-menu-footer {
         float: none;
     }
+
+    nav.navigation li.main-menu-dropdown-item.hide {
+        display: none;
+    }
 }
 
 @media all and (max-width: 979px) {
