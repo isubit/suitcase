@@ -1214,15 +1214,18 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
 /*////////////////////////////////////*/
 /* Webkit Scroll bar */
 
-aside ::-webkit-scrollbar {
+aside ::-webkit-scrollbar,
+.front .panel-panel ::-webkit-scrollbar {
     width: 6px;
 }
 
-aside ::-webkit-scrollbar-track {
+aside ::-webkit-scrollbar-track,
+.front .panel-panel ::-webkit-scrollbar-track {
     opacity: 0;
 }
 
-aside ::-webkit-scrollbar-thumb {
+aside ::-webkit-scrollbar-thumb,
+.front .panel-panel ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: rgba(51,51,51,0.2);
 }
