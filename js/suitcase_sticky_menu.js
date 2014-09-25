@@ -46,7 +46,6 @@
 
                         if(scrollTop > menu_offset_top) {
                             if(classNotSticky) {
-                                console.log('here');
                                 $('#zone-menu-wrapper').css('height', $('#zone-menu-wrapper').height());
                                 $menu.addClass(sticky_class).css({ 'top': admin_menu_height, 'padding-left': menu_offset_left});
                                 classNotSticky = false;
