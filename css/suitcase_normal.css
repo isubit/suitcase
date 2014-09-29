@@ -63,8 +63,12 @@
     }
 
     aside li.leaf > a:hover,
+<<<<<<< HEAD
     aside li.expanded > a:hover,
     aside .item-list > ul > li > a:hover {
+=======
+    aside .item-list > ul > li > a:hover{
+>>>>>>> 805ebf65fe24581417dd036fcd24e852c5697383
         text-decoration: none;
         background-color: rgba(52, 52, 52, 0.1);
     }

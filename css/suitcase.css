@@ -805,8 +805,14 @@ aside ul.menu ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 100px;
 }
 
-aside li > a {
+aside li > a,
+aside .content > p a {
     display: block;
+}
+
+aside .content > p {
+    padding: 4px;
+    margin-bottom: 0;
 }
 
 aside ul {
