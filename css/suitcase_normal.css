@@ -49,6 +49,10 @@
         border-left: 6px solid transparent;
         margin-top: 10px;
     }
+
+    .nameplate img {
+        
+    }
 }
 
 @media all and (min-width: 1220px) {

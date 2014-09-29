@@ -391,10 +391,16 @@ input[type="submit"] {
 
 /*////////////////////////////////////*/
 /* Site Name/Slogan */
+.nameplate img {
+    width: auto;
+    height: 20px;
+    margin: 10px 10px 10px 0;
+}
 
 h1.site-name,
 h2.site-name {
-    font-size: 2.2em;
+    font-size: 2em;
+    letter-spacing: 0;
 }
 
 .site-name,
@@ -403,7 +409,6 @@ h2.site-name {
 }
 
 .site-name {
-    font-family: lucida grande, lucida sans unicode, arial, sans-serif;
     font-weight: normal;
     margin-top: 0;
     text-shadow: 0 1px 3px #333333;
@@ -437,22 +442,12 @@ h2.site-name {
     text-decoration: none;
 }
 
-.nameplate img {
-    width: 75%;
-    height: auto;
-}
-
 .zone-menu .form-type-textfield label {
     display: none;
 }
 
 .zone-menu .form-type-textfield input {
     width: 100%;
-}
-
-#isu_wordmark {
-    max-width: 300px;
-    margin-bottom: 5px;
 }
 
 /*////////////////////////////////////*/
