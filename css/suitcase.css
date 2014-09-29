@@ -762,6 +762,7 @@ aside .block img {
 }
 
 aside li.leaf,
+aside li.expanded,
 aside .item-list > ul > li,
 aside .item-list > ul {
     /*display: block !important;*/
@@ -769,13 +770,39 @@ aside .item-list > ul {
     padding: 0;
 }
 
-aside li:not(:last-child) > a,
+aside li.leaf > a,
+aside li.expanded > a,
+aside .item-list > ul > li > a {
+    padding: 8px;
+}
+
+aside li:not(:last-child) a,
 aside .item-list > ul > li:not(:last-child) > a {
     border-bottom: 1px solid #eee;
 }
 
 aside li.leaf > a.facetapi-active {
     display: inline-block;
+}
+
+aside ul.menu ul.menu > li > a {
+    padding-left: 20px;
+}
+
+aside ul.menu ul.menu ul.menu > li > a {
+    padding-left: 40px;
+}
+
+aside ul.menu ul.menu ul.menu ul.menu > li > a {
+    padding-left: 60px;
+}
+
+aside ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
+    padding-left: 80px;
+}
+
+aside ul.menu ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
+    padding-left: 100px;
 }
 
 aside li > a {
@@ -789,6 +816,12 @@ aside ul {
     margin-bottom: 0;
 }
 
+aside li {
+    margin: 0;
+    list-style-image: none;
+    list-style-type: none;
+}
+
 aside .facetapi-limit-link {
     display: none;
 }
@@ -799,10 +832,6 @@ aside .block .view-content > .views-row.views-row-even {
     border: none;
     background: none !important;
     padding: 0;
-}
-
-aside ul li.expanded {
-    margin: 0 0 0.25em 1.5em !important;
 }
 
 /*////////////////////////////////////*/

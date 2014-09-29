@@ -56,12 +56,14 @@
     }
 
     aside li.leaf > a,
+    aside li.expanded > a,
     aside .item-list > ul > li > a {
         padding: 4px;
         transition: background-color 0.1s ease;
     }
 
     aside li.leaf > a:hover,
+    aside li.expanded > a:hover,
     aside .item-list > ul > li > a:hover {
         text-decoration: none;
         background-color: rgba(52, 52, 52, 0.1);
