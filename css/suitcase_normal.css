@@ -54,6 +54,18 @@
     .page-search .content article footer {
         margin-left: 1.5em;
     }
+
+    aside li.leaf > a,
+    aside .item-list > ul > li > a {
+        padding: 4px;
+        transition: background-color 0.1s ease;
+    }
+
+    aside li.leaf > a:hover,
+    aside .item-list > ul > li > a:hover {
+        text-decoration: none;
+        background-color: rgba(52, 52, 52, 0.1);
+    }
 }
 
 @media (min-device-width: 980px) and (min-width: 980px), (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
