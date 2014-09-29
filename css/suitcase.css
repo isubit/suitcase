@@ -394,24 +394,24 @@ input[type="submit"] {
 .nameplate img {
     width: auto;
     height: 20px;
-    margin: 10px 10px 10px 0;
+    margin-bottom: 8px;
 }
 
 h1.site-name,
 h2.site-name {
-    font-size: 2em;
-    letter-spacing: 0;
+    font-size: 1.857em;
 }
 
 .site-name,
 .site-slogan {
-  margin-bottom: 3px;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 3px #333333;
+    margin-bottom: 8px;
 }
 
 .site-name {
     font-weight: normal;
     margin-top: 0;
-    text-shadow: 0 1px 3px #333333;
 }
 
 .site-name-slogan a {
@@ -419,14 +419,7 @@ h2.site-name {
 }
 
 .site-slogan a {
-    color: #FFFFFF;
-    font-family: lucida grande, lucida sans unicode, arial, sans-serif;
-    font-size: 1.3em;
     font-weight: normal;
-    line-height: 1.25;
-    margin-top: 0;
-    padding-bottom: 14px;
-    text-shadow: 0 1px 3px #333333;
 }
 
 .zone-footer ul.menu li {
