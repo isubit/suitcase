@@ -739,6 +739,11 @@ aside .block-title,
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    letter-spacing: 0;
+}
+
+aside .block-title a {
+    color: #fff;
 }
 
 aside .block,
