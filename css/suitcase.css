@@ -188,6 +188,15 @@ code {
   padding-left: 1.7em;
 }
 
+.node {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #ddd;
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    padding: 15px;
+    font-size: 14px;
+}
+
 /*////////////////////////////////////*/
 /* Stuff */
 
@@ -734,9 +743,10 @@ aside .block-title,
 
 aside .block,
 .zone-postscript .block {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: solid 1px rgba(200, 200, 200, 0.9);
-    /*margin-bottom: 1em;*/
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px #ddd;
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
 aside .block img {
@@ -776,11 +786,6 @@ aside ul li.expanded {
     margin: 0 0 0.25em 1.5em !important;
 }
 
-/*aside .block .item-list > ul > li:not(.last):not(.views-row-last),
-aside .block .view-content > .views-row:not(.views-row-last) {
-    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
-}*/
-
 /*////////////////////////////////////*/
 /* Search Results */
 .search-result {
@@ -791,21 +796,15 @@ aside .block .view-content > .views-row:not(.views-row-last) {
 
 .page-search .content article {
     margin-bottom: 1em;
-    border-bottom: 1px dashed rgba(100, 100, 100, 0.3);
-    padding-bottom: 0.5em;
-}
-
-.page-search .content article:last-child {
-    border-bottom: none;
+    border: 1px solid #ddd;
+    background-color: rgba(255,255,255,0.8);
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    padding: 15px;
 }
 
 .page-search .content article footer {
     padding-top: 0;
-}
-
-.page-search .content article .content,
-.page-search .content article footer {
-    margin-left: 1.5em;
 }
 
 /*////////////////////////////////////*/
@@ -833,7 +832,7 @@ aside .block .view-content > .views-row:not(.views-row-last) {
     padding: 5px;
     border: 1px solid #e2e2e2;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #fff;
     transition: background-color 0.1s ease;
 }
 
