@@ -15,11 +15,9 @@
                     sidebar_offset = 300,
                     top;
 
-                $sidebar_button.bind('click touchend', function(e) {
-                    if(isTouchedAlready) {
-                        isTouchedAlready = false;
-                        return;
-                    }
+                $sidebar_button
+                .bind('click touchend', function(e) {
+                    if(isTouchedAlready) {isTouchedAlready = false;return;}
 
                     var togglePos = $sidebar_button.offset();
 //                    var sidebar_offset = parseFloat($('#zone-side-menu-wrapper').width());
@@ -31,12 +29,11 @@
                     }
 
                     isTouchedAlready = (e.type == 'touchend');
-                }).bind('touchstart', function(e) {
-                    e.preventDefault();
-                }).show()
-                    .removeAttr('href')
-                    .css('font-weight', 'bold')
-                    .css('font-size', '1.5em');
+                })
+                .show()
+                .removeAttr('href')
+                .css('font-weight', 'bold')
+                .css('font-size', '1.5em');
 
                 function HideMenu(sidebar_offset) {
                     $('#zone-side-menu-wrapper').stop().animate({
@@ -110,8 +107,10 @@
 
                 // Close Button
                 $('#zone-side-menu-wrapper').append('<img src="' + Drupal.settings.basePath + 'sites/all/themes/suitcase/images/close-button-white.png" id="side-menu-close-button" style="top: ' + top + 'px">');
-                $('#side-menu-close-button').click(function() {
+                $('#side-menu-close-button').bind('click touchend',function() {
+                    if(isTouchedAlready){isTouchedAlready=false;return;}
                     HideMenu(sidebar_offset);
+                    isTouchedAlready = (e.type == 'touchend');
                 });
             });
         }
