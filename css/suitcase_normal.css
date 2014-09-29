@@ -62,7 +62,7 @@
     }
 
     aside li.leaf > a:hover,
-    aside .item-list > ul > li > a:hover {
+    aside .item-list > ul > li > a:hover{
         text-decoration: none;
         background-color: rgba(52, 52, 52, 0.1);
     }

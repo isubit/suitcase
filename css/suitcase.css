@@ -778,8 +778,14 @@ aside li.leaf > a.facetapi-active {
     display: inline-block;
 }
 
-aside li > a {
+aside li > a,
+aside .content > p a {
     display: block;
+}
+
+aside .content > p {
+    padding: 4px;
+    margin-bottom: 0;
 }
 
 aside ul {
