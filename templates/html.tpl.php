@@ -9,8 +9,11 @@
 <!--  <script >/* html5shiv */ (function(){var t='abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video'.split(' ');for(var i=t.length;i--;)document.createElement(t[i])})();</script>-->
 </head>
 <body<?php print $attributes;?>>
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
+	<!--[if lt IE 9]><div class="iecomp"><![endif]-->
+  		<?php print $page_top; ?>
+  		<!--[if lt IE 9]><div class="alert alert-danger"><strong>Danger Zone!</strong> To get the best experience from this site, you should <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" style="text-decoration:underline;">upgrade your browser here</a>!</div><![endif]-->
+  		<?php print $page; ?>
+  		<?php print $page_bottom; ?>
+	<!--[if lt IE 9]></div><![endif]-->
 </body>
 </html>

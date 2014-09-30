@@ -59,6 +59,7 @@
     aside .item-list > ul > li > a {
         padding: 4px;
         transition: background-color 0.1s ease;
+        min-height: 28px;
     }
 
     aside li.leaf > a:hover,
