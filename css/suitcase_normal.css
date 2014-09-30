@@ -56,16 +56,30 @@
     }
 
     aside li.leaf > a,
+    aside li.expanded > a,
+    aside li.collapsed > a,
     aside .item-list > ul > li > a {
-        padding: 4px;
+        padding: 4px 10px 4px 4px;
         transition: background-color 0.1s ease;
         min-height: 28px;
     }
 
     aside li.leaf > a:hover,
-    aside .item-list > ul > li > a:hover{
+    aside li.expanded > a:hover,
+    aside li.collapsed > a:hover,
+    aside .item-list > ul > li > a:hover {
         text-decoration: none;
         background-color: rgba(52, 52, 52, 0.1);
+    }
+
+    aside li.leaf > a:after,
+    aside li.expanded > a:after,
+    aside li.collapsed > a:after,
+    aside .item-list > ul > li > a:after {
+        border-left-width: 4px;
+        border-top-width: 6px;
+        border-bottom-width: 6px;
+        right: 6px;
     }
 }
 
