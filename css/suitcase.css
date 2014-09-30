@@ -898,20 +898,24 @@ aside .block .view-content > .views-row.views-row-even {
     margin-top: 10px;
 }
 
-.field.field-name-field-tags .field-item {
+.field.field-name-field-tags .field-item,
+.field.field-name-field-category .field-item {
     display: inline;
 }
 
-.field.field-name-field-tags .field-item a {
+.field.field-name-field-tags .field-item a,
+.field.field-name-field-category .field-item a {
     display: inline-block;
     padding: 5px;
     border: 1px solid #e2e2e2;
     border-radius: 4px;
     background-color: #fff;
     transition: background-color 0.1s ease;
+    color: #555;
 }
 
-.field.field-name-field-tags .field-item a:hover {
+.field.field-name-field-tags .field-item a:hover,
+.field.field-name-field-category .field-item a:hover  {
     background-color: rgba(206, 201, 187, 0.1);
     text-decoration: none;
 }
