@@ -460,17 +460,9 @@ h2.site-name {
     margin-bottom: 0.5em;
 }
 
-.zone-content .content>.view .views-row {
-    border: 1px solid rgba(100, 100, 100, 0.1);
-}
-
-.zone-content .content>.view .views-row.views-row-odd {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.zone-content .views-row.views-row-even {
-    /*background-color: rgba(175, 174, 166, 0.1);*/
-    background-color: rgba(0, 0, 0, 0.1);
+.view-display-id-people_grid .views-row {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
 }
 
 /*////////////////////////////////////*/

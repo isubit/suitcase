@@ -31,10 +31,6 @@
         padding-right: 10px;
     }
 
-    .view-display-id-people_grid .views-row-even {
-        background-color: rgba(255, 255, 255, 0.7) !important;
-    }
-
     #suitcase-main-menu-dropdown-toggle {
         display: none;
     }
