@@ -47,6 +47,10 @@ section h1 {
     line-height: 1.4;
     margin-bottom: 8px;
     text-shadow: 0 0.5px 1px #CCCCCC;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
 }
 
 section h2.node-title {
@@ -456,13 +460,7 @@ h2.site-name {
 /* Views */
 
 .zone-content .views-row {
-    padding: 0.5em;
     margin-bottom: 0.5em;
-}
-
-.view-display-id-people_grid .views-row {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid #ddd;
 }
 
 /*////////////////////////////////////*/
@@ -1100,14 +1098,14 @@ footer.section-footer {
 
 /*////////////////////////////////////*/
 /* Forms - People, News, etc. */
-.view-display-id-people_grid .views-row {
+/*.view-display-id-people_grid .views-row {
     height: 215px;
     transition: box-shadow 0.3s ease;
 }
 
 .view-display-id-people_grid .views-row:hover {
     box-shadow: 0 0 10px rgba(52, 52, 52, 0.3);
-}
+}*/
 
 .node-people-form .field-multiple-table thead th {
     background: none;

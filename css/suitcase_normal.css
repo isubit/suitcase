@@ -9,10 +9,6 @@
         border: none;
         background-color: inherit;
     }
-
-    .view-display-id-people_grid .views-row {
-        width: 31.7%;
-    }
 }
 
 @media all and (min-width: 980px) {
@@ -33,10 +29,6 @@
     #block-menu-menu-footer .leaf a:hover {
         text-decoration: underline;
         background: none;
-    }
-
-    .view-display-id-people_grid .views-row {
-        float: left;
     }
 
     .region-menu .main-menu>li a {
@@ -81,6 +73,10 @@
         border-bottom-width: 6px;
         right: 6px;
     }
+
+    .view-display-id-people_grid .views-row {
+        width: 47.55%;
+    }
 }
 
 @media (min-device-width: 980px) and (min-width: 980px), (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
@@ -96,13 +92,13 @@
 }
 
 @media all and (min-width: 1220px) {
-    .view-display-id-people_grid .views-row {
-        width: 32%;
-    }
-
-    .container-12 {
+    .container-12:not(.zone-side-menu):not(.sticky-top) {
         max-width: 1220px;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+
+    .view-display-id-people_grid .views-row {
+        width: 48%;
     }
 }

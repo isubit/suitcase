@@ -34,4 +34,14 @@
     #suitcase-main-menu-dropdown-toggle {
         display: none;
     }
+
+    .view-display-id-people_grid h3 {
+        display: block;
+        clear: both;
+    }
+
+    .view-display-id-people_grid .views-row {
+        float: left;
+        width: 46.8%;
+    }
 }
