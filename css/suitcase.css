@@ -1107,6 +1107,19 @@ footer.section-footer {
     box-shadow: 0 0 10px rgba(52, 52, 52, 0.3);
 }*/
 
+.node-type-people h1.title {
+    float: left;
+    border-bottom: none;
+    display: inherit;
+    width: inherit;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.field-name-field-people-title-category {
+    margin-left: 0;
+}
+
 .node-people-form .field-multiple-table thead th {
     background: none;
 }
