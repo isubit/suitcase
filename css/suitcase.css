@@ -835,9 +835,6 @@ aside .content > p {
 }
 
 aside ul {
-    max-height: 600px;
-    overflow-y: auto;
-    overflow-x: hidden;
     margin-bottom: 0;
 }
 
@@ -845,10 +842,6 @@ aside ul li.expanded {
     margin: 0;
     list-style-image: none;
     list-style-type: none;
-}
-
-aside .facetapi-limit-link {
-    display: none;
 }
 
 /* Views Specific overrides */
