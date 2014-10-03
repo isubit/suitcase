@@ -99,4 +99,10 @@
     .view-display-id-people_grid .views-row {
         width: 32%;
     }
+
+    .container-12 {
+        max-width: 1220px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
