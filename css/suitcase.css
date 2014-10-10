@@ -59,6 +59,7 @@ section h2.node-title {
     font-size: 1.429em;
     line-height: 1.4;
     margin-bottom: 8px;
+    letter-spacing: 0;
 }
 
 section section h1,
