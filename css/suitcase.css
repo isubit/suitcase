@@ -1022,6 +1022,36 @@ aside .block .view-content > .views-row.views-row-even {
     border-bottom: 4px solid #DFBD00;
 }
 
+.panel-panel.grid-4 .pane-content .views-row {
+    padding: 10px;
+}
+
+.panel-panel.grid-4 .pane-content .views-row:not(.views-row-last) {
+    border-bottom: 1px solid #ddd;
+}
+
+.panel-panel.grid-4 .pane-content li {
+    padding: 0;
+    margin: 0;
+}
+
+.panel-panel.grid-4 .pane-content li > a {
+    padding: 10px;
+    display: block;
+}
+
+.panel-panel.grid-4 .pane-content li:not(:last-child) > a {
+    border-bottom: 1px solid #ddd;
+}
+
+.panel-panel.grid-4 .more-link {
+    text-align: left;
+}
+
+.panel-panel.grid-4 .more-link > a {
+    padding: 10px 16px;
+}
+
 .front .item-list {
     display: block;
 }
