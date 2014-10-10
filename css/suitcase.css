@@ -1268,6 +1268,86 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
 }
 
 /*////////////////////////////////////*/
+/* Biblio */
+.biblio-category-section,
+#biblio-header {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #ddd;
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.biblio-separator-bar {
+    margin: -15px -15px 15px -15px;
+    border-bottom: 1px solid #ddd;
+    border: none;
+}
+
+
+
+.pager {
+    background: none;
+    border: none;
+    border-color: inherit;
+    border-radius: 0;
+    -moz-border-right: 0;
+    -webkit-border-right: 0;
+}
+
+.biblio-category-section + h2 + .item-list {
+    display: table;
+    margin: 0 auto;
+}
+
+.pager li.pager-first,
+.pager li.pager-previous,
+.pager li.pager-item,
+.pager li.pager-current,
+.pager li.pager-next,
+.pager li.pager-last {
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    background: none;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.pager li.pager-first {
+    border-left: 1px solid #ddd;
+}
+
+.pager li.pager-first > a,
+.pager li.pager-previous > a,
+.pager li.pager-item > a,
+.pager li.pager-current,
+.pager li.pager-next > a,
+.pager li.pager-last > a {
+    background: rgba(255,255,255,0.9);
+    padding: 10px 16px;
+    color: #333;
+    font-size: 14px;
+    width: auto;
+    transition: 0.3s ease background;
+}
+
+.pager li.pager-current {
+    background: rgba(52,52,52,0.1);
+}
+
+.pager li.pager-first > a:hover,
+.pager li.pager-previous > a:hover,
+.pager li.pager-item > a:hover,
+.pager li.pager-next > a:hover,
+.pager li.pager-last > a:hover {
+    background: rgba(255,255,255,0.5);
+}
+
+/*////////////////////////////////////*/
 /* Carets */
 .caret {
     display: inline-block;
