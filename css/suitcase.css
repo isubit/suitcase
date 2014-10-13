@@ -1023,8 +1023,16 @@ aside .block .view-content > .views-row.views-row-even {
     border-bottom: 4px solid #DFBD00;
 }
 
-.panel-panel.grid-4 .pane-content .views-row {
+.panel-panel.grid-4 .pane-content .views-row,
+.panel-panel.grid-4 .pane-content .node {
     padding: 10px;
+}
+
+.panel-panel.grid-4 .pane-content .node {
+    background: none;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 .panel-panel.grid-4 .pane-content .views-row:not(.views-row-last) {
