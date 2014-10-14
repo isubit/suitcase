@@ -511,26 +511,33 @@ nav.navigation .main-menu>li a.active {
 nav.navigation .secondary-menu {
     display: block;
     margin-bottom: 0;
-    background: rgba(52, 52, 52, 1);
     float: left;
+    background: #333;
 }
 
 nav.navigation .secondary-menu>li {
     height: 100%;
     display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 nav.navigation .secondary-menu>li a {
     display: block;
-    line-height: 42px;
-    border: 3px solid rgba(255, 255, 255, 0);
+    padding: 15px 16px;
 }
 
 nav.navigation .main-menu>li a:hover,
-nav.navigation .secondary-menu>li a:hover {
+nav.navigation .main-menu>li a.active-trail {
     /*box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.3);*/
     background-color: rgba(0, 0, 0, 0.1);
     /*border-bottom: 3px solid #DFBD00;*/
+    cursor: pointer;
+}
+
+nav.navigation .secondary-menu>li a:hover,
+nav.navigation .secondary-menu>li a.active-trail {
+    background-color: rgba(255,255,255,0.1);
     cursor: pointer;
 }
 
