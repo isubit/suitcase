@@ -511,26 +511,33 @@ nav.navigation .main-menu>li a.active {
 nav.navigation .secondary-menu {
     display: block;
     margin-bottom: 0;
-    background: rgba(52, 52, 52, 1);
     float: left;
+    background: #333;
 }
 
 nav.navigation .secondary-menu>li {
     height: 100%;
     display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 nav.navigation .secondary-menu>li a {
     display: block;
-    line-height: 42px;
-    border: 3px solid rgba(255, 255, 255, 0);
+    padding: 15px 16px;
 }
 
 nav.navigation .main-menu>li a:hover,
-nav.navigation .secondary-menu>li a:hover {
+nav.navigation .main-menu>li a.active-trail {
     /*box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.3);*/
     background-color: rgba(0, 0, 0, 0.1);
     /*border-bottom: 3px solid #DFBD00;*/
+    cursor: pointer;
+}
+
+nav.navigation .secondary-menu>li a:hover,
+nav.navigation .secondary-menu>li a.active-trail {
+    background-color: rgba(255,255,255,0.1);
     cursor: pointer;
 }
 
@@ -1068,8 +1075,16 @@ aside .block .view-content > .views-row.views-row-even {
     border-bottom: 4px solid #DFBD00;
 }
 
-.panel-panel.grid-4 .pane-content .views-row {
+.panel-panel.grid-4 .pane-content .views-row,
+.panel-panel.grid-4 .pane-content .node {
     padding: 10px;
+}
+
+.panel-panel.grid-4 .pane-content .node {
+    background: none;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 .panel-panel.grid-4 .pane-content .views-row:not(.views-row-last) {
@@ -1126,20 +1141,20 @@ aside .block .view-content > .views-row.views-row-even {
 }
 
 .zone-footer .block-menu-footer {
-    float: right;
     margin-top: -12px;
-}
-
-.zone-footer .region-footer-first-inner .block:last-child {
-    float: left;
 }
 
 footer.section-footer {
     border-top: 1px dashed #9D9D9D;
 }
 
+.section-footer .block {
+    float: left;
+}
+
 #block-menu-menu-footer {
     margin-bottom: 1em;
+    float: right;
 }
 
 #block-menu-menu-footer .leaf {
@@ -1157,24 +1172,6 @@ footer.section-footer {
     text-shadow: 0 1px 3px #333333;
     line-height: 3em;
 }
-
-/*////////////////////////////////////*/
-/* Forms */
-.form-item {
-    /*border: 1px solid rgba(52, 52, 52, 0.3);*/
-    /*padding: 0.5em;*/
-}
-
-/*////////////////////////////////////*/
-/* Forms - People, News, etc. */
-/*.view-display-id-people_grid .views-row {
-    height: 215px;
-    transition: box-shadow 0.3s ease;
-}
-
-.view-display-id-people_grid .views-row:hover {
-    box-shadow: 0 0 10px rgba(52, 52, 52, 0.3);
-}*/
 
 .node-type-people h1.title {
     float: left;
