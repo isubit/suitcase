@@ -10,24 +10,17 @@
         attach: function (context) {
             $('body', context).once('suitcaseSidebarMenu', function() {
                 var isTouchedAlready = false,
-                    slide_time = 200,
                     $sidebar_button = $('nav.navigation ul li a:contains(≡)'),
                     sidebar_offset = 300,
+                    $sidebarmenu = $('#zone-side-menu-wrapper'),
+                    $page = $('#page'),
                     top;
-
+                $sidebarmenu.addClass('sidebar-close');
+                $page.addClass('page-close');
                 $sidebar_button
                 .bind('click touchend', function(e) {
                     if(isTouchedAlready) {isTouchedAlready = false;return;}
-
-                    var togglePos = $sidebar_button.offset();
-//                    var sidebar_offset = parseFloat($('#zone-side-menu-wrapper').width());
-
-                    if(parseInt($('#zone-side-menu-wrapper').css('left')) == 0) {
-                        HideMenu(sidebar_offset);
-                    } else {
-                        ShowMenu(togglePos, sidebar_offset);
-                    }
-
+                    toggleMenu();
                     isTouchedAlready = (e.type == 'touchend');
                 })
                 .show()
@@ -35,53 +28,19 @@
                 .css('font-weight', 'bold')
                 .css('font-size', '1.5em');
 
-                function HideMenu(sidebar_offset) {
-                    $('#zone-side-menu-wrapper').stop().animate({
-                        left: -sidebar_offset
-                    }, slide_time);
-
-                    $('.page').stop().animate({
-                        left: 0
-                    }, slide_time);
-
-                    $('#zone-menu').stop().animate({
-                        left: 0
-                    }, slide_time);
-
-                    $('body:not(#zone-side-menu-wrapper)').unbind('click touchstart');
+                function toggleMenu() {
+                    $sidebarmenu.toggleClass('sidebar-close').toggleClass('sidebar-open');
+                    if(parseFloat($('#zone-content').css('margin-left')) < sidebar_offset) {
+                        if($page.hasClass('page-close')) {
+                            $page.addClass('page-open').removeClass('page-close').css('transition', '0.2s').css('left', sidebar_offset);
+                        } else {
+                            $page.addClass('page-close').removeClass('page-open').css('transition', '0.2s').css('left', 0);
+                        }
+                    }
                 }
 
-                function ShowMenu(togglePos, sidebar_offset) {
-                    $('#zone-side-menu-wrapper')
-                        .width(sidebar_offset)
-                        .css("left", -sidebar_offset)
-                        .stop().animate({
-                            left: 0
-                        }, slide_time);
-
-                    if(sidebar_offset > togglePos.left) {
-                        $('.page').stop().animate({
-                            left: sidebar_offset - togglePos.left + 7
-                        }, slide_time);
-                    }
-
-                    $('#zone-menu').stop().animate({
-                        left: sidebar_offset - togglePos.left
-                    }, slide_time);
-
-                    $('#zone-side-menu-wrapper .content>ul>li').css('width', sidebar_offset);
-//                    setTimeout(function() {
-//                        $('body').bind('click touchstart', function(e) {
-//                            if(e.pageX > sidebar_offset) {
-//                                HideMenu(parseFloat($('#zone-side-menu-wrapper').width()));
-//                            }
-//                        });
-//                    }, 400);
-                    if($('#admin-menu')) {
-                        setSideMenuCloseButtonPosition();
-                        setSideMenuWrapperPaddingTop();
-                    }
-
+                function HideMenu() {
+                    $('body:not(#zone-side-menu-wrapper)').unbind('click touchstart');
                 }
 
                 function setSideMenuCloseButtonPosition() {
@@ -101,15 +60,18 @@
 
                 $(window).resize(function() {
                     if(parseInt($('#zone-side-menu-wrapper').css('left')) == 0) {
-                        HideMenu(sidebar_offset);
+                        //HideMenu(sidebar_offset);
+                        setSideMenuWrapperPaddingTop();
+                        setSideMenuCloseButtonPosition();
                     }
                 });
 
                 // Close Button
-                $('#zone-side-menu-wrapper').append('<img src="' + Drupal.settings.basePath + 'sites/all/themes/suitcase/images/close-button-white.png" id="side-menu-close-button" style="top: ' + top + 'px">');
-                $('#side-menu-close-button').bind('click touchend',function() {
+                $sidebarmenu.append('<img src="' + Drupal.settings.basePath + 'sites/all/themes/suitcase/images/close-button-white.png" id="side-menu-close-button" style="top: ' + top + 'px">');
+                $('#side-menu-close-button').bind('click touchend',function(e) {
                     if(isTouchedAlready){isTouchedAlready=false;return;}
-                    HideMenu(sidebar_offset);
+                    HideMenu();
+                    toggleMenu();
                     isTouchedAlready = (e.type == 'touchend');
                 });
             });
