@@ -1053,6 +1053,10 @@ aside .block .view-content > .views-row.views-row-even {
     border-bottom: 1px solid #ddd;
 }
 
+.panel-panel.grid-4 .pane-content > p {
+    padding: 0 10px;
+}
+
 .panel-panel.grid-4 .more-link {
     text-align: left;
 }
