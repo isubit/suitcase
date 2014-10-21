@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 8px;
     font-family: arial;
+    letter-spacing: 0;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -1370,8 +1371,6 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
     border: none;
 }
 
-
-
 .pager {
     background: none;
     border: none;
@@ -1381,7 +1380,8 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
     -webkit-border-right: 0;
 }
 
-.biblio-category-section + h2 + .item-list {
+.biblio-category-section + h2 + .item-list,
+.page-search .item-list .pager {
     display: table;
     margin: 0 auto;
 }
