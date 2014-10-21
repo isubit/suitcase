@@ -828,10 +828,10 @@ aside .item-list > ul > li > a:active {
     background-color: rgba(52, 52, 52, 0.1);
 }
 
-aside li.leaf > a:after,
-aside li.expanded > a:after,
-aside li.collapsed > a:after,
-aside .item-list > ul > li > a:after {
+aside li.leaf > a.facetapi-inactive:after,
+aside li.expanded > a.facetapi-inactive:after,
+aside li.collapsed > a.facetapi-inactive:after,
+aside .item-list > ul > li > a.facetapi-inactive:after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -847,9 +847,17 @@ aside .item-list > ul > li > a:after {
     right: 12px;
 }
 
-aside li:not(:last-child) a,
-aside .item-list > ul > li:not(:last-child) > a {
+aside .facetapi-active {
+    display: inline-block;
+}
+
+aside li a,
+aside .item-list > ul > li > a {
     border-bottom: 1px solid #eee;
+}
+
+aside li.expanded > .item-list > ul > li > a {
+    text-indent: 20px;
 }
 
 aside li.leaf > a.facetapi-active {
