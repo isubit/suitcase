@@ -1516,6 +1516,18 @@ aside ::-webkit-scrollbar-thumb,
     margin-bottom: 0;
 }
 
+/*////////////////////////////////////*/
+/* Views */
+/* - People */
+.view-display-id-people_grid .view-content > h3 {
+    color: #fff;
+    background: #524747;
+    border-bottom: 4px solid #dfbd00;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
 /* GLOBAL STYLING END */
