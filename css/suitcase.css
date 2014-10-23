@@ -1534,6 +1534,8 @@ aside ::-webkit-scrollbar-thumb,
     text-align: center;
     padding: 5px;
     font-size: 20px;
+    display: block;
+    clear: both;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////*/
