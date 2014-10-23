@@ -35,6 +35,10 @@
         display: none;
     }
 
+    .view-display-id-people_grid h3 {
+        width: 99%;
+    }
+
     .view-display-id-people_grid .views-row {
         float: left;
         width: 49%;
