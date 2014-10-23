@@ -8,6 +8,14 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 small {
     font-size: 0.85em;
 }
@@ -22,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 8px;
     font-family: arial;
+    letter-spacing: 0;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -828,10 +837,10 @@ aside .item-list > ul > li > a:active {
     background-color: rgba(52, 52, 52, 0.1);
 }
 
-aside li.leaf > a:after,
-aside li.expanded > a:after,
-aside li.collapsed > a:after,
-aside .item-list > ul > li > a:after {
+aside li.leaf > a.facetapi-inactive:after,
+aside li.expanded > a.facetapi-inactive:after,
+aside li.collapsed > a.facetapi-inactive:after,
+aside .item-list > ul > li > a.facetapi-inactive:after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -847,9 +856,17 @@ aside .item-list > ul > li > a:after {
     right: 12px;
 }
 
-aside li:not(:last-child) a,
-aside .item-list > ul > li:not(:last-child) > a {
+aside .facetapi-active {
+    display: inline-block;
+}
+
+aside li a,
+aside .item-list > ul > li > a {
     border-bottom: 1px solid #eee;
+}
+
+aside li.expanded > .item-list > ul > li > a {
+    text-indent: 20px;
 }
 
 aside li.leaf > a.facetapi-active {
@@ -1362,8 +1379,6 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
     border: none;
 }
 
-
-
 .pager {
     background: none;
     border: none;
@@ -1373,7 +1388,8 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
     -webkit-border-right: 0;
 }
 
-.biblio-category-section + h2 + .item-list {
+.biblio-category-section + h2 + .item-list,
+.page-search .item-list .pager {
     display: table;
     margin: 0 auto;
 }
@@ -1506,6 +1522,20 @@ aside ::-webkit-scrollbar-thumb,
 
 .iecomp .alert-danger {
     margin-bottom: 0;
+}
+
+/*////////////////////////////////////*/
+/* Views */
+/* - People */
+.view-display-id-people_grid .view-content > h3 {
+    color: #fff;
+    background: #524747;
+    border-bottom: 4px solid #dfbd00;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    display: block;
+    clear: both;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////*/
