@@ -8,6 +8,14 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 small {
     font-size: 0.85em;
 }
