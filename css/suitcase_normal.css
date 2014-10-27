@@ -64,10 +64,10 @@
         background-color: rgba(52, 52, 52, 0.1);
     }
 
-    aside li.leaf > a.facetapi-inactive:after,
-    aside li.expanded > a.facetapi-inactive:after,
-    aside li.collapsed > a.facetapi-inactive:after,
-    aside .item-list > ul > li > a.facetapi-inactive:after {
+    aside li.leaf > a:not(.facetapi-active):after,
+    aside li.expanded > a:after,
+    aside li.collapsed > a:after,
+    aside .item-list > ul > li > a:not(.facetapi-active):after {
         border-left-width: 4px;
         border-top-width: 6px;
         border-bottom-width: 6px;
