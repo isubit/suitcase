@@ -1126,6 +1126,10 @@ aside .block .view-content > .views-row.views-row-even {
     padding: 10px 16px;
 }
 
+.panel-panel.grid-4 .views-field-title {
+    font-weight: bold;
+}
+
 .front .item-list {
     display: block;
 }
