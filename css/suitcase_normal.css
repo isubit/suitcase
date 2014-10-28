@@ -74,6 +74,13 @@
         right: 6px;
     }
 
+    aside li.collapsed > a:after {
+        border-top: 5px solid #333;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: none;
+    }
+
     .view-display-id-people_grid .views-row {
         width: 47.55%;
     }

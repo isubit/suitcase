@@ -857,6 +857,13 @@ aside .item-list > ul > li > a:not(.facetapi-active):after {
     right: 12px;
 }
 
+aside li.collapsed > a:after {
+    border-top: 6px solid #333;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: none;
+}
+
 aside li.leaf > a:after {
 
 }
