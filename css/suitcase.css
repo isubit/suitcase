@@ -211,6 +211,18 @@ code {
     font-size: 14px;
 }
 
+.node-unpublished {
+    background: #fff4f4;
+}
+
+.node-unpublished:before {
+    content: "Unpublished";
+    font-weight: bold;
+    color: crimson;
+    float: right;
+    font-size: 18px;
+}
+
 /*////////////////////////////////////*/
 /* Stuff */
 
