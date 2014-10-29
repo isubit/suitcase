@@ -1055,12 +1055,15 @@ aside .block .view-content > .views-row.views-row-even {
 .flexslider .flex-caption {
     position: absolute;
     right: 1em;
-    bottom: 1em;
+    bottom: 3em;
     background: rgba(255, 255, 255, 0.85);
     padding: 1em;
     -webkit-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
     -moz-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
     box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
+	.flexslider .flex-caption {
+}
+
 }
 
 .flexslider img {
