@@ -1082,6 +1082,25 @@ aside .block .view-content > .views-row.views-row-even {
     height: inherit;
 }
 
+.flex-control-paging li a {
+  background: none repeat scroll 0 0 rgba(231, 231, 231, 0.6);
+}
+
+.flex-control-paging li a.flex-active {
+  background: none repeat scroll 0 0 rgba(206, 17, 38, 0.9);
+  
+}
+
+.flex-control-paging li {
+	padding:.5em 0 0 0;
+
+}
+
+.flex-control-nav {
+	background: rgba(234, 226, 183, 0.95);
+	z-index: 2;
+	bottom: 0;
+}
 
 
 /*////////////////////////////////////*/
