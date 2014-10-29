@@ -1079,7 +1079,9 @@ aside .block .view-content > .views-row.views-row-even {
     height: inherit;
 }
 
-
+.flex-control-nav {
+    z-index: 2;
+}
 
 /*////////////////////////////////////*/
 /* Panels */
