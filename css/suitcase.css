@@ -1075,7 +1075,7 @@ aside .block .view-content > .views-row.views-row-even {
 .flexslider .flex-caption {
     position: absolute;
     right: 1em;
-    bottom: 1em;
+    bottom: 2em;
     background: rgba(255, 255, 255, 0.85);
     padding: 1em;
     -webkit-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
@@ -1099,7 +1099,9 @@ aside .block .view-content > .views-row.views-row-even {
     height: inherit;
 }
 
-
+.flexslider .flex-control-nav {
+    bottom: 0;
+}
 
 /*////////////////////////////////////*/
 /* Panels */
