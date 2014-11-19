@@ -199,6 +199,18 @@ code {
     border-radius: 4px;
 }
 
+sub, sup {
+    font-size: 75%;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+sup {
+    vertical-align: super;
+}
+
 @media print {
     a {
         color: blue;

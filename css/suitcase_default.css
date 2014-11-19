@@ -43,4 +43,8 @@
         float: left;
         width: 49%;
     }
+
+    .view-display-id-people_grid .views-field-title span a {
+        font-size: 16px;
+    }
 }
