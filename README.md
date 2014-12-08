@@ -12,3 +12,19 @@ Suitcase is a mobile first theme that has been optimized for use with Luggage.
 - Opera
 - IE 8+
 
+Troubleshooting
+----
+Read/Search [Luggage Documentation][]
+
+Join us on IRC FreeNode @ #luggage
+* Need help setting up IRC? https://www.drupal.org/irc/setting-up
+
+License
+----
+
+[GPLv2][]
+
+
+**Open Source | Open Access | Open Mind**
+
+[Luggage Documentation]:http://www.biology-it.iastate.edu/luggage_doc/
