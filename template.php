@@ -38,3 +38,9 @@ function suitcase_preprocess_region(&$vars) {
 function suitcase_preprocess_content(&$vars) {
   $vars['categories'] = variable_get('field_people_category', $default = NULL);
 }
+
+// Remove troublesome debugging information added by Drupal 7.33
+// https://www.drupal.org/node/2385835
+function suitcase_preprocess_ds_search_page(&$vars) {
+  unset($vars['theme_hook_original']);
+}
