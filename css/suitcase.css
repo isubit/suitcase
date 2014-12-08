@@ -1588,6 +1588,12 @@ aside ::-webkit-scrollbar-thumb,
     clear: both;
 }
 
+/*////////////////////////////////////*/
+/* Helper classes */
+.display-inline {
+    display: inline-block;
+}
+
 .insert-default-image-styling {
     margin: 10px;
 }
