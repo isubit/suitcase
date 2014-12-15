@@ -1449,7 +1449,8 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
 .pager li.pager-item,
 .pager li.pager-current,
 .pager li.pager-next,
-.pager li.pager-last {
+.pager li.pager-last,
+.pager li.pager-ellipsis {
     position: inherit;
     top: inherit;
     right: inherit;
@@ -1469,7 +1470,8 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
 .pager li.pager-item > a,
 .pager li.pager-current,
 .pager li.pager-next > a,
-.pager li.pager-last > a {
+.pager li.pager-last > a,
+.pager li.pager-ellipsis {
     background: rgba(255,255,255,0.9);
     padding: 10px 16px;
     color: #333;
