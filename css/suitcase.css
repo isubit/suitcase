@@ -12,6 +12,22 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    text-rendering: optimizeSpeed;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -191,6 +207,18 @@ code {
     border-radius: 4px;
 }
 
+sub, sup {
+    font-size: 75%;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+sup {
+    vertical-align: super;
+}
+
 @media print {
     a {
         color: blue;
@@ -209,6 +237,18 @@ code {
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
     padding: 15px;
     font-size: 14px;
+}
+
+.node-unpublished {
+    background: #fff4f4;
+}
+
+.node-unpublished:before {
+    content: "Unpublished";
+    font-weight: bold;
+    color: crimson;
+    float: right;
+    font-size: 18px;
 }
 
 /*////////////////////////////////////*/
@@ -1055,7 +1095,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 .flexslider .flex-caption {
     position: absolute;
     right: 1em;
-    bottom: 1em;
+    bottom: 2em;
     background: rgba(255, 255, 255, 0.85);
     padding: 1em;
     -webkit-box-shadow: 0 0 0.4em rgba(100, 100, 100, 0.85);
@@ -1417,7 +1457,8 @@ html.js input.form-autocomplete {
 .pager li.pager-item,
 .pager li.pager-current,
 .pager li.pager-next,
-.pager li.pager-last {
+.pager li.pager-last,
+.pager li.pager-ellipsis {
     position: inherit;
     top: inherit;
     right: inherit;
@@ -1437,7 +1478,8 @@ html.js input.form-autocomplete {
 .pager li.pager-item > a,
 .pager li.pager-current,
 .pager li.pager-next > a,
-.pager li.pager-last > a {
+.pager li.pager-last > a,
+.pager li.pager-ellipsis {
     background: rgba(255,255,255,0.9);
     padding: 10px 16px;
     color: #333;
@@ -1554,6 +1596,16 @@ html.js input.form-autocomplete {
     font-size: 20px;
     display: block;
     clear: both;
+}
+
+/*////////////////////////////////////*/
+/* Helper classes */
+.display-inline {
+    display: inline-block;
+}
+
+.insert-default-image-styling {
+    margin: 10px;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////*/
