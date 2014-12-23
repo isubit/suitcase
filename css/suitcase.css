@@ -1113,6 +1113,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .flex-control-nav {
     z-index: 2;
+    bottom: 0;
 }
 
 /*////////////////////////////////////*/
