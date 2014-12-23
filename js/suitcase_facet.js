@@ -9,7 +9,7 @@
     Drupal.behaviors.suitcaseFacet = {
         attach: function (context) {
             $('body', context).once('suitcaseFacet', function() {
-                $('aside section.block').addClass('js-suitcase-facet');
+                $('section.block').addClass('js-suitcase-facet');
                 var touched = false;
 
                 $('.js-suitcase-facet .block-title').each(function() {

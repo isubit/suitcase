@@ -757,8 +757,8 @@ nav.navigation .secondary-menu>li a.active-trail {
 /*////////////////////////////////////*/
 /* Sidebar Facets */
 
-aside section {
-    background-color: rgba(255, 255, 255, 0.5);
+.section-content section.block {
+    background-color: rgba(255, 255, 255, 0.8);
     border: solid 1px rgba(200, 200, 200, 0.9);
     margin-bottom: 1em;
 }
@@ -780,7 +780,7 @@ aside section {
 /*////////////////////////////////////*/
 /* Sidebar */
 
-aside .block-title,
+.section-content .block .block-title,
 .zone-postscript .block h2.block-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
@@ -793,11 +793,11 @@ aside .block-title,
     letter-spacing: 0;
 }
 
-aside .block-title a {
+.section-content .block .block-title a {
     color: inherit;
 }
 
-aside .block,
+.section-content .block .block,
 .zone-postscript .block {
     background-color: rgba(255, 255, 255, 0.8);
     border: solid 1px #ddd;
@@ -805,43 +805,43 @@ aside .block,
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
-aside .block img {
+.section-content .block .block img {
     max-width: 100%;
     height: auto !important;
     float: none !important;
     margin: 0 !important;
 }
 
-aside li.leaf,
-aside li.expanded,
-aside li.collapsed,
-aside .item-list > ul > li,
-aside .item-list > ul {
+.section-content .block li.leaf,
+.section-content .block li.expanded,
+.section-content .block li.collapsed,
+.section-content .block .item-list > ul > li,
+.section-content .block .item-list > ul {
     /*display: block !important;*/
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-aside li.leaf > a,
-aside li.expanded > a,
-aside li.collapsed > a,
-aside .item-list > ul > li > a {
+.section-content .block li.leaf > a,
+.section-content .block li.expanded > a,
+.section-content .block li.collapsed > a,
+.section-content .block .item-list > ul > li > a {
     padding: 12px;
 }
 
-aside li.leaf > a:active,
-aside li.expanded > a:active,
-aside li.collapsed > a:active,
-aside .item-list > ul > li > a:active {
+.section-content .block li.leaf > a:active,
+.section-content .block li.expanded > a:active,
+.section-content .block li.collapsed > a:active,
+.section-content .block .item-list > ul > li > a:active {
     text-decoration: none;
     background-color: rgba(52, 52, 52, 0.1);
 }
 
-aside li.leaf > a:not(.facetapi-active):after,
-aside li.expanded > a:after,
-aside li.collapsed > a:after,
-aside .item-list > ul > li > a:not(.facetapi-active):after {
+.section-content .block li.leaf > a:not(.facetapi-active):after,
+.section-content .block li.expanded > a:after,
+.section-content .block li.collapsed > a:after,
+.section-content .block .item-list > ul > li > a:not(.facetapi-active):after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -857,77 +857,77 @@ aside .item-list > ul > li > a:not(.facetapi-active):after {
     right: 12px;
 }
 
-aside li.collapsed > a:after {
+.section-content .block li.collapsed > a:after {
     border-top: 6px solid #333;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: none;
 }
 
-aside li.leaf > a:after {
+.section-content .block li.leaf > a:after {
 
 }
 
-aside .facetapi-active {
+.section-content .block .facetapi-active {
     display: inline-block;
 }
 
-aside li a,
-aside .item-list > ul > li > a {
+.section-content .block li a,
+.section-content .block .item-list > ul > li > a {
     border-bottom: 1px solid #eee;
 }
 
-aside li.expanded > .item-list > ul > li > a {
+.section-content .block li.expanded > .item-list > ul > li > a {
     text-indent: 20px;
 }
 
-aside li.leaf > a.facetapi-active {
+.section-content .block li.leaf > a.facetapi-active {
     display: inline-block;
 }
 
-aside ul.menu ul.menu > li > a {
+.section-content .block ul.menu ul.menu > li > a {
     padding-left: 20px;
 }
 
-aside ul.menu ul.menu ul.menu > li > a {
+.section-content .block ul.menu ul.menu ul.menu > li > a {
     padding-left: 40px;
 }
 
-aside ul.menu ul.menu ul.menu ul.menu > li > a {
+.section-content .block ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 60px;
 }
 
-aside ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
+.section-content .block ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 80px;
 }
 
-aside ul.menu ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
+.section-content .block ul.menu ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 100px;
 }
 
-aside li > a,
-aside .content > p a {
+.section-content .block li > a,
+.section-content .block .content > p a {
     display: block;
 }
 
-aside .content > p {
+.section-content .block .content > p {
     padding: 4px;
     margin-bottom: 0;
 }
 
-aside ul {
+.section-content .block ul {
     margin-bottom: 0;
 }
 
-aside ul li.expanded {
+.section-content .block ul li.expanded {
     margin: 0;
     list-style-image: none;
     list-style-type: none;
 }
 
 /* Views Specific overrides */
-aside .block .view-content > .views-row.views-row-odd,
-aside .block .view-content > .views-row.views-row-even {
+.section-content .block .block .view-content > .views-row.views-row-odd,
+.section-content .block .block .view-content > .views-row.views-row-even {
     border: none;
     background: none !important;
     padding: 0;
@@ -1286,12 +1286,12 @@ html.js input.form-autocomplete {
 
 /*////////////////////////////////////*/
 /* Book Outline Sidebar Block */
-/*aside .book-outline-sidebar-block > .view-content > .views-row a {*/
+/*.section-content .block .book-outline-sidebar-block > .view-content > .views-row a {*/
     /*font-family: "Overpass","Open Sans","Helvetica Neue",sans-serif;*/
     /*color: #333;*/
 /*}*/
 
-aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
+.section-content .block .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
     border-bottom: 1px solid #ddd;
 }
 
@@ -1479,17 +1479,17 @@ aside .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
 /*////////////////////////////////////*/
 /* Webkit Scroll bar */
 
-aside ::-webkit-scrollbar,
+.section-content .block ::-webkit-scrollbar,
 .front .panel-panel ::-webkit-scrollbar {
     width: 6px;
 }
 
-aside ::-webkit-scrollbar-track,
+.section-content .block ::-webkit-scrollbar-track,
 .front .panel-panel ::-webkit-scrollbar-track {
     opacity: 0;
 }
 
-aside ::-webkit-scrollbar-thumb,
+.section-content .block ::-webkit-scrollbar-thumb,
 .front .panel-panel ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: rgba(51,51,51,0.2);
