@@ -20,14 +20,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body {
-    text-rendering: optimizeSpeed;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-touch-callout: none;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
