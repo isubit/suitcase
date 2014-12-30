@@ -937,7 +937,7 @@ nav.navigation .secondary-menu>li a.active-trail {
     padding-left: 100px;
 }
 
-.section-content .block li > a,
+.section-content .block ul:not(.tabs):not(.biblio-export-buttons) li > a,
 .section-content .block .content > p a {
     display: block;
 }
