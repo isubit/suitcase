@@ -812,7 +812,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 /*////////////////////////////////////*/
 /* Sidebar */
 
-.section-content .block .block-title,
+.zone-content .block .block-title,
 .zone-postscript .block h2.block-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
@@ -825,11 +825,11 @@ nav.navigation .secondary-menu>li a.active-trail {
     letter-spacing: 0;
 }
 
-.section-content .block .block-title a {
+.zone-content .block .block-title a {
     color: inherit;
 }
 
-.section-content .block .block,
+.zone-content .block .block,
 .zone-postscript .block {
     background-color: rgba(255, 255, 255, 0.8);
     border: solid 1px #ddd;
@@ -837,43 +837,43 @@ nav.navigation .secondary-menu>li a.active-trail {
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
-.section-content .block .block img {
+.zone-content .block .block img {
     max-width: 100%;
     height: auto !important;
     float: none !important;
     margin: 0 !important;
 }
 
-.section-content .block li.leaf,
-.section-content .block li.expanded,
-.section-content .block li.collapsed,
-.section-content .block .item-list > ul > li,
-.section-content .block .item-list > ul {
+.zone-content .block li.leaf,
+.zone-content .block li.expanded,
+.zone-content .block li.collapsed,
+.zone-content .block .item-list > ul > li,
+.zone-content .block .item-list > ul {
     /*display: block !important;*/
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.section-content .block li.leaf > a,
-.section-content .block li.expanded > a,
-.section-content .block li.collapsed > a,
-.section-content .block .item-list > ul > li > a {
+.zone-content .block li.leaf > a,
+.zone-content .block li.expanded > a,
+.zone-content .block li.collapsed > a,
+.zone-content .block .item-list > ul > li > a {
     padding: 12px;
 }
 
-.section-content .block li.leaf > a:active,
-.section-content .block li.expanded > a:active,
-.section-content .block li.collapsed > a:active,
-.section-content .block .item-list > ul > li > a:active {
+.zone-content .block li.leaf > a:active,
+.zone-content .block li.expanded > a:active,
+.zone-content .block li.collapsed > a:active,
+.zone-content .block .item-list > ul > li > a:active {
     text-decoration: none;
     background-color: rgba(52, 52, 52, 0.1);
 }
 
-.section-content .block li.leaf > a:not(.facetapi-active):after,
-.section-content .block li.expanded > a:after,
-.section-content .block li.collapsed > a:after,
-.section-content .block .item-list > ul > li > a:not(.facetapi-active):after {
+.zone-content .block li.leaf > a:not(.facetapi-active):after,
+.zone-content .block li.expanded > a:after,
+.zone-content .block li.collapsed > a:after,
+.zone-content .block .item-list > ul > li > a:not(.facetapi-active):after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -889,77 +889,77 @@ nav.navigation .secondary-menu>li a.active-trail {
     right: 12px;
 }
 
-.section-content .block li.collapsed > a:after {
+.zone-content .block li.collapsed > a:after {
     border-top: 6px solid #333;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: none;
 }
 
-.section-content .block li.leaf > a:after {
+.zone-content .block li.leaf > a:after {
 
 }
 
-.section-content .block .facetapi-active {
+.zone-content .block .facetapi-active {
     display: inline-block;
 }
 
-.section-content .block li a,
-.section-content .block .item-list > ul > li > a {
+.zone-content .block li a,
+.zone-content .block .item-list > ul > li > a {
     border-bottom: 1px solid #eee;
 }
 
-.section-content .block li.expanded > .item-list > ul > li > a {
+.zone-content .block li.expanded > .item-list > ul > li > a {
     text-indent: 20px;
 }
 
-.section-content .block li.leaf > a.facetapi-active {
+.zone-content .block li.leaf > a.facetapi-active {
     display: inline-block;
 }
 
-.section-content .block ul.menu ul.menu > li > a {
+.zone-content .block ul.menu ul.menu > li > a {
     padding-left: 20px;
 }
 
-.section-content .block ul.menu ul.menu ul.menu > li > a {
+.zone-content .block ul.menu ul.menu ul.menu > li > a {
     padding-left: 40px;
 }
 
-.section-content .block ul.menu ul.menu ul.menu ul.menu > li > a {
+.zone-content .block ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 60px;
 }
 
-.section-content .block ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
+.zone-content .block ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 80px;
 }
 
-.section-content .block ul.menu ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
+.zone-content .block ul.menu ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 100px;
 }
 
-.section-content .block ul:not(.tabs):not(.biblio-export-buttons) li > a,
-.section-content .block .content > p a {
+.zone-content .block ul:not(.tabs):not(.biblio-export-buttons) li > a,
+.zone-content .block .content > p a {
     display: block;
 }
 
-.section-content .block .content > p {
+.zone-content .block .content > p {
     padding: 4px;
     margin-bottom: 0;
 }
 
-.section-content .block ul {
+.zone-content .block ul {
     margin-bottom: 0;
 }
 
-.section-content .block ul li.expanded {
+.zone-content .block ul li.expanded {
     margin: 0;
     list-style-image: none;
     list-style-type: none;
 }
 
 /* Views Specific overrides */
-.section-content .block .block .view-content > .views-row.views-row-odd,
-.section-content .block .block .view-content > .views-row.views-row-even {
+.zone-content .block .block .view-content > .views-row.views-row-odd,
+.zone-content .block .block .view-content > .views-row.views-row-even {
     border: none;
     background: none !important;
     padding: 0;
@@ -1319,7 +1319,7 @@ html.js input.form-autocomplete {
 
 /*////////////////////////////////////*/
 /* Book Outline Sidebar Block */
-/*.section-content .block .book-outline-sidebar-block > .view-content > .views-row a {*/
+/*.zone-content .block .book-outline-sidebar-block > .view-content > .views-row a {*/
     /*font-family: "Overpass","Open Sans","Helvetica Neue",sans-serif;*/
     /*color: #333;*/
 /*}*/
