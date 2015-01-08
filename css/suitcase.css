@@ -1514,17 +1514,17 @@ html.js input.form-autocomplete {
 /*////////////////////////////////////*/
 /* Webkit Scroll bar */
 
-.section-content .block ::-webkit-scrollbar,
+.zone-content .block ::-webkit-scrollbar,
 .front .panel-panel ::-webkit-scrollbar {
     width: 6px;
 }
 
-.section-content .block ::-webkit-scrollbar-track,
+.zone-content .block ::-webkit-scrollbar-track,
 .front .panel-panel ::-webkit-scrollbar-track {
     opacity: 0;
 }
 
-.section-content .block ::-webkit-scrollbar-thumb,
+.zone-content .block ::-webkit-scrollbar-thumb,
 .front .panel-panel ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: rgba(51,51,51,0.2);
