@@ -844,36 +844,36 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin: 0 !important;
 }
 
-.section-content .block li.leaf,
-.section-content .block li.expanded,
-.section-content .block li.collapsed,
-.section-content .block .item-list > ul > li,
-.section-content .block .item-list > ul {
+.section-content .block :not(.pager) li.leaf,
+.section-content .block :not(.pager) li.expanded,
+.section-content .block :not(.pager) li.collapsed,
+.section-content .block .item-list > ul:not(.pager) > li,
+.section-content .block .item-list > ul:not(.pager) {
     /*display: block !important;*/
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.section-content .block li.leaf > a,
-.section-content .block li.expanded > a,
-.section-content .block li.collapsed > a,
-.section-content .block .item-list > ul > li > a {
+.section-content .block :not(.pager) li.leaf > a,
+.section-content .block :not(.pager) li.expanded > a,
+.section-content .block :not(.pager) li.collapsed > a,
+.section-content .block .item-list > ul:not(.pager) > li > a {
     padding: 12px;
 }
 
-.section-content .block li.leaf > a:active,
-.section-content .block li.expanded > a:active,
-.section-content .block li.collapsed > a:active,
-.section-content .block .item-list > ul > li > a:active {
+.section-content .block :not(.pager) li.leaf > a:active,
+.section-content .block :not(.pager) li.expanded > a:active,
+.section-content .block :not(.pager) li.collapsed > a:active,
+.section-content .block .item-list > ul:not(.pager) > li > a:active {
     text-decoration: none;
     background-color: rgba(52, 52, 52, 0.1);
 }
 
-.section-content .block li.leaf > a:not(.facetapi-active):after,
-.section-content .block li.expanded > a:after,
-.section-content .block li.collapsed > a:after,
-.section-content .block .item-list > ul > li > a:not(.facetapi-active):after {
+.section-content .block :not(.pager) li.leaf > a:not(.facetapi-active):after,
+.section-content .block :not(.pager) li.expanded > a:after,
+.section-content .block :not(.pager) li.collapsed > a:after,
+.section-content .block .item-list > ul:not(.pager) > li > a:not(.facetapi-active):after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -889,14 +889,14 @@ nav.navigation .secondary-menu>li a.active-trail {
     right: 12px;
 }
 
-.section-content .block li.collapsed > a:after {
+.section-content .block :not(.pager) li.collapsed > a:after {
     border-top: 6px solid #333;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: none;
 }
 
-.section-content .block li.leaf > a:after {
+.section-content .block :not(.pager) li.leaf > a:after {
 
 }
 
@@ -904,8 +904,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     display: inline-block;
 }
 
-.section-content .block li a,
-.section-content .block .item-list > ul > li > a {
+.section-content .block ul:not(.pager) li a,
+.section-content .block .item-list > ul:not(.pager) > li > a {
     border-bottom: 1px solid #eee;
 }
 
@@ -1440,7 +1440,7 @@ html.js input.form-autocomplete {
 }
 
 .biblio-category-section + h2 + .item-list,
-.page-search .item-list .pager {
+.zone-content .item-list ul.pager {
     display: table;
     margin: 0 auto;
 }
