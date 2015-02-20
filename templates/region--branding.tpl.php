@@ -2,9 +2,9 @@
 <div<?php print $content_attributes; ?>>
   <?php if ($linked_logo_img || $site_name || $site_slogan): ?>
     <div class="branding-data clearfix">
-      <?php if ($linked_logo_img): ?>
+      <?php if ($suitcase_config_logo): ?>
         <div class="logo-img">
-          <?php print $linked_logo_img; ?>
+          <?php print $suitcase_config_logo; ?>
         </div>
       <?php endif; ?>
 

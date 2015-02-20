@@ -23,6 +23,20 @@ function suitcase_preprocess_html(&$vars) {
 // template_preprocess_region
 function suitcase_preprocess_region(&$vars) {
   $vars['dept_url'] = variable_get('dept_url', $default = NULL);
+
+  // Prepare Logo
+  $vars['suitcase_config_logo'] = FALSE;
+  if($vars['elements']['#region'] == 'branding') {
+    $logo = variable_get('suitcase_config_logo');
+    $vars['site_name'] = variable_get('site_name');
+
+    if ($logo) {
+      $logo_url = file_create_url($logo['uri']);
+      $vars['suitcase_config_logo'] = '<div class="logo-img"><a href="' . $GLOBALS['base_url'] . '" rel="home" title="' . $vars['site_name'] . '" class="active"><img src="' . $logo_url . '" alt="Go to ' . $vars['site_name'] . ' home" id="logo" /></a></div>';
+    }
+  }
+
+
   if($vars['elements']['#region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
     $node = node_load(arg(1));
     if($node->type == 'people' && !empty($node->field_people_category)) {
