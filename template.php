@@ -32,6 +32,15 @@ function suitcase_preprocess_region(&$vars) {
       }
     }
   } else if($vars['region'] == 'branding') {
+    // Prepare Logo
+    $vars['suitcase_config_logo'] = FALSE;
+    $logo = variable_get('suitcase_config_logo');
+    $vars['site_name'] = variable_get('site_name');
+    if ($logo) {
+      $logo_url = file_create_url($logo['uri']);
+      $vars['suitcase_config_logo'] = '<div class="logo-img"><a href="' . $GLOBALS['base_url'] . '" rel="home" title="' . $vars['site_name'] . '" class="active"><img src="' . $logo_url . '" alt="Go to ' . $vars['site_name'] . ' home" id="logo" /></a></div>';
+    }
+
     $vars['dept_url'] = variable_get('dept_url', $default = NULL);
     $vars['show_isu_nameplate'] = variable_get('suitcase_config_isu_nameplate_display', 1);
   }
