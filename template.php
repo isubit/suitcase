@@ -22,8 +22,7 @@ function suitcase_preprocess_html(&$vars) {
 
 // template_preprocess_region
 function suitcase_preprocess_region(&$vars) {
-  $vars['dept_url'] = variable_get('dept_url', $default = NULL);
-  if($vars['elements']['#region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
+  if($vars['region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
     $node = node_load(arg(1));
     if($node->type == 'people' && !empty($node->field_people_category)) {
       $vars['categories'] = array();
@@ -32,6 +31,15 @@ function suitcase_preprocess_region(&$vars) {
         array_push($vars['categories'], $tax->name);
       }
     }
+  } else if($vars['region'] == 'branding') {
+    $vars['dept_url'] = variable_get('dept_url', $default = NULL);
+    $vars['show_isu_nameplate'] = variable_get('suitcase_config_isu_nameplate_display', 1);
+  }
+}
+
+function suitcase_preprocess_section(&$vars) {
+  if($vars['section'] == 'header') {
+    $vars['show_blackbar'] = variable_get('suitcase_config_blackbar_display', 1);
   }
 }
 
