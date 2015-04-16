@@ -1118,13 +1118,18 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 /*////////////////////////////////////*/
 /* Panels */
-.panel-panel.grid-12 {
-    margin-bottom: 1em;
+.panel-panel {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
 }
 
-.panel-panel.grid-4 {
-    /*border: 1px solid rgba(100, 100, 100, 0.1);*/
-    background-color: rgba(255, 255, 255, 0.7);
+.panel-panel.grid-4 .pane-content > p {
+    padding: 0 10px;
+}
+
+.panel-panel .pane-content p:first-child {
+    padding-top: 10px;
 }
 
 .panel-panel .view .views-row {
@@ -1169,10 +1174,6 @@ nav.navigation .secondary-menu>li a.active-trail {
     border-bottom: 1px solid #ddd;
 }
 
-.panel-panel.grid-4 .pane-content > p {
-    padding: 0 10px;
-}
-
 .panel-panel.grid-4 .more-link {
     text-align: left;
 }
@@ -1196,9 +1197,11 @@ nav.navigation .secondary-menu>li a.active-trail {
 .front .grid-4 .pane-content {
   height: 350px;
   overflow-y: auto;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
+}
+
+.panel-panel iframe {
+    width: 100% !important;
+    padding: 0 10px !important;
 }
 
 /*////////////////////////////////////*/
