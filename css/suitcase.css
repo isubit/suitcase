@@ -1124,6 +1124,11 @@ nav.navigation .secondary-menu>li a.active-trail {
     border: 1px solid #ddd;
 }
 
+.front .panel-display .panel-panel:first-child {
+    background-color: transparent;
+    border: 0;
+}
+
 .panel-panel.grid-4 .pane-content > p {
     padding: 0 10px;
 }
