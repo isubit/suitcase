@@ -276,6 +276,16 @@ tr.odd:hover td.active {
 background: none;
 }
 
+img {
+max-width: 100%;
+height: auto !important;
+}
+
+#isu_wordmark {
+padding-top: 15px;
+margin-bottom: -10px;
+}
+
 @media print {
     a {
         color: blue;
