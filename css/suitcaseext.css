@@ -1799,6 +1799,15 @@ html.js input.form-autocomplete {
     nav.navigation li.main-menu-dropdown-item.hide {
         display: none;
     }
+    
+    #main-menu li:before {
+		display: none !important;
+	}
+	/*Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
 }
 
 @media all and (max-width: 979px) {
