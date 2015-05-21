@@ -477,7 +477,7 @@ footer {
 }
 
 a, a:link, a:visited {
-    color: #930c0a;
+    color: #467081;
     text-decoration: none;
 }
 
@@ -1485,6 +1485,10 @@ html.js input.form-autocomplete {
 
 .form-item input[type="submit"]:hover {
     background: #fff;
+}
+
+.section-footer {
+	background: #ce1126;
 }
 
 /*////////////////////////////////////*/
