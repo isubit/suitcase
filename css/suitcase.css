@@ -1036,6 +1036,10 @@ nav.navigation .secondary-menu>li a.active-trail {
 .field .field-label {
     color: #444;
 }
+
+.page-node-add .fieldset-legend {
+    font-weight: bold;
+}
 /*////////////////////////////////////*/
 /* A Tag Mobile Styling */
 .item-list ul li.leaf {
