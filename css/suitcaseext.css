@@ -58,7 +58,7 @@ h2 {
 }
 
 section h1 {
-    color: #990000;
+    color: #930c0a;
     font-family: arial;
     font-size: 2em;
     line-height: 1.4;
@@ -462,7 +462,7 @@ body {
 }
 
 .section-content {
-    background-color: #f4f3e8;
+    background-color: #c5b99a;
 }
 
 .zone-content-wrapper {
@@ -477,7 +477,7 @@ footer {
 }
 
 a, a:link, a:visited {
-    color: #900;
+    color: #930c0a;
     text-decoration: none;
 }
 
