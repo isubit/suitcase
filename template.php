@@ -12,7 +12,7 @@
  */
 
 // theme_preprocess_html
-function suitcase_preprocess_html(&$vars) {
+function suitcaseext_preprocess_html(&$vars) {
 //  ISU Bar responsive classes added to body
   $vars['attributes_array']['class'][] = 'responsive';
   $vars['attributes_array']['class'][] = 'wd-show-sidebar';
@@ -21,7 +21,7 @@ function suitcase_preprocess_html(&$vars) {
 }
 
 // template_preprocess_region
-function suitcase_preprocess_region(&$vars) {
+function suitcaseext_preprocess_region(&$vars) {
   $vars['dept_url'] = variable_get('dept_url', $default = NULL);
   if($vars['elements']['#region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
     $node = node_load(arg(1));
@@ -35,6 +35,6 @@ function suitcase_preprocess_region(&$vars) {
   }
 }
 
-function suitcase_preprocess_content(&$vars) {
+function suitcaseext_preprocess_content(&$vars) {
   $vars['categories'] = variable_get('field_people_category', $default = NULL);
 }

@@ -3,12 +3,12 @@
 /**
  * Implementation of themehook_settings().
  */
-function suitcase_form_system_theme_settings_alter(&$form, $form_state) {
-  $form['suitcase'] = array(
+function suitcaseext_form_system_theme_settings_alter(&$form, $form_state) {
+  $form['suitcaseext'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Suitcase Settings'),
+    '#title' => t('Suitcase EIT Settings'),
   );
-  $form['suitcase']['breadcrumb_delimiter'] = array(
+  $form['suitcaseext']['breadcrumb_delimiter'] = array(
     '#type' => 'textfield',
     '#title' => t('Breadcrumb delimiter'),
     '#size' => 4,

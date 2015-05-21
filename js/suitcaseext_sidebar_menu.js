@@ -6,9 +6,9 @@
     /**
      * @todo
      */
-    Drupal.behaviors.suitcaseSidebarMenu = {
+    Drupal.behaviors.suitcaseextSidebarMenu = {
         attach: function (context) {
-            $('body', context).once('suitcaseSidebarMenu', function() {
+            $('body', context).once('suitcaseextSidebarMenu', function() {
                 var isTouchedAlready = false,
                     $sidebar_button = $('nav.navigation ul li a:contains(≡)'),
                     sidebar_offset = 300,
@@ -67,7 +67,7 @@
                 });
 
                 // Close Button
-                $sidebarmenu.append('<img src="' + Drupal.settings.basePath + 'sites/all/themes/suitcase/images/close-button-white.png" id="side-menu-close-button" style="top: ' + top + 'px">');
+                $sidebarmenu.append('<img src="' + Drupal.settings.basePath + 'sites/all/themes/suitcaseext/images/close-button-white.png" id="side-menu-close-button" style="top: ' + top + 'px">');
                 $('#side-menu-close-button').bind('click touchend',function(e) {
                     if(isTouchedAlready){isTouchedAlready=false;return;}
                     HideMenu();
