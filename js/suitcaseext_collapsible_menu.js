@@ -9,7 +9,6 @@
         attach: function (context) {
             $('body', context).once('suitcaseextCollapsibleMenu', function() {
                 if($('#main-menu > li').length > 1) {
-                    var li = '<li id="suitcaseext-main-menu-dropdown-toggle"><a>...</a></li>';
                     var touched = false;
 
                     $('#main-menu > li:first').after(li);
