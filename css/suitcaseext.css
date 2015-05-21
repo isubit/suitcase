@@ -485,7 +485,7 @@ a:link:hover {
 }
 
 input[type="text"] {
-    height: 3em;
+    height: 2em;
     font-size: 1em;
     padding: 0;
 }
@@ -847,7 +847,7 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-left: -7px;
     border: 1px solid #dddddd;
     background: #fff;
-    height: 4.2em;
+    height: 2.8em;
     margin-right: 0;
 }
 
