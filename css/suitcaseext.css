@@ -257,6 +257,19 @@ padding-bottom: 8px;
 padding-right: 15px;
 }
 
+#main-menu li:before {
+content: " | ";
+color: #FFF;
+}
+
+#main-menu li:first-child:before {
+content: none;
+}
+
+#main-menu {
+text-shadow: 0 1px 3px #333333;
+}
+
 @media print {
     a {
         color: blue;
