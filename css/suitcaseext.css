@@ -211,6 +211,52 @@ sup {
     vertical-align: super;
 }
 
+h2.block-title {
+padding-left: 7px;
+padding-top: 5px;
+}
+
+.block-menu-menu-category {
+padding-left: 15px;
+}
+
+.breadcrumb {
+padding-top: 15px;
+}
+
+#search-block-form {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.field-type-taxonomy-term-reference .field-items {
+margin-top: -5px;
+}
+
+.view-content {
+padding: 10px;
+}
+
+.view-grouping-header {
+padding-bottom: 10px;
+}
+
+.view-grouping .view-grouping-content td {
+width: 175px;
+}
+
+.view-display-id-people_grid .views-row {
+min-height: 0 !important;
+}
+
+ul li.leaf {
+padding-bottom: 8px;
+}
+
+#region-sidebar-first {
+padding-right: 15px;
+}
+
 @media print {
     a {
         color: blue;
@@ -859,7 +905,9 @@ nav.navigation .secondary-menu>li a.active-trail {
 .zone-content .block li.expanded > a,
 .zone-content .block li.collapsed > a,
 .zone-content .block .item-list > ul > li > a {
-    padding: 12px;
+    padding: 10px;
+	padding-right: 20px;
+	position: relative;
 }
 
 .zone-content .block li.leaf > a:active,
@@ -886,7 +934,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-top: 4px;
     filter: alpha(opacity=30);
     position: absolute;
-    right: 12px;
+    right: 10px;
+	top: calc(50% - 12px);
 }
 
 .zone-content .block li.collapsed > a:after {
