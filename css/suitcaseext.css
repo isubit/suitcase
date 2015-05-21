@@ -870,11 +870,11 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-bottom: 1em;
 }
 
-.js-suitcase-facet .block-title:hover {
+.js-suitcaseext-facet .block-title:hover {
     cursor: pointer;
 }
 
-.js-suitcase-facet .block-title:hover .caret {
+.js-suitcaseext-facet .block-title:hover .caret {
     opacity: 0.8;
 }
 
