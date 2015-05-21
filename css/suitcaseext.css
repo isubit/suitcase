@@ -531,6 +531,7 @@ input[type="submit"] {
 h1.site-name,
 h2.site-name {
     font-size: 1.857em;
+    padding-top: 10px;
 }
 
 .site-name,
