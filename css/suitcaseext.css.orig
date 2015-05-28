@@ -211,6 +211,7 @@ sup {
     vertical-align: super;
 }
 
+<<<<<<< HEAD:css/suitcaseext.css
 h2.block-title {
 padding-left: 7px;
 padding-top: 5px;
@@ -284,8 +285,7 @@ height: auto !important;
 #isu_wordmark {
 padding-top: 15px;
 margin-bottom: -10px;
-}
-
+=======
 ul {
     list-style-type: disc;
 }
@@ -296,6 +296,7 @@ ul ul, ol ul {
 
 ol ol ul, ol ul ul, ul ol ul, ul ul ul {
     list-style-type: square;
+>>>>>>> e1887e83a5b2402a7dda8e0aaae76247690c7713:css/suitcase.css
 }
 
 @media print {
