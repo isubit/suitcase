@@ -58,7 +58,7 @@ h2 {
 }
 
 section h1 {
-    color: #990000;
+    color: #930c0a;
     font-family: arial;
     font-size: 2em;
     line-height: 1.4;
@@ -211,6 +211,81 @@ sup {
     vertical-align: super;
 }
 
+h2.block-title {
+padding-left: 7px;
+padding-top: 5px;
+}
+
+.block-menu-menu-category {
+padding-left: 15px;
+}
+
+.breadcrumb {
+padding-top: 15px;
+}
+
+#search-block-form {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.field-type-taxonomy-term-reference .field-items {
+margin-top: -5px;
+}
+
+.view-content {
+padding: 10px;
+}
+
+.view-grouping-header {
+padding-bottom: 10px;
+}
+
+.view-grouping .view-grouping-content td {
+width: 175px;
+}
+
+.view-display-id-people_grid .views-row {
+min-height: 0 !important;
+}
+
+ul li.leaf {
+padding-bottom: 8px;
+}
+
+#region-sidebar-first {
+padding-right: 15px;
+}
+
+#main-menu li:before {
+content: " | ";
+color: #FFF;
+}
+
+#main-menu li:first-child:before {
+content: none;
+}
+
+#main-menu {
+text-shadow: 0 1px 3px #333333;
+}
+
+tr:hover td,
+tr.even:hover td.active,
+tr.odd:hover td.active {
+background: none;
+}
+
+img {
+max-width: 100%;
+height: auto !important;
+}
+
+#isu_wordmark {
+padding-top: 15px;
+margin-bottom: -10px;
+}
+
 ul {
     list-style-type: disc;
 }
@@ -279,6 +354,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
     margin: 0;
     overflow: hidden;
     padding: 4px 0;
+    float: right;
 }
 
 .isu-dark-ribbon .isu-signons {
@@ -398,7 +474,7 @@ body {
 }
 
 .section-content {
-    background-color: #f4f3e8;
+    background-color: #F4F3E8;
 }
 
 .zone-content-wrapper {
@@ -413,7 +489,7 @@ footer {
 }
 
 a, a:link, a:visited {
-    color: #900;
+    color: #930c0a;
     text-decoration: none;
 }
 
@@ -422,7 +498,7 @@ a:link:hover {
 }
 
 input[type="text"] {
-    height: 3em;
+    height: 2em;
     font-size: 1em;
     padding: 0;
 }
@@ -460,13 +536,14 @@ input[type="submit"] {
 /* Site Name/Slogan */
 .nameplate img {
     width: auto;
-    height: 20px;
+    height: 60px;
     margin-bottom: 8px;
 }
 
 h1.site-name,
 h2.site-name {
     font-size: 1.857em;
+    padding-top: 10px;
 }
 
 .site-name,
@@ -483,6 +560,7 @@ h2.site-name {
 
 .site-name-slogan a {
     color: #fff;
+    font-weight: bold;
 }
 
 .site-slogan a {
@@ -532,6 +610,7 @@ h2.site-name {
 
 nav.navigation .main-menu {
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 nav.navigation .main-menu>li {
@@ -784,7 +863,7 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-left: -7px;
     border: 1px solid #dddddd;
     background: #fff;
-    height: 4.2em;
+    height: 2.8em;
     margin-right: 0;
 }
 
@@ -807,11 +886,11 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-bottom: 1em;
 }
 
-.js-suitcase-facet .block-title:hover {
+.js-suitcaseext-facet .block-title:hover {
     cursor: pointer;
 }
 
-.js-suitcase-facet .block-title:hover .caret {
+.js-suitcaseext-facet .block-title:hover .caret {
     opacity: 0.8;
 }
 
@@ -824,7 +903,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 /*////////////////////////////////////*/
 /* Sidebar */
 
-.zone-content .block .block-title,
+.zone-content aside .block .block-title,
 .zone-postscript .block h2.block-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
@@ -837,11 +916,11 @@ nav.navigation .secondary-menu>li a.active-trail {
     letter-spacing: 0;
 }
 
-.zone-content .block .block-title a {
+.zone-content aside .block .block-title a {
     color: inherit;
 }
 
-.zone-content .block .block,
+.zone-content aside .block .block,
 .zone-postscript .block {
     background-color: rgba(255, 255, 255, 0.8);
     border: solid 1px #ddd;
@@ -849,43 +928,45 @@ nav.navigation .secondary-menu>li a.active-trail {
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
-.zone-content .block .block img {
+.zone-content aside .block .block img {
     max-width: 100%;
     height: auto !important;
     float: none !important;
     margin: 0 !important;
 }
 
-.zone-content .block li.leaf,
-.zone-content .block li.expanded,
-.zone-content .block li.collapsed,
-.zone-content .block .item-list > ul > li,
-.zone-content .block .item-list > ul {
+.zone-content aside .block li.leaf,
+.zone-content aside .block li.expanded,
+.zone-content aside .block li.collapsed,
+.zone-content aside .block .item-list > ul > li,
+.zone-content aside .block .item-list > ul {
     /*display: block !important;*/
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.zone-content .block li.leaf > a,
-.zone-content .block li.expanded > a,
-.zone-content .block li.collapsed > a,
-.zone-content .block .item-list > ul > li > a {
-    padding: 12px;
+.zone-content aside .block li.leaf > a,
+.zone-content aside .block li.expanded > a,
+.zone-content aside .block li.collapsed > a,
+.zone-content aside .block .item-list > ul > li > a {
+    padding: 10px;
+	padding-right: 20px;
+	position: relative;
 }
 
-.zone-content .block li.leaf > a:active,
-.zone-content .block li.expanded > a:active,
-.zone-content .block li.collapsed > a:active,
-.zone-content .block .item-list > ul > li > a:active {
+.zone-content aside .block li.leaf > a:active,
+.zone-content aside .block li.expanded > a:active,
+.zone-content aside .block li.collapsed > a:active,
+.zone-content aside .block .item-list > ul > li > a:active {
     text-decoration: none;
     background-color: rgba(52, 52, 52, 0.1);
 }
 
-.zone-content .block li.leaf > a:not(.facetapi-active):after,
-.zone-content .block li.expanded > a:after,
-.zone-content .block li.collapsed > a:after,
-.zone-content .block .item-list > ul > li > a:not(.facetapi-active):after {
+.zone-content aside .block li.leaf > a:not(.facetapi-active):after,
+.zone-content aside .block li.expanded > a:after,
+.zone-content aside .block li.collapsed > a:after,
+.zone-content aside .block .item-list > ul > li > a:not(.facetapi-active):after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -898,72 +979,73 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-top: 4px;
     filter: alpha(opacity=30);
     position: absolute;
-    right: 12px;
+    right: 10px;
+	top: calc(50% - 12px);
 }
 
-.zone-content .block li.collapsed > a:after {
+.zone-content aside .block li.collapsed > a:after {
     border-top: 6px solid #333;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: none;
 }
 
-.zone-content .block li.leaf > a:after {
+.zone-content aside .block li.leaf > a:after {
 
 }
 
-.zone-content .block .facetapi-active {
+.zone-content aside .block .facetapi-active {
     display: inline-block;
 }
 
-.zone-content .block li a,
-.zone-content .block .item-list > ul > li > a {
+.zone-content aside .block li a,
+.zone-content aside .block .item-list > ul > li > a {
     border-bottom: 1px solid #eee;
 }
 
-.zone-content .block li.expanded > .item-list > ul > li > a {
+.zone-content aside .block li.expanded > .item-list > ul > li > a {
     text-indent: 20px;
 }
 
-.zone-content .block li.leaf > a.facetapi-active {
+.zone-content aside .block li.leaf > a.facetapi-active {
     display: inline-block;
 }
 
-.zone-content .block ul.menu ul.menu > li > a {
+.zone-content aside .block ul.menu ul.menu > li > a {
     padding-left: 20px;
 }
 
-.zone-content .block ul.menu ul.menu ul.menu > li > a {
+.zone-content aside .block ul.menu ul.menu ul.menu > li > a {
     padding-left: 40px;
 }
 
-.zone-content .block ul.menu ul.menu ul.menu ul.menu > li > a {
+.zone-content aside .block ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 60px;
 }
 
-.zone-content .block ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
+.zone-content aside .block ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 80px;
 }
 
-.zone-content .block ul.menu ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
+.zone-content aside .block ul.menu ul.menu ul.menu ul.menu ul.menu ul.menu > li > a {
     padding-left: 100px;
 }
 
-.zone-content .block ul:not(.tabs):not(.biblio-export-buttons) li > a,
+.zone-content aside .block ul:not(.tabs):not(.biblio-export-buttons) li > a,
 .zone-content .block .content > p a {
     display: block;
 }
 
-.zone-content .block .content > p {
+.zone-content aside .block .content > p {
     padding: 4px;
     margin-bottom: 0;
 }
 
-.zone-content .block ul {
+.zone-content aside .block ul {
     margin-bottom: 0;
 }
 
-.zone-content .block ul li.expanded {
+.zone-content aside .block ul li.expanded {
     margin: 0;
     list-style-image: none;
     list-style-type: none;
@@ -1419,6 +1501,10 @@ html.js input.form-autocomplete {
     background: #fff;
 }
 
+.section-footer {
+	background: #930c0a;
+}
+
 /*////////////////////////////////////*/
 /* Biblio */
 .biblio-category-section,
@@ -1733,6 +1819,15 @@ html.js input.form-autocomplete {
     nav.navigation li.main-menu-dropdown-item.hide {
         display: none;
     }
+    
+    #main-menu li:before {
+		display: none !important;
+	}
+	/*Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
 }
 
 @media all and (max-width: 979px) {

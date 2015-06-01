@@ -6,13 +6,13 @@
     /**
      * @todo
      */
-    Drupal.behaviors.suitcaseFacet = {
+    Drupal.behaviors.suitcaseextFacet = {
         attach: function (context) {
-            $('body', context).once('suitcaseFacet', function() {
-                $('.zone-content section.block').addClass('js-suitcase-facet');
+            $('body', context).once('suitcaseextFacet', function() {
+                $('.zone-content section.block').addClass('js-suitcaseext-facet');
                 var touched = false;
 
-                $('.js-suitcase-facet .block-title').each(function() {
+                $('.js-suitcaseext-facet .block-title').each(function() {
                     $(this).append('<span class="caret"></span>');
                 }).bind('click touchend', function(e) {
                     if(touched) {e.preventDefault();touched=false;return;}
@@ -21,7 +21,7 @@
                 });
 
                 if($(window).width() < 980) {
-                    $('.js-suitcase-facet .content').toggle();
+                    $('.js-suitcaseext-facet .content').toggle();
                 }
             });
         }

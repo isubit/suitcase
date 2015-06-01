@@ -6,9 +6,9 @@
     /**
      * @todo
      */
-    Drupal.behaviors.suitcaseStickyMenu = {
+    Drupal.behaviors.suitcaseextStickyMenu = {
         attach: function (context) {
-            $('body', context).once('suitcaseStickyMenu', function() {
+            $('body', context).once('suitcaseextStickyMenu', function() {
                 var $menu = $('#zone-menu'),
                     admin_menu_height = ($('#admin-menu').length) ? $('#admin-menu').height() : 0,
                     menu_offset_top = (admin_menu_height > 0) ? $menu.offset().top - admin_menu_height : $menu.offset().top,
