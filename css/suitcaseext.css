@@ -560,6 +560,7 @@ h2.site-name {
 
 .site-name-slogan a {
     color: #fff;
+    font-weight: bold;
 }
 
 .site-slogan a {
@@ -609,6 +610,7 @@ h2.site-name {
 
 nav.navigation .main-menu {
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 nav.navigation .main-menu>li {
