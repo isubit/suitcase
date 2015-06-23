@@ -732,7 +732,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 }
 
 #zone-side-menu-wrapper .content>ul>li>ul>li>ul>li a {
-    padding-left: 0.7em;
+    padding-left: 1.7em;
 }
 
 #zone-side-menu-wrapper .content>ul>li>ul>li>ul>li>a {
@@ -1066,6 +1066,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 .item-list ul li.leaf {
     list-style-image: none;
     list-style-type: none;
+    padding-left: 1.7em;
 }
 
 .item-list > ul > li {
