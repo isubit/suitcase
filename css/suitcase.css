@@ -863,8 +863,8 @@ nav.navigation .secondary-menu>li a.active-trail {
 .zone-content aside .block li.leaf,
 .zone-content aside .block li.expanded,
 .zone-content aside .block li.collapsed,
-.zone-content aside .block .item-list > ul > li,
-.zone-content aside .block .item-list > ul {
+.zone-content aside .block .item-list > ul:not(.pager) > li,
+.zone-content aside .block .item-list > ul:not(.pager) {
     /*display: block !important;*/
     margin: 0;
     padding: 0;
