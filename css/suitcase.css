@@ -211,8 +211,20 @@ sup {
     vertical-align: super;
 }
 
-img {
-    vertical-align: inherit;
+ul {
+    list-style-type: disc;
+}
+
+ul ul, ol ul {
+    list-style-type: circle;
+}
+
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+    list-style-type: square;
+}
+
+tr:hover td {
+    background-color: transparent;
 }
 
 @media print {
@@ -988,6 +1000,11 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 /*////////////////////////////////////*/
 /* Fields */
+.field:not(:last-child),
+.node-biblio .content>div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 .field.field-name-body {
     overflow: hidden;
 }
@@ -999,7 +1016,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .field.field-name-field-tags,
 .field.field-name-field-category {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 
 .field.field-name-field-tags .field-item,
@@ -1033,7 +1050,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     color: #336599;
 }
 
-.field .field-label {
+.field .field-label,
+.node-biblio .content h3 {
     color: #444;
 }
 /*////////////////////////////////////*/
@@ -1503,6 +1521,10 @@ html.js input.form-autocomplete {
 .pager li.pager-next > a:hover,
 .pager li.pager-last > a:hover {
     background: rgba(255,255,255,0.5);
+}
+
+.node-biblio .content>div h3 {
+    margin-bottom: 0;
 }
 
 /*////////////////////////////////////*/
