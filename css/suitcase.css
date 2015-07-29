@@ -227,6 +227,11 @@ tr:hover td {
     background-color: transparent;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media print {
     a {
         color: blue;
