@@ -47,34 +47,34 @@
         margin-left: 1.5em;
     }
 
-    .zone-content .block li.leaf > a,
-    .zone-content .block li.expanded > a,
-    .zone-content .block li.collapsed > a,
-    .zone-content .block .item-list > ul > li > a {
+    .zone-content aside .block li.leaf > a,
+    .zone-content aside .block li.expanded > a,
+    .zone-content aside .block li.collapsed > a,
+    .zone-content aside .block .item-list > ul > li > a {
         padding: 4px 10px 4px 4px;
         transition: background-color 0.1s ease;
         min-height: 28px;
     }
 
-    .zone-content .block li.leaf > a:hover,
-    .zone-content .block li.expanded > a:hover,
-    .zone-content .block li.collapsed > a:hover,
-    .zone-content .block .item-list > ul > li > a:hover {
+    .zone-content aside .block li.leaf > a:hover,
+    .zone-content aside .block li.expanded > a:hover,
+    .zone-content aside .block li.collapsed > a:hover,
+    .zone-content aside .block .item-list > ul > li > a:hover {
         text-decoration: none;
         background-color: rgba(52, 52, 52, 0.1);
     }
 
-    .zone-content .block li.leaf > a:not(.facetapi-active):after,
-    .zone-content .block li.expanded > a:after,
-    .zone-content .block li.collapsed > a:after,
-    .zone-content .block .item-list > ul > li > a:not(.facetapi-active):after {
+    .zone-content aside .block li.leaf > a:not(.facetapi-active):after,
+    .zone-content aside .block li.expanded > a:after,
+    .zone-content aside .block li.collapsed > a:after,
+    .zone-content aside .block .item-list > ul > li > a:not(.facetapi-active):after {
         border-left-width: 4px;
         border-top-width: 6px;
         border-bottom-width: 6px;
         right: 6px;
     }
 
-    .zone-content .block li.collapsed > a:after {
+    .zone-content aside .block li.collapsed > a:after {
         border-top: 5px solid #333;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
