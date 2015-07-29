@@ -211,6 +211,10 @@ sup {
     vertical-align: super;
 }
 
+a, p, li, span, strong, em {
+    color: #333;
+}
+
 ul {
     list-style-type: disc;
 }
