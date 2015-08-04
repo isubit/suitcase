@@ -233,8 +233,74 @@ img {
 }
 
 @media print {
-    a {
-        color: blue;
+    /* Set background colors */
+    body,
+    div.page .section-header {
+        background-color: #fff;
+    }
+
+    div.page .node {
+        background-color: transparent;
+    }
+
+    /* Fonts */
+    body div.page .node {
+        font-family: Georgia, Palatino, Times, "Times New Roman", serif;
+        line-height: 24px;
+    }
+
+    /* Font colors */
+    div.page .site-slogan a,
+    div.page .site-name a,
+    div.page .title {
+        color: #000;
+        text-shadow: none;
+    }
+
+    div.page a:link,
+    body div.page .node {
+        color: #333;
+    }
+
+    /* Font sizes */
+    body div.page .node {
+        font-size: 14px;
+    }
+
+    a, p, ul, ol, li, img, span, strong, em {
+        font-size: 18px;
+    }
+
+    /* Borders */
+    div.page .section-header,
+    div.page .zone-branding-wrapper,
+    div.page .title,
+    div.page .node {
+        border: none;
+    }
+
+    /* Hide elements */
+    .zone-menu-wrapper,
+    .zone-header-wrapper,
+    .zone-preface-wrapper,
+    .zone-side-menu-wrapper,
+    #breadcrumb,
+    .pwrapper,
+    div.page .tabs,
+    .section-footer,
+    .content-type-indicator {
+        display: none;
+    }
+
+    /* Box shadows */
+    div.page .node {
+        -webkit-box-shadow: transparent;
+        box-shadow: none;
+    }
+
+    /* Padding */
+    div.page .node {
+        padding: 0;
     }
 }
 
