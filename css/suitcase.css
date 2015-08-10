@@ -211,6 +211,10 @@ sup {
     vertical-align: super;
 }
 
+a, p, li, span, strong, em {
+    color: #333;
+}
+
 ul {
     list-style-type: disc;
 }
@@ -1060,6 +1064,11 @@ nav.navigation .secondary-menu>li a.active-trail {
 .field .field-label,
 .node-biblio .content h3 {
     color: #444;
+}
+
+.page-node-add .fieldset-legend,
+.page-node-edit .fieldset-legend{
+    font-weight: bold;
 }
 /*////////////////////////////////////*/
 /* A Tag Mobile Styling */
