@@ -2,15 +2,17 @@
 <div<?php print $content_attributes; ?>>
   <?php if ($linked_logo_img || $site_name || $site_slogan): ?>
     <div class="branding-data clearfix">
-      <?php if ($linked_logo_img): ?>
+      <?php if ($suitcase_config_logo): ?>
         <div class="logo-img">
-          <?php print $linked_logo_img; ?>
+          <?php print $suitcase_config_logo; ?>
         </div>
       <?php endif; ?>
 
-
-      <div id="isu_wordmark">
-        <a accesskey="1" class="nameplate" href="http://www.iastate.edu" title="Iowa State University Homepage"><img src="<?php print base_path(); ?>sites/all/themes/suitcase/images/sprite.png" alt="Iowa State University"></a></div>
+      <?php if($show_isu_nameplate): ?>
+        <div id="isu_wordmark">
+          <a accesskey="1" class="nameplate" href="http://www.iastate.edu" title="Iowa State University Homepage"><img src="<?php print base_path(); ?>sites/all/themes/suitcase/images/sprite.png" alt="Iowa State University"></a>
+        </div>
+      <?php endif; ?>
       <?php if ($site_name || $site_slogan): ?>
         <?php $class = $site_name_hidden && $site_slogan_hidden ? ' element-invisible' : ''; ?>
         <hgroup class="site-name-slogan<?php print $class; ?>">
