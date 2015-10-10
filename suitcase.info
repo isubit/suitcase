@@ -1,4 +1,4 @@
-name = 'suitcase'
+name = 'Suitcase'
 description = ''
 core = '7.x'
 engine = 'phptemplate'
