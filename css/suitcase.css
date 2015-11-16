@@ -288,7 +288,8 @@ img {
     .pwrapper,
     div.page .tabs,
     .section-footer,
-    .content-type-indicator {
+    .content-type-indicator,
+    aside {
         display: none;
     }
 
@@ -301,6 +302,13 @@ img {
     /* Padding */
     div.page .node {
         padding: 0;
+    }
+
+    /* Field resets */
+    .field.field-type-taxonomy-term-reference .field-items>.field-item>a {
+      padding: 0;
+      display: inline;
+      border: none;
     }
 }
 
