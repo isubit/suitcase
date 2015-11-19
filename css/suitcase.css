@@ -1639,6 +1639,28 @@ html.js input.form-autocomplete {
     margin: 10px;
 }
 
+
+
+/*////////////////////////////////////*/
+/* Comments */
+.comment-new header::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.comment-new header>h3,
+.comment-new header>.new {
+  float: left;
+}
+
+.comment-new header>.new {
+  color: red;
+  margin-left: 10px;
+}
+
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
 /* GLOBAL STYLING END */
