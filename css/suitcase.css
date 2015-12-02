@@ -18,6 +18,9 @@ body {
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
+    background-color: #585858;
+    font: 14px/20px arial, sans-serif -ms-text-size-adjust : 100 %;
+    -webkit-text-size-adjust: 100%;
 }
 
 *, *:before, *:after {
@@ -389,12 +392,6 @@ tr:hover td {
 
 .isu-dark-ribbon .isu-directory-info + .isu-alpha-index .wd-ribbon-menu {
     margin-right: 3px;
-}
-
-body {
-    background-color: #CEC9BB;
-    font: 14px/20px arial, sans-serif -ms-text-size-adjust : 100 %;
-    -webkit-text-size-adjust: 100%;
 }
 
 .section-header {
