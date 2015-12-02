@@ -51,7 +51,7 @@
     .zone-content aside .block li.expanded > a,
     .zone-content aside .block li.collapsed > a,
     .zone-content aside .block .item-list > ul > li > a {
-        padding: 4px 10px 4px 4px;
+        padding: 4px 10px 4px 10px;
         transition: background-color 0.1s ease;
         min-height: 28px;
     }

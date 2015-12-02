@@ -33,7 +33,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.4;
     margin-top: 0;
     margin-bottom: 8px;
@@ -243,12 +243,13 @@ tr:hover td {
 }
 
 .node {
-    background: rgba(255,255,255,0.8);
-    border: 1px solid #ddd;
-    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    padding: 15px;
-    font-size: 14px;
+	background: #fff;
+	border: 1px solid #ddd;
+	webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 2px;
 }
 
 .node-unpublished {
@@ -406,7 +407,7 @@ body {
 }
 
 .section-content {
-    background-color: #f4f3e8;
+    background-color: #fafafa;
 }
 
 .zone-content-wrapper {
@@ -427,6 +428,24 @@ a, a:link, a:visited {
 
 a:link:hover {
     text-decoration: underline;
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+	border-radius: 2px;
 }
 
 input[type="text"] {
@@ -810,9 +829,10 @@ nav.navigation .secondary-menu>li a.active-trail {
 /* Sidebar Facets */
 
 .zone-content section.block {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
     border: solid 1px rgba(200, 200, 200, 0.9);
     margin-bottom: 1em;
+		border-radius: 2px;
 }
 
 .js-suitcase-facet .block-title:hover {
@@ -834,15 +854,17 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .zone-content aside .block .block-title,
 .zone-postscript .block h2.block-title {
-    color: rgba(255, 255, 255, 0.9);
-    background-color: #524747;
+    color: #333;
+    background-color: #f2f2f2;
     margin-bottom: 0;
     padding: 0.25em 0.5em;
-    border-bottom: 4px solid #DFBD00;
+    border-bottom: 1px solid #DFBD00;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     letter-spacing: 0;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
 }
 
 .zone-content aside .block .block-title a {
@@ -999,10 +1021,11 @@ nav.navigation .secondary-menu>li a.active-trail {
 .page-search .content article {
     margin-bottom: 1em;
     border: 1px solid #ddd;
-    background-color: rgba(255,255,255,0.8);
+    background-color: #fff;
     webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
     padding: 15px;
+		border-radius: 2px;
 }
 
 .page-search .content article footer {
@@ -1040,7 +1063,7 @@ nav.navigation .secondary-menu>li a.active-trail {
     display: inline-block;
     padding: 5px;
     border: 1px solid #e2e2e2;
-    border-radius: 4px;
+    border-radius: 2px;
     background-color: #fff;
     transition: background-color 0.1s ease;
     color: #555;
@@ -1155,8 +1178,9 @@ nav.navigation .secondary-menu>li a.active-trail {
 /* Panels */
 .panel-panel {
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #fff;
     border: 1px solid #ddd;
+		border-radius: 2px;
 }
 
 .front .panel-display .panel-panel:first-child {
@@ -1177,11 +1201,11 @@ nav.navigation .secondary-menu>li a.active-trail {
 }
 
 .panel-pane > h2.pane-title {
-    color: rgba(255, 255, 255, 0.9);
-    background-color: #333;
+    color: #333;
+    background-color: #f2f2f2;
     margin-bottom: 0;
     padding-left: 0.5em;
-    border-bottom: 4px solid #DFBD00;
+    border-bottom: 1px solid #DFBD00;
 }
 
 .panel-panel.grid-4 .pane-content .views-row,
@@ -1220,10 +1244,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .panel-panel.grid-4 .more-link > a {
     padding: 10px 16px;
-}
-
-.panel-panel.grid-4 .views-field-title {
-    font-weight: bold;
 }
 
 .front .item-list {
