@@ -18,7 +18,7 @@ body {
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
-    background-color: #585858;
+    background-color: #d8d8d8;
     font: 14px/20px arial, sans-serif -ms-text-size-adjust : 100 %;
     -webkit-text-size-adjust: 100%;
 }
@@ -1202,7 +1202,7 @@ nav.navigation .secondary-menu>li a.active-trail {
     color: #333;
     background-color: #f2f2f2;
     margin-bottom: 0;
-    padding-left: 0.5em;
+    padding: 8px 10px;
     border-bottom: 2px solid #848484;
 }
 
@@ -1295,9 +1295,7 @@ footer.section-footer {
 #block-menu-menu-footer .leaf a {
     display: block;
     padding: 0 0.65em;
-    background: rgba(52, 52, 52, 0.7);
-    color: #fff;
-    text-shadow: 0 1px 3px #333333;
+    color: #333;
     line-height: 3em;
 }
 
@@ -1453,10 +1451,6 @@ html.js input.form-autocomplete {
 
 .zone-footer a:hover {
     text-decoration: underline;
-}
-
-#block-menu-menu-footer .leaf a:hover {
-    background: rgba(52, 52, 52, 0.8);
 }
 
 .form-item input[type="submit"]:hover {
