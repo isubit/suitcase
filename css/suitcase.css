@@ -404,7 +404,7 @@ tr:hover td {
 }
 
 .section-content {
-    background-color: #fafafa;
+    background-color: #f2f2f2;
 }
 
 .zone-content-wrapper {
@@ -851,8 +851,8 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .zone-content aside .block .block-title,
 .zone-postscript .block h2.block-title {
-    color: #333;
-    background-color: #f2f2f2;
+    color: #555;
+    background-color: #fafafa;
     margin-bottom: 0;
     padding: 0.25em 0.5em;
     border-bottom: 2px solid #848484;
@@ -982,6 +982,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 .zone-content aside .block ul:not(.tabs):not(.biblio-export-buttons) li > a,
 .zone-content aside .block .content > p a {
     display: block;
+    color: #333;
 }
 
 .zone-content aside .block .content > p,
