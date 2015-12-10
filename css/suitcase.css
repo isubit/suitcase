@@ -396,12 +396,7 @@ tr:hover td {
 }
 
 .section-header {
-    background-color: #CB1A2A;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.28));
-    background-position: center bottom;
-    background-repeat: repeat-x, repeat;
-    border-bottom: 6px solid #DFBD00;
-
+    background-color: #cc0000;
 }
 
 .section-content {
@@ -485,20 +480,21 @@ input[type="submit"] {
 /* Site Name/Slogan */
 .nameplate img {
     width: auto;
-    height: 20px;
+    height: 25px;
     margin-bottom: 8px;
 }
 
 h1.site-name,
 h2.site-name {
-    font-size: 1.857em;
+    font-size: 18px;
+    margin-bottom: 0;
 }
 
 .site-name,
 .site-slogan {
-    letter-spacing: 2px;
-    text-shadow: 0 1px 3px #333333;
-    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px #333333;
+    margin-bottom: 14px;
 }
 
 .site-name {
@@ -508,10 +504,12 @@ h2.site-name {
 
 .site-name-slogan a {
     color: #fff;
+    font-weight: bold;
 }
 
 .site-slogan a {
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .zone-footer ul.menu li {
@@ -535,6 +533,10 @@ h2.site-name {
     width: 100%;
 }
 
+.zone-menu-wrapper {
+  background-color: rgba(0,0,0,0.1);
+}
+
 /*////////////////////////////////////*/
 /* Views */
 
@@ -552,7 +554,11 @@ h2.site-name {
 /*////////////////////////////////////*/
 /* Main menu mobile */
 .zone-branding-wrapper {
-    padding-top: 0.5em;
+    padding: 20px 0;
+}
+
+#isu_wordmark {
+  margin-bottom: 10px;
 }
 
 nav.navigation .main-menu {
@@ -1121,10 +1127,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 #zone-menu.sticky-top {
     position: fixed;
     top: 0;
-    background: #CB1A2A;
-    background-position: center bottom;
-    background-repeat: repeat-x, repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.28));
+    background: #cc0000;
     width: 100%;
     z-index: 3;
     -webkit-box-shadow: 0 0.25em 0.5em #333;
