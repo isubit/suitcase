@@ -278,6 +278,10 @@ tr:hover td {
     /*border-top: 1px solid #888888;*/
 }
 
+.pwrapper {
+  background-color: #b70000;
+}
+
 /*////////////////////////////////////*/
 /* Dark Ribbon */
 
@@ -492,8 +496,8 @@ h2.site-name {
 .site-name,
 .site-slogan {
     letter-spacing: 1px;
-    text-shadow: 0 0 1px #333333;
-    margin-bottom: 14px;
+    text-shadow: 0 0 1px #a30000;
+    margin-bottom: 24px;
 }
 
 .site-name {
@@ -503,7 +507,7 @@ h2.site-name {
 
 .site-name-slogan a {
     color: #fff;
-    font-weight: bold;
+    font-size: 24px;
 }
 
 .site-slogan a {
@@ -532,10 +536,6 @@ h2.site-name {
     width: 100%;
 }
 
-.zone-menu-wrapper {
-  background-color: rgba(0,0,0,0.1);
-}
-
 /*////////////////////////////////////*/
 /* Views */
 
@@ -553,11 +553,11 @@ h2.site-name {
 /*////////////////////////////////////*/
 /* Main menu mobile */
 .zone-branding-wrapper {
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
 }
 
 #isu_wordmark {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 nav.navigation .main-menu {
@@ -574,7 +574,7 @@ nav.navigation .main-menu>li {
 nav.navigation .main-menu>li a,
 nav.navigation .secondary-menu>li a {
     color: #fff;
-    text-shadow: 0 1px 3px #333333;
+    text-shadow: 0 0 1px #a30000;
     display: inline-block;
 }
 
@@ -612,10 +612,9 @@ nav.navigation .secondary-menu>li a {
 
 nav.navigation .main-menu>li a:hover,
 nav.navigation .main-menu>li a.active-trail {
-    /*box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.3);*/
-    background-color: rgba(0, 0, 0, 0.1);
-    /*border-bottom: 3px solid #DFBD00;*/
     cursor: pointer;
+    text-decoration: none;
+    color: #ddd;
 }
 
 nav.navigation .secondary-menu>li a:hover,
@@ -1411,29 +1410,13 @@ html.js input.form-autocomplete {
 /*///////////////////////////////////////////////////////////*/
 /*/////////////////// Hover Events //////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
-.isu-dark-ribbon .wd-ribbon-menu li a:hover {
-    text-decoration: underline;
-}
-
-.isu-dark-ribbon .isu-alpha-index li a:hover {
-    background: #777;
-    text-decoration: none;
-}
-
-.isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a:hover {
-    background: #777;
-    text-decoration: none;
-}
-
-.site-name a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-
+.isu-dark-ribbon .wd-ribbon-menu li a:hover,
+.isu-dark-ribbon .isu-alpha-index li a:hover,
+.isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a:hover,
+.site-name a:hover,
 .site-slogan a:hover {
-    color: #FFFFFF;
-    font-weight: normal;
-    text-decoration: underline;
+    color: #ddd;
+    text-decoration: none;
 }
 
 .item-list a:hover {
