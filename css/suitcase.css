@@ -1149,10 +1149,19 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 /*////////////////////////////////////*/
 /* Panels */
-.panel-panel {
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid #ddd;
+.panel-pane {
+  margin-bottom: 20px;
+}
+
+.panel-pane:not(.panel-pane-nostyle) {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.panel-pane-overflow .pane-content {
+  height: 350px;
+  overflow-y: auto;
 }
 
 .front .panel-display .panel-panel:first-child {
@@ -1228,11 +1237,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .front .view-about-front-page .field-content li {
     margin-left: 20px;
-}
-
-.front .grid-4 .pane-content {
-  height: 350px;
-  overflow-y: auto;
 }
 
 .panel-panel iframe {
