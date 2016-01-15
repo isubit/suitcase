@@ -1,7 +1,7 @@
 <header<?php print $attributes; ?>>
   <div id="section-header-container">
     <?php if ($show_blackbar): ?>
-      <div class="pwrapper">
+      <div class="pwrapper element-invisible">
         <div class="pwrapper-wrapper">
           <div class="hwrapper" id="header">
             <div class="isu-dark-ribbon" id="top-strip">
@@ -27,7 +27,6 @@
                       <ul class="wd-ribbon-menu">
                         <li class="first"><a href="http://info.iastate.edu/">Directory</a></li>
                         <li><a href="http://www.fpm.iastate.edu/maps/">Maps</a></li>
-                        <li class="last"><a href="http://www.iastate.edu/contact/">Contact Us</a></li>
                       </ul>
                     </li>
                   </ul>
