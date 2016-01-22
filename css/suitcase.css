@@ -236,7 +236,7 @@ tr:hover td {
 
 .page-node .title {
   color: #cc0000;
-  font-weight: bold;
+  font-size: 28px;
 }
 
 .node-unpublished {
@@ -399,7 +399,7 @@ tr:hover td {
 }
 
 .zone-content-wrapper {
-    /*padding-top: 1em;*/
+    padding-top: 15px;
     padding-bottom: 1em;
 }
 
@@ -835,6 +835,26 @@ nav.navigation .secondary-menu>li a.active-trail {
     z-index: -1;
 }
 
+.page-search .search-form .form-wrapper {
+  position: relative;
+}
+
+.page-search .search-form .form-item-keys {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.page-search .search-form .form-item-keys .form-text {
+  width: 100%;
+}
+
+.page-search .search-form .form-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /*////////////////////////////////////*/
 /* Sidebar Facets */
 
@@ -1034,10 +1054,9 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .page-search .content article {
     margin-bottom: 1em;
-    border: 1px solid #ddd;
     background-color: #fff;
-    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    webkit-box-shadow: 0 0 3px #ddd;
+    box-shadow: 0 0 3px #ddd;
     padding: 15px;
 		border-radius: 2px;
 }
