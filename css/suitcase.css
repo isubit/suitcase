@@ -1323,6 +1323,23 @@ nav.navigation .secondary-menu>li a.active-trail {
     border: 0;
 }
 
+.front .panel-pane > h2.pane-title {
+    display: block;
+}
+
+.front .panel-pane .views-field-title a,
+.front .panel-pane .pane-content .item-list li a {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.front .panel-pane .pane-content .item-list li {
+    margin-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
 .panel-panel.grid-4 .pane-content > p {
     padding: 0 10px;
 }
