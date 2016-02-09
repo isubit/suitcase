@@ -269,15 +269,19 @@ tr:hover td {
 }
 
 .pwrapper {
-  background-color: #b70000;
+  background-color: #333;
 }
 
 /*////////////////////////////////////*/
 /* Dark Ribbon */
 
 .isu-dark-ribbon {
-    /*background-color: #333;*/
-    color: #fff;
+    opacity: 0.45;
+    transition: opacity 0.1s ease;
+}
+
+.isu-dark-ribbon:hover {
+    opacity: 1;
 }
 
 .isu-dark-ribbon .wd-ribbon-menu {
@@ -306,12 +310,17 @@ tr:hover td {
 }
 
 .isu-dark-ribbon .wd-ribbon-menu li a {
-    color: #fff;
+    color: #aaa;
     display: block;
     font-size: 12px;
     line-height: 1.5;
     padding: 0 6px;
     text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+.isu-dark-ribbon .wd-ribbon-menu li a:hover {
+    color: #fff;
 }
 
 .isu-dark-ribbon .isu-directory-info.wd-ribbon-menu li a,
