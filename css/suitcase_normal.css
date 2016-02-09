@@ -84,11 +84,6 @@
     .view-display-id-people_grid .views-row {
         width: 47.55%;
     }
-
-    nav.navigation .main-menu>li a {
-        line-height: 40px;
-        font-size: 1.2em;
-    }
 }
 
 @media (min-device-width: 980px) and (min-width: 980px), (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
