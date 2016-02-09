@@ -547,7 +547,12 @@ h2.site-name {
 /* Views */
 
 .zone-content .views-row {
-    margin-bottom: 0.5em;
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
+.zone-content .views-row:not(:last-child) {
+    border-bottom: 1px solid #eee;
 }
 
 /*////////////////////////////////////*/
@@ -1725,14 +1730,11 @@ html.js input.form-autocomplete {
 /* Views */
 /* - People */
 .view-display-id-people_grid .view-content > h3 {
-    color: #fff;
-    background: #524747;
-    border-bottom: 4px solid #dfbd00;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    display: block;
-    clear: both;
+    border: none;
+}
+
+.view-display-id-people_grid .view-content > h3:not(:first-child) {
+    margin-top: 32px;
 }
 
 /*////////////////////////////////////*/

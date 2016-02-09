@@ -29,7 +29,7 @@
                         <li class="first"><a href="http://www.iastate.edu/index/A">ISU Index</a></li>
                         <li class="first"><a href="http://info.iastate.edu/">ISU Directory</a></li>
                         <li><a href="http://www.fpm.iastate.edu/maps/">Maps</a></li>
-                        <li><a href="https://basket.sample.iastate.edu/safety/">Safety</a></li>
+                        <li><a href="http://web.iastate.edu/safety/">Safety</a></li>
                       </ul>
                     </li>
                   </ul>
