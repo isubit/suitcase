@@ -59,6 +59,10 @@ section h2.node-title {
     color: #333;
 }
 
+.page-search .node-title {
+    font-weight: 500;
+}
+
 section section h1,
 h3 {
     font-size: 1.25em;
@@ -80,8 +84,7 @@ h6 {
     font-size: 0.857em;
 }
 
-p, ul, ol, dl, table, blockquote, pre, .wd-Alert, .wd-Alert--info, .wd-Alert--warning, .wd-Alert--error, .wd-Alert--success, .notify-msg {
-    margin-top: 16px;
+p, dl, table, blockquote, pre, .wd-Alert, .wd-Alert--info, .wd-Alert--warning, .wd-Alert--error, .wd-Alert--success, .notify-msg {
     margin-bottom: 16px;
 }
 
@@ -400,7 +403,8 @@ tr:hover td {
 
 footer {
     background-color: #333;
-    padding-top: 12px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 footer a, footer a:link, footer a:visited, footer p, footer span, footer li, footer strong, footer em {
@@ -509,8 +513,8 @@ h2.site-name {
 }
 
 .zone-footer ul.menu li {
-    display: inline-block;
     list-style-type: none;
+    list-style-image: none;
 }
 
 .zone-footer ul.menu li a {
@@ -1071,12 +1075,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 }
 
 .page-search .content article {
-    margin-bottom: 1em;
-    background-color: #fff;
-    webkit-box-shadow: 0 0 3px #ddd;
-    box-shadow: 0 0 3px #ddd;
-    padding: 15px;
-		border-radius: 2px;
+    margin-bottom: 32px;
 }
 
 .page-search .content article footer {
@@ -1150,7 +1149,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 .item-list ul li.leaf {
     list-style-image: none;
     list-style-type: none;
-    padding-left: 1.7em;
 }
 
 /*////////////////////////////////////*/
@@ -1389,34 +1387,13 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 /*////////////////////////////////////*/
 /* Footer */
-.zone-footer ul.menu li:first-child {
+.zone-footer ul.menu li {
     margin: 0;
-}
-
-.zone-footer .region:first-child {
-  padding-top: 16px;
+    margin-bottom: 8px;
 }
 
 .section-footer .block {
     float: left;
-}
-
-#block-menu-menu-footer {
-    margin-bottom: 1em;
-    float: right;
-}
-
-#block-menu-menu-footer .leaf {
-    padding: 0;
-    margin: 0;
-    opacity: 0.9;
-    float: left;
-}
-
-#block-menu-menu-footer .leaf a {
-    display: block;
-    padding: 0 0.65em;
-    line-height: 3em;
 }
 
 .node-type-people h1.title {
