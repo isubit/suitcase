@@ -46,6 +46,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 h2 {
     font-size: 1.429em;
+    font-weight: 500;
 }
 
 section h2.node-title {
@@ -407,7 +408,7 @@ tr:hover td {
 .zone-content-wrapper {
     margin-top: 32px;
     padding-top: 16px;
-    padding-bottom: 1em;
+    padding-bottom: 48px;
 }
 
 footer {

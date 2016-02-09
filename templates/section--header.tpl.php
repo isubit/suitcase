@@ -14,7 +14,7 @@
                     <li>
                       <a class="wd-ribbon-menu-header" href="#">Sign-ons</a>
                       <ul class="wd-ribbon-menu">
-                        <li class="first"><a href="http://iastate.edu/"><img src="sites/all/themes/suitcase/images/sprite.png" style="height:11px;vertical-align:baseline"></a></li>
+                        <li class="first"><a href="http://iastate.edu/"><img src="<?php print base_path(); ?>sites/all/themes/suitcase/images/sprite.png" style="height:11px;vertical-align:baseline"></a></li>
                         <li><a href="http://cymail.iastate.edu/">CyMail</a></li>
                         <li><a href="http://outlook.iastate.edu/">Outlook</a></li>
                         <li><a href="http://bb.its.iastate.edu/">Blackboard</a></li>
