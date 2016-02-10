@@ -275,16 +275,6 @@ tr:hover td {
 
 /*////////////////////////////////////*/
 /* Dark Ribbon */
-
-.isu-dark-ribbon {
-    opacity: 0.45;
-    transition: opacity 0.1s ease;
-}
-
-.isu-dark-ribbon:hover {
-    opacity: 1;
-}
-
 .isu-dark-ribbon .wd-ribbon-menu {
     list-style: none;
     margin: 0;
@@ -311,17 +301,13 @@ tr:hover td {
 }
 
 .isu-dark-ribbon .wd-ribbon-menu li a {
-    color: #aaa;
+    color: #ddd;
     display: block;
     font-size: 12px;
     line-height: 1.5;
     padding: 0 6px;
     text-decoration: none;
     transition: color 0.1s ease;
-}
-
-.isu-dark-ribbon .wd-ribbon-menu li a:hover {
-    color: #fff;
 }
 
 .isu-dark-ribbon .isu-directory-info.wd-ribbon-menu li a,
@@ -1538,7 +1524,6 @@ html.js input.form-autocomplete {
 .isu-dark-ribbon .isu-alpha-index li a:hover,
 .isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a:hover,
 .site-slogan a:hover {
-    color: #ddd;
     text-decoration: none;
 }
 
