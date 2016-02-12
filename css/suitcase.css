@@ -594,7 +594,7 @@ ul li.expanded {
 }
 
 .section-content .container-12 .grid-2.region-mega-menu {
-    width: 73px !important;
+    width: auto !important;
 }
 
 .region-mega-menu .content>.menu>li>.menu li {
