@@ -572,10 +572,6 @@ nav.navigation .secondary-menu>li a {
     display: inline-block;
 }
 
-.region-mega-menu .content>.menu {
-    float: right;
-}
-
 nav.navigation .main-menu>li a,
 .region-mega-menu .content>.menu>li>a {
     line-height: 1;
@@ -597,13 +593,16 @@ ul li.expanded {
     list-style-type: none;
 }
 
+.section-content .container-12 .grid-2.region-mega-menu {
+    width: 73px !important;
+}
+
 .region-mega-menu .content>.menu>li>.menu li {
     margin-bottom: 16px;
 }
 
 .region-mega-menu .content>.menu>li>.menu {
     position: absolute;
-    right: 0;
     width: 0;
     height: 0;
     overflow: hidden;
@@ -614,13 +613,9 @@ ul li.expanded {
     z-index: 3;
     box-shadow: 0 0 3px #ddd;
     min-width: 0;
-    /*display: none;*/
-    /*transition: height 1s ease,*/
-        /*min-width 0.1s ease;*/
 }
 
 .region-mega-menu .content>.menu>li>.menu.show {
-    /*display: block;*/
     overflow: auto;
     height: auto;
     min-width: 300px;
@@ -628,7 +623,6 @@ ul li.expanded {
 }
 
 .region-mega-menu .content>.menu>li>.menu>* {
-    /*display: none;*/
     transition: display 0.5s ease;
 }
 
@@ -641,8 +635,8 @@ ul li.expanded {
 }
 
 .region-mega-menu .content>.menu>li>a {
-    margin-right: 0;
-    padding-right: 0;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 nav.navigation .main-menu>li:first-child a {

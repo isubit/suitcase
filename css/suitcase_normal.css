@@ -87,11 +87,11 @@
 }
 
 @media (min-device-width: 980px) and (min-width: 980px), (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
-    .container-12 .grid-2 {
+    .section-content .container-12 .grid-2 {
         width: 25% !important;
     }
 
-    .container-12 .grid-10 {
+    .section-content .container-12 .grid-10 {
         width: 71% !important;
     }
 }
