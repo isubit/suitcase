@@ -572,6 +572,10 @@ nav.navigation .secondary-menu>li a {
     display: inline-block;
 }
 
+.region-mega-menu .content>.menu {
+    float: right;
+}
+
 nav.navigation .main-menu>li a,
 .region-mega-menu .content>.menu>li>a {
     line-height: 1;
@@ -636,8 +640,12 @@ ul li.expanded {
     margin-top: 16px;
 }
 
-nav.navigation .main-menu>li:first-child a,
 .region-mega-menu .content>.menu>li>a {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+nav.navigation .main-menu>li:first-child a {
     margin-left: 0;
     padding-left: 0;
 }
