@@ -496,8 +496,8 @@ h2.site-name {
 }
 
 .site-slogan {
-    text-shadow: 0 0 1px #a30000;
-    margin-bottom: 32px;
+/*     text-shadow: 0 0 1px #a30000; */
+    margin-bottom: 16px;
     padding-top: 8px;
     
 }
@@ -512,14 +512,14 @@ h2.site-name {
 
 .site-name-slogan a {
     color: #fff;
-    font-size: 24px;
+    font-size: 32px;
     display: block;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .site-slogan a {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .zone-footer ul.menu li {
