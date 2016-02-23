@@ -43,7 +43,13 @@ function suitcase_preprocess_region(&$vars) {
 
     $vars['dept_url'] = variable_get('dept_url', $default = NULL);
     $vars['show_isu_nameplate'] = variable_get('suitcase_config_isu_nameplate_display', 1);
-    $vars['site_wordmark'] = file_create_url(variable_get('site_wordmark', $default = file_create_url('sites/all/themes/suitcase/images/sprite.png')));
+
+    // Get the uploaded wordmark if is exists
+    $vars['site_wordmark'] = file_create_url(variable_get('site_wordmark', $default = NULL));
+    if (!$vars['site_wordmark']) {
+      // If a wordmark hasn't been uploaded, create a var for the default wordmark
+      $vars['default_wordmark'] = file_create_url('sites/all/themes/suitcase/images/sprite.png');
+    }
   } else if($vars['region'] == 'menu') {
     $vars['site_name'] = variable_get('site_name');
     $vars['linked_site_name'] = l($vars['site_name'], '<front>', array('attributes' => array('title' => t('Home')), 'html' => TRUE));
