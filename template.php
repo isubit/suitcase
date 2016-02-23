@@ -45,10 +45,12 @@ function suitcase_preprocess_region(&$vars) {
     $vars['show_isu_nameplate'] = variable_get('suitcase_config_isu_nameplate_display', 1);
 
     // Get the uploaded wordmark if is exists
-    $vars['site_wordmark'] = file_create_url(variable_get('site_wordmark', $default = NULL));
+    $vars['site_wordmark'] = variable_get('site_wordmark', $default = NULL);
     if (!$vars['site_wordmark']) {
       // If a wordmark hasn't been uploaded, create a var for the default wordmark
       $vars['default_wordmark'] = file_create_url('sites/all/themes/suitcase/images/sprite.png');
+    } else {
+      $vars['site_wordmark'] = file_create_url($vars['site_wordmark']);
     }
   } else if($vars['region'] == 'menu') {
     $vars['site_name'] = variable_get('site_name');
