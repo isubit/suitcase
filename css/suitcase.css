@@ -49,6 +49,14 @@ h2 {
     font-weight: 500;
 }
 
+h2.block-title {
+	font-size: 25px;
+	font-weight: 300;
+	margin: 0 0 16px 0;
+	padding: 0 0 13px 0;
+	border-bottom: solid 1px #ccc;
+}
+
 section h2.node-title {
     color: inherit;
     font-size: 20px;
@@ -223,7 +231,7 @@ tr:hover td {
 
 .node ol,
 .node ul {
-  padding-left: 1.7em;
+  padding-left: 3em;
 }
 
 .title {
@@ -389,12 +397,13 @@ tr:hover td {
 
 .section-content {
     background-color: #fff;
+    padding-bottom: 32px;
 }
 
 .zone-content-wrapper {
     margin-top: 32px;
     padding-top: 16px;
-    padding-bottom: 48px;
+    padding-bottom: 32px;
 }
 
 footer {
@@ -410,11 +419,14 @@ footer a, footer a:link, footer a:visited, footer p, footer span, footer li, foo
 
 a, a:link, a:visited {
     color: #cc0000;
-    text-decoration: none;
+    text-decoration:none;
 }
 
-a:link:hover {
-    text-decoration: underline;
+a:link:hover, a:visited:hover {
+	text-decoration: underline;
+    color: #cc0000;
+/*     border-bottom: none; */
+	border-bottom-color: #cc0000;
 }
 
 textarea,
@@ -485,7 +497,9 @@ h2.site-name {
 
 .site-slogan {
     text-shadow: 0 0 1px #a30000;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    padding-top: 8px;
+    
 }
 
 .site-name {
@@ -498,9 +512,9 @@ h2.site-name {
 
 .site-name-slogan a {
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
     display: block;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .site-slogan a {
@@ -1167,20 +1181,22 @@ nav.navigation .secondary-menu>li a.active-trail {
 .field.field-name-field-tags .field-item a,
 .field.field-name-field-category .field-item a {
     display: inline-block;
-    padding: 5px;
+    padding: 2px 6px;
     border: 1px solid #e2e2e2;
     border-radius: 2px;
     background-color: #fff;
     transition: background-color 0.1s ease;
-    color: #555;
+    color: #cc0000;
     margin-bottom: 5px;
 }
 
 .field.field-name-field-tags .field-item a:hover,
 .field.field-name-field-category .field-item a:hover  {
-    background-color: rgba(206, 201, 187, 0.1);
+    /*background-color: rgba(206, 201, 187, 0.1);*/
+    background-color: #f5f5f5;
     text-decoration: none;
 }
+
 
 /*.views-field-title a {
     font-weight: bold;
@@ -1194,6 +1210,8 @@ nav.navigation .secondary-menu>li a.active-trail {
 .field .field-label,
 .node-biblio .content h3 {
     color: #444;
+    padding-right: 5px;
+    margin-top: 2px;
 }
 
 .page-node-add .fieldset-legend,
@@ -1285,13 +1303,19 @@ nav.navigation .secondary-menu>li a.active-trail {
 .panel-pane > h2.pane-title,
 .region-sidebar-first .block-title,
 .region-sidebar-second .block-title {
-  color: #cc0000;
+  /*color: #cc0000;*/
   /* background-color: #fafafa; */
-  margin-bottom: 10px;
-  padding: 0 5px 10px;
+  /*margin-bottom: 10px;
+  padding: 0 5px 10px;*/
   /* margin: 0 10px; */
-  border-bottom: 2px solid #f1be48;
-  display: none;
+  /*border-bottom: 2px solid #f1be48;*/
+  
+	font-size: 25px;
+	font-weight: 300;
+	margin: 0 0 16px 0;
+	padding: 0 0 13px 0;
+	border-bottom: solid 1px #ccc;
+}
 }
 
 .panel-pane>.pane-content {
@@ -1433,11 +1457,26 @@ nav.navigation .secondary-menu>li a.active-trail {
 }
 
 .panel-panel.grid-4 .more-link {
-    text-align: left;
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: background-color 0.1s ease;
+    color: #247bbd;
+    margin-bottom: 5px;
+    text-align:right;
 }
 
 .panel-panel.grid-4 .more-link > a {
-    padding: 10px 16px;
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: background-color 0.1s ease;
+    color: #247bbd;
+    margin-bottom: 5px;
 }
 
 .front .item-list {
@@ -1603,7 +1642,7 @@ html.js input.form-autocomplete {
 /*}*/
 
 .field-item a:hover {
-    text-decoration: underline;
+/*    text-decoration: underline; */
 }
 
 .zone-footer a:hover {
@@ -2000,4 +2039,39 @@ html.js input.form-autocomplete {
         margin-top: 0.5em;
         height: 1em;
     }
+}
+
+/*Ann things*/
+
+.zone-postscript .item-list ul li {
+	margin: 0 0 4px 0;
+}
+
+.region-postscript-full, 
+.region-postscript-first, 
+.region-postscript-second, 
+.region-postscript-third,
+.region-postscript-fourth  {
+	margin-bottom: 16px;
+}
+
+.views-row-odd,
+.views-row-even {
+	padding-bottom: 4px;
+}
+
+.more-link {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: background-color 0.1s ease;
+    color: #247bbd;
+    margin-bottom: 5px;
+    float: right;
+}
+
+.region-content {
+	padding-right: 32px;
 }
