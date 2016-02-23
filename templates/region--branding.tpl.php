@@ -10,7 +10,7 @@
 
       <?php if($show_isu_nameplate): ?>
         <div id="isu_wordmark">
-          <a accesskey="1" class="nameplate" href="http://www.iastate.edu" title="Iowa State University Homepage"><img src="<?php print base_path(); ?>sites/all/themes/suitcase/images/sprite.png" alt="Iowa State University"></a>
+          <a accesskey="1" class="nameplate" href="http://www.iastate.edu" title="Iowa State University Homepage"><img src="<?php print $site_wordmark; ?>" alt="Iowa State University"></a>
         </div>
       <?php endif; ?>
       <?php if ($site_name || $site_slogan): ?>
