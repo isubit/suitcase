@@ -203,7 +203,7 @@ sup {
     vertical-align: super;
 }
 
-a, p, li, span, strong, em {
+a, p, li, span, em {
     color: #333;
 }
 
@@ -308,6 +308,10 @@ tr:hover td {
     float: left;
 }
 
+.isu-dark-ribbon .wd-ribbon-menu li:not(:last-child) {
+    border-right: 1px solid #444;
+}
+
 .isu-dark-ribbon .wd-ribbon-menu li a {
     color: #aaa;
     display: block;
@@ -315,7 +319,11 @@ tr:hover td {
     line-height: 1.5;
     padding: 0 6px;
     text-decoration: none;
-    transition: color 0.1s ease;
+}
+
+.isu-dark-ribbon .wd-ribbon-menu li a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .isu-dark-ribbon .isu-directory-info.wd-ribbon-menu li a,
@@ -1615,13 +1623,6 @@ html.js input.form-autocomplete {
 /*///////////////////////////////////////////////////////////*/
 /*/////////////////// Hover Events //////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
-.isu-dark-ribbon .wd-ribbon-menu li a:hover,
-.isu-dark-ribbon .isu-alpha-index li a:hover,
-.isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a:hover,
-.site-slogan a:hover {
-    text-decoration: none;
-}
-
 .site-name a:hover {
   color: #f3f3f3;
   text-decoration: none;

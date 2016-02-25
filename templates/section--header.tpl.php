@@ -14,7 +14,7 @@
                     <li>
                       <a class="wd-ribbon-menu-header" href="#">Sign-ons</a>
                       <ul class="wd-ribbon-menu">
-                        <li class="first"><a href="http://iastate.edu/">ISU Homepage</a></li>
+                        <li class="first"><a href="https://www.it.iastate.edu/signons/"><strong>ISU SignOns</strong></a></li>
                         <li><a href="http://cymail.iastate.edu/">CyMail</a></li>
                         <li><a href="http://outlook.iastate.edu/">Outlook</a></li>
                         <li><a href="http://bb.its.iastate.edu/">Blackboard</a></li>
@@ -26,6 +26,7 @@
                     <li>
                       <a class="wd-ribbon-menu-header" href="http://www.iastate.edu/contact">Directory</a>
                       <ul class="wd-ribbon-menu">
+                        <li class="first"><a href="https://www.iastate.edu"><strong>iastate.edu</strong></a></li>
                         <li class="first"><a href="http://www.iastate.edu/index/A">ISU Index</a></li>
                         <li class="first"><a href="http://info.iastate.edu/">ISU Directory</a></li>
                         <li><a href="http://www.fpm.iastate.edu/maps/">Maps</a></li>
