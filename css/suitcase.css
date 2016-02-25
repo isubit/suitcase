@@ -2081,3 +2081,16 @@ html.js input.form-autocomplete {
 .pull-right {
     float: right;
 }
+
+.popover {
+    display: none;
+    background-color: white;
+    padding: 16px;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    box-shadow: 0 0 3px #ddd;
+    border-radius: 2px;
+    width: 250px;
+    right: 0;
+}

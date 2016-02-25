@@ -67,6 +67,9 @@ function suitcase_preprocess_region(&$vars) {
     );
     $search_form_box = drupal_render($search_form);
     $vars['search_form'] = $search_form_box;
+
+    // Load the categories vocabulary
+    $vars['categories'] = taxonomy_get_tree(1);
   }
 }
 
