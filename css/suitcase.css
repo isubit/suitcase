@@ -528,6 +528,10 @@ input[type="submit"] {
     padding-top: 0;
 }
 
+.region-search {
+    padding-top: 16px;
+}
+
 .margin-left-10 {
     margin-left: 10px;
 }
