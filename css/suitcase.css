@@ -138,7 +138,7 @@ address {
 }
 
 blockquote {
-    border: 3px solid #DFBD00;
+    border: 3px solid #F1BE48;
     border-width: 0 0 0 3px;
     color: #555;
     margin-left: 0;
@@ -449,26 +449,18 @@ input[type="week"] {
 
 input[type="text"] {
     height: 3em;
-    font-size: 1em;
-    padding: 0;
 }
 
 input[type=text], textarea {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
     outline: none;
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
     border: 1px solid #DDDDDD;
 }
 
 input[type=text]:focus, textarea:focus {
-    box-shadow: 0 0 5px #DFBD00;
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
-    border: 1px solid #DFBD00;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #F1BE48;
 }
 
 input[type="password"] {
@@ -479,7 +471,66 @@ input[type="password"] {
 
 input[type="submit"] {
     height: 3.25em;
-    border-radius: 0;
+    border-radius: 2px;
+}
+
+.form-submit.transparent {
+    background: transparent;
+    border: 0;
+}
+
+.form-text.transparent {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    width: 100px;
+    -webkit-transition: width 0.1s ease;
+    -moz-transition: width 0.1s ease;
+    -ms-transition: width 0.1s ease;
+    -o-transition: width 0.1s ease;
+    transition: width 0.1s ease;
+}
+
+.form-text.transparent:focus {
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 200px;
+}
+
+.form-text.transparent::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+    opacity: 0;
+}
+
+.form-text.transparent:focus::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    opacity: 0.8;
+}
+
+.form-text.transparent:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  1;
+}
+.form-text.transparent::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  1;
+}
+.form-text.transparent:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #fff;
+}
+.form-text.transparent:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+    color:    #fff;
+    opacity: 1;
+}
+
+.region-search .form-text.transparent {
+    height: 2em;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
 }
 
 /*////////////////////////////////////*/
@@ -721,10 +772,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .block-menu-secondary-menu .menu li a {
     color: #fff;
-}
-
-.block-menu-secondary-menu .menu li:last-child a {
-    font-size: 26px;
+    text-decoration: none;
 }
 
 /*////////////////////////////////////*/
@@ -895,67 +943,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 #side-menu-close-button:hover {
     cursor: pointer;
     opacity: 1;
-}
-
-/*////////////////////////////////////*/
-/* Search Form */
-#search-block-form {
-  float: right;
-}
-
-.page-search input#edit-keys,
-.page form#search-block-form .form-item-search-block-form input.form-text {
-    padding-left: 2em;
-    color: rgba(50, 50, 50, 0.9);
-    margin: 0;
-}
-
-.page-search input#edit-keys:focus,
-.page form#search-block-form .form-item-search-block-form input.form-text {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-.page-search .search-form input#edit-submit,
-.page form#search-block-form .form-actions input.form-submit {
-    margin-left: -7px;
-    border: 1px solid #dddddd;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    background: #fff;
-    height: 42px;
-    margin-right: 0;
-}
-
-.page-search #page-title,
-.pane-search-form .pane-title {
-    font-size: .9em;
-    float: left;
-    margin: 0.5em 3px 0 0;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-}
-
-.page-search .search-form .form-wrapper {
-  position: relative;
-}
-
-.page-search .search-form .form-item-keys {
-  width: 100%;
-  display: block;
-  margin: 0;
-}
-
-.page-search .search-form .form-item-keys .form-text {
-  width: 100%;
-}
-
-.page-search .search-form .form-submit {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 /*////////////////////////////////////*/
@@ -1643,7 +1630,7 @@ html.js input.form-autocomplete {
 
 .page-search .search-form input#edit-submit:hover,
 .page form#search-block-form .form-actions input.form-submit:hover {
-    border: 1px solid #DFBD00;
+    border: 1px solid #F1BE48;
 }
 
 /*.block-apachesolr-search:hover {*/
@@ -2085,4 +2072,8 @@ html.js input.form-autocomplete {
 
 .region-content {
 	padding-right: 32px;
+}
+
+.pull-right {
+    float: right;
 }
