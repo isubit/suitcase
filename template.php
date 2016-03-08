@@ -63,7 +63,7 @@ function suitcase_preprocess_region(&$vars) {
    $search_form['basic']['keys']['#attributes']['class'][] = 'transparent';
    $search_form['basic']['submit'] = array(
      '#type' => 'item',
-     '#markup' => '<button type="submit" id="edit-submit" name="op" class="form-submit transparent"><img src="' . base_path() . drupal_get_path('theme', 'suitcase') . '/images/search.png" class="img-responsive" alt="Search" height="24px"></button>',
+     '#markup' => '<button type="submit" id="edit-submit" name="op" class="form-submit transparent"><img src="' . base_path() . drupal_get_path('theme', 'suitcase') . '/images/search_gray.png" class="img-responsive" alt="Search" height="24px"></button>',
    );
     $search_form_box = drupal_render($search_form);
     $vars['search_form'] = $search_form_box;

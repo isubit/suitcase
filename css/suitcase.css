@@ -490,7 +490,7 @@ input[type="submit"] {
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
-    color: #fff;
+    color: #333;
     width: calc(100% - 50px);
     -webkit-transition: width 0.1s ease;
     -moz-transition: width 0.1s ease;
@@ -501,29 +501,6 @@ input[type="submit"] {
 
 .form-text.transparent:focus {
     border: none;
-    border-bottom: 1px solid #fff;
-}
-
-.form-text.transparent::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #fff;
-}
-.form-text.transparent:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #fff;
-}
-.form-text.transparent::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #fff;
-}
-.form-text.transparent:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    #fff;
-}
-.form-text.transparent:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
-    color:    #fff;
-}
-
-.region-search .form-text.transparent {
-    height: 2em;
-    padding-left: 0;
-    padding-top: 0;
 }
 
 .margin-left-10 {
@@ -535,20 +512,25 @@ input[type="submit"] {
 }
 
 .region-search-inner .search-form-container {
-    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-    padding: 8px 0 8px 12px;
     border-radius: 2px;
     width: 100%;
     max-width: 400px;
-    margin-top: 16px;
+    margin-top: 24px;
+    background-color: #fff;
 }
 
 .region-search .search-form {
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .region-search .search-form .form-wrapper {
     position: relative;
+}
+
+.region-search .search-form .form-text {
+    font-size: 16px;
+    padding: 8px 10px;
+    height: 100%;
 }
 
 /*////////////////////////////////////*/
@@ -1506,6 +1488,10 @@ nav.navigation .secondary-menu>li a.active-trail {
     padding: 0 10px !important;
 }
 
+#front-panel {
+    margin-top: -48px;
+}
+
 /*////////////////////////////////////*/
 /* Footer */
 .zone-footer ul.menu li {
@@ -2084,7 +2070,7 @@ html.js input.form-autocomplete {
     padding: 16px;
     position: absolute;
     z-index: 10;
-    top: 100%;
+    top: calc(100% + 16px);
     box-shadow: 0 0 3px #ddd;
     border-radius: 2px;
     right: 0;
