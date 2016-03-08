@@ -708,6 +708,19 @@ ul li.expanded {
     padding-left: 0;
 }
 
+.region-mega-menu .menu>.expanded:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: " ";
+}
+
 nav.navigation .main-menu>li:first-child a {
     margin-left: 0;
     padding-left: 0;
