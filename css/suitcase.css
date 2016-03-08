@@ -484,6 +484,7 @@ input[type="submit"] {
 .form-submit.transparent {
     background: transparent;
     border: 0;
+    box-shadow: none;
 }
 
 .form-text.transparent {
@@ -531,6 +532,10 @@ input[type="submit"] {
     font-size: 16px;
     padding: 8px 10px;
     height: 100%;
+}
+
+.region-search .search-form .form-text:not(.throbbing) {
+    background-image: none;
 }
 
 /*////////////////////////////////////*/
@@ -708,7 +713,7 @@ ul li.expanded {
     padding-left: 0;
 }
 
-.region-mega-menu .menu>.expanded:after {
+.region-mega-menu .content>.menu>.expanded:after {
     display: inline-block;
     width: 0;
     height: 0;
