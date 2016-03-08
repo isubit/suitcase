@@ -1,6 +1,6 @@
 <div<?php print $attributes; ?>>
   <div<?php print $content_attributes; ?>>
-    <div class="pull-right margin-left-10">
+    <div class="pull-right margin-left-10 pos-relative search-form-container">
       <?php print $search_form; ?>
       <div class="popover">
         <h3>Popular searches:</h3>
@@ -11,6 +11,8 @@
         </ul>
       </div>
     </div>
-    <div class="pull-right"><?php print $content; ?></div>
+    <?php if ($content): ?>
+      <div class="pull-right"><?php print $content; ?></div>
+    <?php endif; ?>
   </div>
 </div>

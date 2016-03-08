@@ -491,7 +491,7 @@ input[type="submit"] {
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-    width: 200px;
+    width: calc(100% - 50px);
     -webkit-transition: width 0.1s ease;
     -moz-transition: width 0.1s ease;
     -ms-transition: width 0.1s ease;
@@ -506,24 +506,18 @@ input[type="submit"] {
 
 .form-text.transparent::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
-    opacity: 0.8;
 }
-
 .form-text.transparent:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color:    #fff;
-    opacity:  0.8;
 }
 .form-text.transparent::-moz-placeholder { /* Mozilla Firefox 19+ */
     color:    #fff;
-    opacity:  0.8;
 }
 .form-text.transparent:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color:    #fff;
-    opacity:  0.8;
 }
 .form-text.transparent:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
     color:    #fff;
-    opacity:  0.8;
 }
 
 .region-search .form-text.transparent {
@@ -534,6 +528,27 @@ input[type="submit"] {
 
 .margin-left-10 {
     margin-left: 10px;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.region-search-inner .search-form-container {
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+    padding: 8px 0 8px 12px;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 16px;
+}
+
+.region-search .search-form {
+    margin-bottom: 8px;
+}
+
+.region-search .search-form .form-wrapper {
+    position: relative;
 }
 
 /*////////////////////////////////////*/
@@ -2072,6 +2087,6 @@ html.js input.form-autocomplete {
     top: 100%;
     box-shadow: 0 0 3px #ddd;
     border-radius: 2px;
-    width: 250px;
     right: 0;
+    left: 0;
 }
