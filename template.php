@@ -59,7 +59,7 @@ function suitcase_preprocess_region(&$vars) {
     $search_form = drupal_get_form('search_form');
     // Hide the input label
    $search_form['basic']['keys']['#title_display'] = 'invisible';
-   $search_form['basic']['keys']['#attributes']['placeholder'] = t('Search...');
+   $search_form['basic']['keys']['#attributes']['placeholder'] = t('Search');
    $search_form['basic']['keys']['#attributes']['class'][] = 'transparent';
    $search_form['basic']['submit'] = array(
      '#type' => 'item',
