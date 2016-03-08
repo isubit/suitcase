@@ -58,13 +58,13 @@ function suitcase_preprocess_region(&$vars) {
   } else if($vars['region'] == 'search') {
     $search_form = drupal_get_form('search_form');
     // Hide the input label
-//    $search_form['basic']['keys']['#title_display'] = 'invisible';
-//    $search_form['basic']['keys']['#attributes']['placeholder'] = t('Search...');
-//    $search_form['basic']['keys']['#attributes']['class'][] = 'transparent';
-//    $search_form['basic']['submit'] = array(
-//      '#type' => 'item',
-//      '#markup' => '<button type="submit" id="edit-submit" name="op" class="form-submit transparent"><img src="' . base_path() . drupal_get_path('theme', 'suitcase') . '/images/search.png" class="img-responsive" alt="Search" height="24px"></button>',
-//    );
+   $search_form['basic']['keys']['#title_display'] = 'invisible';
+   $search_form['basic']['keys']['#attributes']['placeholder'] = t('Search...');
+   $search_form['basic']['keys']['#attributes']['class'][] = 'transparent';
+   $search_form['basic']['submit'] = array(
+     '#type' => 'item',
+     '#markup' => '<button type="submit" id="edit-submit" name="op" class="form-submit transparent"><img src="' . base_path() . drupal_get_path('theme', 'suitcase') . '/images/search.png" class="img-responsive" alt="Search" height="24px"></button>',
+   );
     $search_form_box = drupal_render($search_form);
     $vars['search_form'] = $search_form_box;
 
