@@ -2083,9 +2083,53 @@ html.js input.form-autocomplete {
     padding: 16px;
     position: absolute;
     z-index: 10;
-    top: calc(100% + 16px);
+    top: calc(100% + 11px);
     box-shadow: 0 0 3px #ddd;
     border-radius: 2px;
     right: 0;
     left: 0;
+}
+
+.popover>.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-width: 11px;
+}
+
+.popover>.arrow, .popover>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.popover>.arrow:after {
+    content: " ";
+    border-width: 10px;
+}
+
+.popover>.arrow:after {
+    top: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: #fff;
+}
+
+.popover>.arrow {
+    top: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-width: 0;
+    border-bottom-color: #999;
+    border-bottom-color: rgba(0,0,0,.25);
 }

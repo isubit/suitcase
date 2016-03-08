@@ -3,6 +3,7 @@
     <div class="pull-right margin-left-10 pos-relative search-form-container">
       <?php print $search_form; ?>
       <div class="popover">
+        <div class="arrow"></div>
         <h3>Popular searches:</h3>
         <ul class="menu">
           <?php foreach ($categories as $term): ?>
