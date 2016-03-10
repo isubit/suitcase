@@ -1820,3 +1820,10 @@ html.js input.form-autocomplete {
         height: 1em;
     }
 }
+
+/*////////////////////////////////////*/
+/* Postscript Styling */
+
+	.zone-postscript {
+		margin-bottom: 15px;
+	}
