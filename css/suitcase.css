@@ -2139,6 +2139,10 @@ html.js input.form-autocomplete {
     border-bottom-color: rgba(0,0,0,.25);
 }
 
+.block-current-search:not(:first-child) {
+    margin-left: 4px;
+}
+
 .block-current-search .content {
     font-size: 12px;
 }
@@ -2159,4 +2163,9 @@ html.js input.form-autocomplete {
 
 .block-current-search .content>.current-search-item a:hover {
     background-color: #555;
+}
+
+.block-current-search .content .item-list li {
+    margin-left: 0;
+    display: inline-block;
 }
