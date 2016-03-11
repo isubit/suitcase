@@ -547,10 +547,10 @@ input[type="submit"] {
 
 h1.site-name,
 h2.site-name {
-    font-size: 26px;
+    font-size: 18px;
     margin-top: 14px;
     margin-bottom: 0;
-    line-height: 25px;
+    line-height: 16px;
     font-weight: 400;
 }
 
@@ -563,6 +563,12 @@ h2.site-name {
   text-decoration: none;
 }
 
+.site-name-slogan hr {
+    background-color: #cc0000;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    margin: 14px 0;
+}
+
 .site-name-slogan a {
     color: #fff;
     display: block;
@@ -573,7 +579,7 @@ h2.site-name {
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
-    line-height: 14px;
+    line-height: 16px;
 }
 
 .site-slogan a:hover {

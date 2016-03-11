@@ -24,6 +24,7 @@
             <?php $class = $site_slogan_hidden ? ' element-invisible' : ''; ?>
             <h3 class="site-slogan<?php print $class; ?>"><a href="<?php print $dept_url; ?>"><?php print $site_slogan; ?></a></h3>
           <?php endif; ?>
+          <hr>
           <?php if ($site_name): ?>
             <?php $class = $site_name_hidden ? ' element-invisible' : ''; ?>
             <?php if ($is_front): ?>
