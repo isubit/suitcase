@@ -2139,16 +2139,16 @@ html.js input.form-autocomplete {
     border-bottom-color: rgba(0,0,0,.25);
 }
 
-.block-current-search:not(:first-child) {
-    margin-left: 4px;
-}
-
 .block-current-search .content {
     font-size: 12px;
 }
 
 .block-current-search .content>.current-search-item {
     float: left;
+}
+
+.block-current-search .current-search-item:not(:first-child) {
+    margin-left: 4px;
 }
 
 .block-current-search .content>.current-search-item a {
