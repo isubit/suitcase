@@ -490,7 +490,7 @@ input[type="submit"] {
 .form-text.transparent {
     background: transparent;
     border: none;
-    /*border-bottom: 1px solid #fff;*/
+    padding-left: 10px;
     color: #333;
     width: calc(100% - 50px);
     -webkit-transition: width 0.1s ease;
@@ -2147,18 +2147,15 @@ html.js input.form-autocomplete {
     float: left;
 }
 
-.block-current-search .current-search-item:not(:first-child) {
-    margin-left: 4px;
-}
-
 .block-current-search .content>.current-search-item a {
     text-decoration: none;
     background-color: #333;
-    padding: 3px;
+    padding: 2px;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 2px;
     color: #fff;
     margin-right: 4px;
+    margin-left: 10px;
 }
 
 .block-current-search .content>.current-search-item a:hover {
@@ -2166,6 +2163,6 @@ html.js input.form-autocomplete {
 }
 
 .block-current-search .content .item-list li {
-    margin-left: 0;
+    margin-left: 4px;
     display: inline-block;
 }
