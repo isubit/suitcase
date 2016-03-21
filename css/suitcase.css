@@ -2190,3 +2190,8 @@ html.js input.form-autocomplete {
     margin-left: 4px;
     display: inline-block;
 }
+
+.region-content img {
+    max-width: 100%;
+    height: auto;
+}
