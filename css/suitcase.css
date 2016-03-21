@@ -540,6 +540,7 @@ input[type="submit"] {
 
 /*////////////////////////////////////*/
 /* Site Name/Slogan */
+
 .nameplate img {
     width: auto;
     height: 28px;
@@ -547,15 +548,15 @@ input[type="submit"] {
 
 h1.site-name,
 h2.site-name {
-    font-size: 18px;
-    margin-top: 14px;
+    font-size: 22px;
+    margin-top: 0;
     margin-bottom: 0;
     line-height: 16px;
     font-weight: 400;
 }
 
 .site-slogan {
-    padding-top: 7px;
+    
 }
 
 .site-name a {
@@ -563,7 +564,7 @@ h2.site-name {
   text-decoration: none;
 }
 
-.site-name-slogan hr {
+.region-branding hr {
     background-color: #cc0000;
     border-top-color: rgba(255, 255, 255, 0.5);
     margin: 14px 0;
@@ -580,6 +581,13 @@ h2.site-name {
     font-size: 18px;
     text-decoration: none;
     line-height: 16px;
+    padding-top: 7px;
+}
+
+.site-slogan a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
 }
 
 .site-slogan a:hover {
@@ -775,6 +783,10 @@ nav.navigation .secondary-menu>li a.active-trail {
 }
 
 /*////////////////////////////////////*/
+.block-menu-secondary-menu {
+    margin-top: 6px;
+}
+
 .block-menu-secondary-menu .block-title {
     display: none;
 }
@@ -790,6 +802,12 @@ nav.navigation .secondary-menu>li a.active-trail {
 .block-menu-secondary-menu .menu li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.block-menu-secondary-menu .menu li:last-child {
+    padding-right: 0;
 }
 
 /*////////////////////////////////////*/

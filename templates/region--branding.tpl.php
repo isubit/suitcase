@@ -15,16 +15,16 @@
           <?php else: ?>
             <a accesskey="1" class="nameplate" href="http://www.iastate.edu" title="Iowa State University Homepage"><img src="<?php print $default_wordmark; ?>" alt="Iowa State University"></a>
           <?php endif; ?>
-        </div>
-      <?php endif; ?>
-      <?php if ($site_name || $site_slogan): ?>
-        <?php $class = $site_name_hidden && $site_slogan_hidden ? ' element-invisible' : ''; ?>
-        <hgroup class="site-name-slogan<?php print $class; ?>">
           <?php if ($site_slogan): ?>
             <?php $class = $site_slogan_hidden ? ' element-invisible' : ''; ?>
             <h3 class="site-slogan<?php print $class; ?>"><a href="<?php print $dept_url; ?>"><?php print $site_slogan; ?></a></h3>
           <?php endif; ?>
-          <hr>
+        </div>
+      <?php endif; ?>
+      <?php if ($site_name || $site_slogan): ?>
+        <hr>
+        <?php $class = $site_name_hidden && $site_slogan_hidden ? ' element-invisible' : ''; ?>
+        <hgroup class="site-name-slogan<?php print $class; ?>">
           <?php if ($site_name): ?>
             <?php $class = $site_name_hidden ? ' element-invisible' : ''; ?>
             <?php if ($is_front): ?>
