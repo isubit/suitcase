@@ -308,7 +308,8 @@ tr:hover td {
     float: left;
 }
 
-.isu-dark-ribbon .wd-ribbon-menu li:not(:last-child) {
+.isu-dark-ribbon .isu-signons .wd-ribbon-menu li:not(:last-child),
+.isu-dark-ribbon .isu-directory-info .wd-ribbon-menu li:not(:last-child) {
     border-right: 1px solid #444;
 }
 
