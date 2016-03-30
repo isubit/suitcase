@@ -35,13 +35,19 @@ function suitcase_preprocess_region(&$vars) {
     // Prepare Logo
     $vars['suitcase_config_logo'] = FALSE;
     $logo = variable_get('suitcase_config_logo');
-    $vars['site_name'] = variable_get('site_name');
     if ($logo) {
       $logo_url = file_create_url($logo['uri']);
       $vars['suitcase_config_logo'] = '<div class="logo-img"><a href="' . $GLOBALS['base_url'] . '" rel="home" title="' . $vars['site_name'] . '" class="active"><img src="' . $logo_url . '" alt="Go to ' . $vars['site_name'] . ' home" id="logo" /></a></div>';
     }
 
     $vars['dept_url'] = variable_get('dept_url', $default = NULL);
+
+    $vars['site_name_level_2'] = variable_get('site_name');
+    $vars['linked_site_name_level_2'] = l($vars['site_name_level_2'], $vars['dept_url'], array('attributes' => array('title' => $vars['site_name_level_2']), 'html' => TRUE));
+
+    $vars['site_name_level_3'] = variable_get('site_slogan');
+    $vars['linked_site_name_level_3'] = l($vars['site_name_level_3'], '<front>', array('attributes' => array('title' => t('Home')), 'html' => TRUE));
+
     $vars['show_isu_nameplate'] = variable_get('suitcase_config_isu_nameplate_display', 1);
 
     // Get the uploaded wordmark if is exists
@@ -71,6 +77,9 @@ function suitcase_preprocess_region(&$vars) {
 
     // Load the categories vocabulary
     $vars['categories'] = taxonomy_get_tree(1);
+
+    $vars['site_name_level_2'] = variable_get('site_name');
+    $vars['site_name_level_3'] = variable_get('site_slogan');
   }
 }
 

@@ -517,8 +517,15 @@ input[type="submit"] {
     border-radius: 2px;
     width: 100%;
     max-width: 400px;
-    margin-top: 24px;
     background-color: #fff;
+}
+
+.region-search-inner .search-form-container.has-site-name-level-2 {
+    margin-top: 6px;
+}
+
+.region-search-inner .search-form-container.has-site-name-level-3 {
+    margin-top: 24px;
 }
 
 .region-search .search-form {
@@ -547,8 +554,8 @@ input[type="submit"] {
     height: 28px;
 }
 
-h1.site-name,
-h2.site-name {
+h1.site-name-level-3,
+h2.site-name-level-3 {
     font-size: 22px;
     margin-top: 0;
     margin-bottom: 0;
@@ -556,11 +563,7 @@ h2.site-name {
     font-weight: 400;
 }
 
-.site-slogan {
-    
-}
-
-.site-name a {
+.site-name-level-3 a {
   color: #cc0000;
   text-decoration: none;
 }
@@ -577,7 +580,8 @@ h2.site-name {
     text-decoration: none;
 }
 
-.site-slogan {
+.site-name-level-2 {
+    margin-bottom: 0;
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
@@ -585,13 +589,13 @@ h2.site-name {
     padding-top: 7px;
 }
 
-.site-slogan a {
+.site-name-level-2 a {
     color: #fff;
     display: block;
     text-decoration: none;
 }
 
-.site-slogan a:hover {
+.site-name-level-2 a:hover {
 	color: #fff;
     text-decoration: none;
 }
@@ -1652,7 +1656,7 @@ html.js input.form-autocomplete {
 /*///////////////////////////////////////////////////////////*/
 /*/////////////////// Hover Events //////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
-.site-name a:hover {
+.site-name-level-3 a:hover {
   color: #f3f3f3;
   text-decoration: none;
 }
