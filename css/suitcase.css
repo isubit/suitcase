@@ -1205,7 +1205,7 @@ nav.navigation .secondary-menu>li a.active-trail {
     /*-webkit-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
     /*-moz-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
     /*box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
-    margin: 0 0 1em;
+    margin: 0;
 }
 
 .flexslider .flex-caption {
@@ -1237,15 +1237,25 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .flex-control-nav {
     z-index: 2;
-    bottom: 0;
+    bottom: -10px;
+    position: relative;
 }
 
 /*////////////////////////////////////*/
 /* Panels */
-.panel-panel {
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid #ddd;
+.panel-pane {
+  margin-bottom: 20px;
+}
+
+.panel-pane:not(.panel-pane-nostyle) {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.panel-pane-overflow .pane-content {
+  height: 350px;
+  overflow-y: auto;
 }
 
 .front .panel-display .panel-panel:first-child {
@@ -1253,12 +1263,21 @@ nav.navigation .secondary-menu>li a.active-trail {
     border: 0;
 }
 
-.panel-panel.grid-4 .pane-content > p {
-    padding: 0 10px;
+.pane-content {
+    padding: 10px;
+}
+
+/* Override padding for #front-panel */
+#front-panel .panel-panel.grid-12:first-child .pane-content {
+    padding: 0;
 }
 
 .panel-panel .pane-content p:first-child {
     padding-top: 10px;
+}
+
+.panel-panel.alpha {
+    margin-left: 1%;
 }
 
 .panel-panel .view .views-row {
