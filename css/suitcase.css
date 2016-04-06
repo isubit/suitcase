@@ -1816,3 +1816,11 @@ html.js input.form-autocomplete {
         height: 1em;
     }
 }
+
+figure figcaption {
+    color: #818a91;
+}
+
+figure .insert-default-image-styling + figcaption {
+    margin: 0 10px;
+}
