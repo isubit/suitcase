@@ -411,11 +411,7 @@ body {
 
 .section-content {
     background-color: #f4f3e8;
-}
-
-.zone-content-wrapper {
-    /*padding-top: 1em;*/
-    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 footer {
@@ -813,12 +809,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 /*////////////////////////////////////*/
 /* Sidebar Facets */
 
-.zone-content section.block {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: solid 1px rgba(200, 200, 200, 0.9);
-    margin-bottom: 1em;
-}
-
 .js-suitcase-facet .block-title:hover {
     cursor: pointer;
 }
@@ -835,9 +825,23 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 /*////////////////////////////////////*/
 /* Sidebar */
+.zone-content .block:not(.block-main),
+.zone-postscript .block,
+.zone-preface .block:not(.block-search) {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px rgba(200, 200, 200, 0.9);
+}
+
+.zone-content .block,
+.zone-postscript .block,
+.zone-preface .block {
+    margin-bottom: 1em;
+}
 
 .zone-content aside .block .block-title,
-.zone-postscript .block h2.block-title {
+.zone-content .block:not(.block-main) .block-title,
+.zone-postscript .block h2.block-title,
+.zone-preface .block .block-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
     margin-bottom: 0;
@@ -1251,6 +1255,10 @@ nav.navigation .secondary-menu>li a.active-trail {
 .panel-panel iframe {
     width: 100% !important;
     padding: 0 10px !important;
+}
+
+#front-panel {
+    margin-top: -1em;
 }
 
 /*////////////////////////////////////*/
