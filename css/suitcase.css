@@ -15,7 +15,6 @@ html {
 body {
     text-rendering: optimizeSpeed;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-touch-callout: none;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
 }
@@ -211,6 +210,10 @@ sup {
     vertical-align: super;
 }
 
+a, p, li, span, strong, em {
+    color: #333;
+}
+
 ul {
     list-style-type: disc;
 }
@@ -240,7 +243,7 @@ img {
 
 .node ol,
 .node ul {
-  padding-left: 1.7em;
+  padding-left: 3.5em;
 }
 
 .node {
@@ -1071,6 +1074,11 @@ nav.navigation .secondary-menu>li a.active-trail {
   color: #990000;
 }
 
+.page-node-add .fieldset-legend,
+.page-node-edit .fieldset-legend{
+    font-weight: bold;
+}
+
 /*////////////////////////////////////*/
 /* A Tag Mobile Styling */
 .item-list ul li.leaf {
@@ -1642,6 +1650,28 @@ html.js input.form-autocomplete {
 
 .insert-default-image-styling {
     margin: 10px;
+}
+
+
+
+/*////////////////////////////////////*/
+/* Comments */
+.comment-new header::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.comment-new header>h3,
+.comment-new header>.new {
+  float: left;
+}
+
+.comment-new header>.new {
+  color: red;
+  margin-left: 10px;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////*/
