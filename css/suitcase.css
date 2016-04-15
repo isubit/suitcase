@@ -686,7 +686,7 @@ nav.navigation .main-menu>li a {
 .region-mega-menu .content>.menu>li>a {
     width: 100px;
     font-size: 14px;
-    padding: 10px 4px 10px 0;
+    padding: 11px 4px 10px 0;
 }
 
 ul li.leaf,
@@ -700,8 +700,41 @@ ul li.expanded {
 }
 
 .region-mega-menu .content>.menu>li>.menu li {
-    margin-bottom: 16px;
+    margin: 0;
+    padding: 0;
 }
+
+.region-mega-menu .content>.menu>li>.menu>li>a {
+    font-weight: bold;
+}
+
+.region-mega-menu .content>.menu>li>.menu li>a {
+    padding: 10px 0;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.region-mega-menu .content>.menu>li>.menu>li li>a {
+    color: #555;
+}
+
+/*.region-mega-menu .content>.menu>li>.menu>li:not(:last-child)>a,
+.region-mega-menu .content>.menu>li>.menu>li li>a {*/
+.region-mega-menu .content>.menu>li>.menu>li.expanded>a {
+    border-bottom: 1px solid #ddd;
+}
+
+.region-mega-menu .content>.menu>li>.menu>li>.menu>li>a {
+    padding-left: 20px;
+    position: relative;
+}
+
+/*.region-mega-menu .content>.menu>li>.menu>li>.menu>li>a::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+}*/
 
 .region-mega-menu .content>.menu>li>.menu {
     position: absolute;
@@ -713,7 +746,7 @@ ul li.expanded {
     list-style-type: none;
     list-style-image: none;
     z-index: 3;
-    box-shadow: 0 0 3px #ddd;
+    box-shadow: 0 3px 3px #aaa;
     min-width: 0;
 }
 
@@ -721,19 +754,12 @@ ul li.expanded {
     overflow: auto;
     height: auto;
     min-width: 300px;
-    padding: 16px;
+    padding: 0 16px;
+    z-index: 11;
 }
 
 .region-mega-menu .content>.menu>li>.menu>* {
     transition: display 0.5s ease;
-}
-
-.region-mega-menu .content>.menu>li>.menu.show>* {
-    display: block;
-}
-
-.region-mega-menu .content>.menu>li>.menu>li>.menu {
-    margin-top: 16px;
 }
 
 .region-mega-menu .content>.menu>li>a {
