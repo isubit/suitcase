@@ -3,11 +3,6 @@
         width: auto;
     }
 
-    nav.navigation .main-menu li:first-child,
-    nav.navigation .secondary-menu {
-        margin-left: 0.9em;
-    }
-
     .region-banner#region-banner {
         width: 100%;
     }
