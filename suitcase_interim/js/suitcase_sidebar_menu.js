@@ -67,7 +67,7 @@
                 });
 
                 // Close Button
-                $sidebarmenu.append('<img src="' + Drupal.settings.basePath + 'sites/all/themes/suitcase/images/close-button-white.png" id="side-menu-close-button" style="top: ' + top + 'px">');
+                $sidebarmenu.append('<img src="' + Drupal.settings.basePath + 'sites/all/themes/suitcase/suitcase_interim/images/close-button-white.png" id="side-menu-close-button" style="top: ' + top + 'px">');
                 $('#side-menu-close-button').bind('click touchend',function(e) {
                     if(isTouchedAlready){isTouchedAlready=false;return;}
                     HideMenu();

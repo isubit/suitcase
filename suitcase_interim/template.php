@@ -54,7 +54,7 @@ function suitcase_interim_preprocess_region(&$vars) {
     $vars['site_wordmark'] = variable_get('site_wordmark', $default = NULL);
     if (!$vars['site_wordmark']) {
       // If a wordmark hasn't been uploaded, create a var for the default wordmark
-      $vars['default_wordmark'] = file_create_url('sites/all/themes/suitcase/images/sprite.png');
+      $vars['default_wordmark'] = file_create_url(path_to_theme() . '/images/sprite.png');
     } else {
       $vars['site_wordmark'] = file_create_url($vars['site_wordmark']);
     }
