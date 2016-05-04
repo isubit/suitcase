@@ -1145,7 +1145,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 .flex-control-nav {
     z-index: 2;
     position: static;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 /*////////////////////////////////////*/
@@ -1170,7 +1170,7 @@ nav.navigation .secondary-menu>li a.active-trail {
     border: 0;
 }
 
-.pane-content {
+.panel-pane-padding .pane-content {
     padding: 10px;
 }
 
