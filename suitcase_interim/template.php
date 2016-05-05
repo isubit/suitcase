@@ -69,7 +69,7 @@ function suitcase_interim_preprocess_region(&$vars) {
    $search_form['search_block_form']['#attributes']['class'][] = 'transparent';
    $search_form['actions']['submit'] = array(
      '#type' => 'item',
-     '#markup' => '<button type="submit" id="edit-submit" name="op" class="form-submit transparent"><img src="' . base_path() . drupal_get_path('theme', 'suitcase') . '/images/search_gray.png" class="img-responsive" alt="Search" height="24px"></button>',
+     '#markup' => '<button type="submit" id="edit-submit" name="op" class="form-submit transparent"><img src="' . base_path() . drupal_get_path('theme', 'suitcase_interim') . '/images/search_gray.png" class="img-responsive" alt="Search" height="24px"></button>',
    );
     $search_form['#form_id'] = 'apachesolr_search_custom_page_search_form';
     $search_form_box = drupal_render($search_form);
