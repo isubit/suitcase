@@ -2345,3 +2345,9 @@ html.js input.form-autocomplete {
     color: #ddd;
     vertical-align: text-top;
 }
+
+.menu a>i {
+    font-size: 24px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
