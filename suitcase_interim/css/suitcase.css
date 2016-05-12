@@ -656,7 +656,7 @@ h2.site-name-level-3 {
 }
 
 .zone-content .views-row:not(:last-child) {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px dotted #999;
 }
 
 /*////////////////////////////////////*/
@@ -689,8 +689,8 @@ nav.navigation .secondary-menu>li a {
     display: inline-block;
 }
 
-.main-menu>li.active,
-.main-menu>li.active-trail {
+.main-menu>li.active>a,
+.main-menu>li.active-trail>a {
     background-color: #ddd;
 }
 
@@ -822,6 +822,7 @@ nav.navigation .main-menu>li a:hover,
 nav.navigation .main-menu>li a.active-trail,
 nav.navigation .main-menu>li a.active {
     text-decoration: none;
+    background-color: #ddd;
 }
 
 nav.navigation .main-menu>li a.active-trail,
@@ -1296,7 +1297,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     border-radius: 2px;
     background-color: #fff;
     transition: background-color 0.1s ease;
-    color: #cc0000;
+    color: #666666;
+    text-decoration: none;
     margin-bottom: 5px;
 }
 
