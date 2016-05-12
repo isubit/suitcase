@@ -1348,12 +1348,12 @@ nav.navigation .secondary-menu>li a.active-trail {
 #zone-menu.sticky-top {
     position: fixed;
     top: 0;
-    background: #cc0000;
+    background: #eee;
     width: 100%;
     z-index: 3;
-    -webkit-box-shadow: 0 0.25em 0.5em #333;
-    -moz-box-shadow: 0 0.25em 0.5em #333;
-    box-shadow: 0 0.25em 0.5em #333;
+    -webkit-box-shadow: 0 1px 5px #999;;
+    -moz-box-shadow: 0 1px 5px #999;;
+    box-shadow: 0 1px 5px #999;;
     margin-left: 0;
 }
 
