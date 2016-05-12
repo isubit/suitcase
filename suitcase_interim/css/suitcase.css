@@ -2357,3 +2357,7 @@ html.js input.form-autocomplete {
     vertical-align: bottom;
     margin-right: 10px;
 }
+
+.view-expertise .item-list>ul.item-list-item>li.views-row {
+    margin-top: 0;
+}
