@@ -1940,6 +1940,10 @@ html.js input.form-autocomplete {
     margin-top: 32px;
 }
 
+.views-field.views-field-field-people-position {
+    color: #6e6259;
+}
+
 /*////////////////////////////////////*/
 /* Helper classes */
 .display-inline {
