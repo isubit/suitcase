@@ -50,6 +50,12 @@ function suitcase_interim_preprocess_region(&$vars) {
 
     $vars['show_isu_nameplate'] = variable_get('suitcase_config_isu_nameplate_display', 1);
 
+    // Levels to show
+    $vars['levels_to_show'] = variable_get('suitcase_config_levels_to_show', NULL);
+
+    // Level that is site name
+    $vars['level_that_is_site_name'] = variable_get('suitcase_config_level_that_is_site_name', NULL);
+
     // Get the uploaded wordmark if is exists
     $vars['site_wordmark'] = variable_get('site_wordmark', $default = NULL);
     if (!$vars['site_wordmark']) {
@@ -80,6 +86,10 @@ function suitcase_interim_preprocess_region(&$vars) {
 
     $vars['site_name_level_2'] = variable_get('site_name');
     $vars['site_name_level_3'] = variable_get('site_slogan');
+
+    // Levels to show
+    $vars['levels_to_show'] = variable_get('suitcase_config_levels_to_show');
+
   } else if($vars['region'] == 'secondary_menu') {
     $theme = alpha_get_theme();
     $vars['secondary_menu'] = $theme->page['secondary_menu'];
