@@ -224,8 +224,16 @@ table {
     border: none;
 }
 
+tr.even, tr.odd {
+    background-color: transparent;
+}
+
 td {
     border-bottom: 1px solid #ddd;
+}
+
+tr.even td {
+    background: transparent;
 }
 
 .table-bordered td, .table-bordered th {
@@ -233,9 +241,14 @@ td {
 }
 
 th {
-    border-bottom: 2px solid #ddd !important;
+
+}
+
+thead th, th {
+    background: transparent;
+    color: #333;
+    border-bottom: 2px solid #ddd;
     font-weight: bold;
-    background-color: transparent;
 }
 
 tr:hover td {
@@ -421,6 +434,7 @@ tr:hover td {
 
 .section-header {
     background-color: #cc0000;
+    border-bottom: 3px solid #F1BE48;
 }
 
 .section-content {
