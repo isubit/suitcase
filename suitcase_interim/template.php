@@ -40,6 +40,9 @@ function suitcase_interim_preprocess_region(&$vars) {
       $vars['suitcase_config_logo'] = '<div class="logo-img"><a href="' . $GLOBALS['base_url'] . '" rel="home" title="' . $vars['site_name'] . '" class="active"><img src="' . $logo_url . '" alt="Go to ' . $vars['site_name'] . ' home" id="logo" /></a></div>';
     }
 
+    // Get the level 1 url
+    $vars['level_1_url'] = variable_get('suitcase_config_level_1_url', $default = NULL);
+
     $vars['dept_url'] = variable_get('dept_url', $default = NULL);
 
     $vars['site_name_level_2'] = variable_get('site_name');
@@ -58,6 +61,7 @@ function suitcase_interim_preprocess_region(&$vars) {
 
     // Get the uploaded wordmark if is exists
     $vars['site_wordmark'] = variable_get('site_wordmark', $default = NULL);
+
     if (!$vars['site_wordmark']) {
       // If a wordmark hasn't been uploaded, create a var for the default wordmark
       $vars['default_wordmark'] = file_create_url(path_to_theme() . '/images/sprite.png');

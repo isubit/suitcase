@@ -11,9 +11,9 @@
       <?php if($show_isu_nameplate): ?>
         <div id="isu_wordmark">
           <?php if ($site_wordmark): ?>
-            <a accesskey="1" class="nameplate" href="<?php print $dept_url; ?>" title="<?php print $site_name; ?>"><img src="<?php print $site_wordmark; ?>" alt="Iowa State University - <?php print $site_name; ?>"></a>
+            <a accesskey="1" class="nameplate" href="<?php ($level_1_url) ? print $level_1_url : 'http://www.iastate.edu' ?>" title="<?php print $site_name; ?>"><img src="<?php print $site_wordmark; ?>" alt="Iowa State University - <?php print $site_name; ?>"></a>
           <?php else: ?>
-            <a accesskey="1" class="nameplate" href="http://www.iastate.edu" title="Iowa State University Homepage"><img src="<?php print $default_wordmark; ?>" alt="Iowa State University"></a>
+            <a accesskey="1" class="nameplate" href="<?php ($level_1_url) ? print $level_1_url : 'http://www.iastate.edu' ?>" title="Iowa State University Homepage"><img src="<?php print $default_wordmark; ?>" alt="Iowa State University"></a>
           <?php endif; ?>
           <?php if (!$levels_to_show || $levels_to_show['2'] != 0): ?>
             <?php $class = $site_slogan_hidden ? ' element-invisible' : ''; ?>
