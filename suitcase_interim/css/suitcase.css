@@ -704,6 +704,7 @@ nav.navigation .main-menu>li a,
     letter-spacing: .5px;
     display: inline-block;
     text-decoration: none;
+    border-bottom: 3px solid transparent;
 }
 
 nav.navigation .main-menu>li a {
@@ -822,13 +823,14 @@ nav.navigation .main-menu>li a:hover,
 nav.navigation .main-menu>li a.active-trail,
 nav.navigation .main-menu>li a.active {
     text-decoration: none;
-    background-color: #ddd;
+    border-bottom: 3px solid #F1BE48;
 }
 
 nav.navigation .main-menu>li a.active-trail,
 nav.navigation .main-menu>li a.active {
     font-weight: bold;
     color: #000;
+    border-bottom: 3px solid #F1BE48;
 }
 
 nav.navigation .secondary-menu {
