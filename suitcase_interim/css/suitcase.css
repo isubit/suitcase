@@ -1653,8 +1653,12 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-bottom: 8px;
 }
 
+.section-footer img {
+    max-width: 100%;
+}
+
 .section-footer .block {
-    float: left;
+    margin-bottom: 16px;
 }
 
 .node-type-people h1.title {
