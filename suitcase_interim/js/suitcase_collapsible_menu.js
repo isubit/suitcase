@@ -9,10 +9,10 @@
         attach: function (context) {
             $('body', context).once('suitcaseCollapsibleMenu', function() {
                 if($('#main-menu > li').length > 1) {
-                    var li = '<li id="suitcase-main-menu-dropdown-toggle"><a>...</a></li>';
+                    var li = '<li id="suitcase-main-menu-dropdown-toggle"><a>&#9776; Menu</a></li>';
                     var touched = false;
 
-                    $('#main-menu > li:first').after(li);
+                    $('#main-menu > li:first').before(li);
 
                     $('#suitcase-main-menu-dropdown-toggle').bind('click touchend', function(e) {
                         if(touched) {touched=false;return;}
