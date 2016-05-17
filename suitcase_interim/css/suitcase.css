@@ -2215,6 +2215,14 @@ html.js input.form-autocomplete {
     }
 }
 
+figure figcaption {
+    color: #818a91;
+}
+
+figure .insert-default-image-styling + figcaption {
+    margin: 0 10px;
+}
+
 /*Ann things*/
 
 .zone-postscript .item-list ul li {
