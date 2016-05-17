@@ -2398,3 +2398,10 @@ figure .insert-default-image-styling + figcaption {
 .view-id-my_resources .view-content {
     overflow-x: auto;
 }
+
+/*------ Font Antialiasing Fixes------*/
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
