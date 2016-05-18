@@ -1396,11 +1396,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 /*////////////////////////////////////*/
 /* Flexslider */
 .flexslider {
-    display: none;
     border: none;
-    /*-webkit-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
-    /*-moz-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
-    /*box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
     margin: 0 0 1em;
 }
 
