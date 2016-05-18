@@ -1120,6 +1120,12 @@ nav.navigation .secondary-menu>li a.active-trail {
 /*////////////////////////////////////*/
 /* Sidebar */
 
+.zone-content .block,
+.zone-postscript .block,
+.zone-preface .block {
+    margin-bottom: 1em;
+}
+
 /*.zone-content aside .block .block-title,
 .zone-postscript .block h2.block-title {
     color: #555;
