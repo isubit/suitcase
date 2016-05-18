@@ -2399,3 +2399,10 @@ figure .insert-default-image-styling + figcaption {
 .view-id-my_resources .view-content {
     overflow-x: auto;
 }
+
+/*---Fixing antialiasing for footers---*/
+footer {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+}
