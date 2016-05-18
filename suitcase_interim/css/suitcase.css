@@ -2356,13 +2356,13 @@ figure .insert-default-image-styling + figcaption {
     height: auto;
 }
 
-.region-secondary-menu {
+.region-secondary-menu .links {
+    margin: 0;
     margin-top: 1em;
 }
 
-.region-secondary-menu .links {
-    display: block;
-    margin: 0;
+.region-secondary-menu .links.inline {
+    display: inline-block;
 }
 
 .region-secondary-menu .links>li {
