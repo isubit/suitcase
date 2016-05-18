@@ -782,6 +782,10 @@ ul li.expanded {
     color: #333;
 }
 
+.region-mega-menu .content>.menu>li>.menu li>a:hover {
+    color: #cc0000;
+}
+
 .region-mega-menu .content>.menu>li>.menu>li li>a {
     color: #555;
 }
@@ -856,6 +860,7 @@ nav.navigation .main-menu>li a.active-trail,
 nav.navigation .main-menu>li a.active {
     text-decoration: none;
     border-bottom: 3px solid #F1BE48;
+    background-color: #ddd;
 }
 
 nav.navigation .main-menu>li a.active-trail,
