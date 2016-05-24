@@ -459,19 +459,19 @@ tr:hover td {
     padding-bottom: 32px;
 }
 
-footer {
+#section-footer {
     background-color: #333;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-footer a, footer a:link, footer a:visited, footer p, footer span, footer li, footer strong, footer em {
+#section-footer a, #section-footer a:link, #section-footer a:visited, #section-footer p, #section-footer span, #section-footer li, #section-footer strong, #section-footer em {
     color: #d3d3d3;
     font-size: 14px;
 }
 
-footer a:link:hover,
-footer a:visited:hover {
+#section-footer a:link:hover,
+#section-footer a:visited:hover {
     color: #fff;
     border-bottom-color: #ddd;
 }
