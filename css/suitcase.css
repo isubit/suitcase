@@ -230,9 +230,9 @@ tr:hover td {
     background-color: transparent;
 }
 
-img {
+.field-type-text-long img, .field-type-text-with-summary img {
     max-width: 100%;
-    height: auto;
+    height: auto !important;
 }
 
 @media print {
