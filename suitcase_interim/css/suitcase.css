@@ -2413,3 +2413,7 @@ footer {
     -moz-osx-font-smoothing: grayscale;
     -o-font-smoothing: antialiased;
 }
+
+.region-content-inner>.tabs {
+    margin-bottom: 16px;
+}
