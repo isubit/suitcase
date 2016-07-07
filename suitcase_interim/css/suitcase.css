@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     font-family: Arial, Helvetica neue, sans-serif;
     letter-spacing: 0;
 }
@@ -1653,7 +1653,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 }
 
 #front-panel {
-    margin-top: -56px;
+    margin-top: -32px;
 }
 
 /*////////////////////////////////////*/
