@@ -451,7 +451,10 @@ tr:hover td {
 
 .section-content {
     background-color: #fff;
-    padding-bottom: 32px;
+}
+
+.section-content>div {
+    margin-bottom: 16px;
 }
 
 .zone-content-wrapper {
