@@ -1825,3 +1825,7 @@ media="(min-device-width: 740px) and (min-width: 740px), (max-device-width: 800p
 .alpha {
     margin-left: 1%;
 }
+
+.read-more {
+    display: block;
+}
