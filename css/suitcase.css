@@ -1943,3 +1943,8 @@ figure figcaption {
 figure .insert-default-image-styling + figcaption {
     margin: 0 10px;
 }
+
+media="(min-device-width: 740px) and (min-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape)"
+.alpha {
+    margin-left: 1%;
+}
