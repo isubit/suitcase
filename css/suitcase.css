@@ -230,6 +230,11 @@ tr:hover td {
     background-color: transparent;
 }
 
+td, th {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
 .field-type-text-long img, .field-type-text-with-summary img {
     max-width: 100%;
     height: auto !important;
