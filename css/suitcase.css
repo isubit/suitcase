@@ -230,7 +230,7 @@ tr:hover td {
     background-color: transparent;
 }
 
-td, th {
+.field-type-text-with-summary td, .field-type-text-with-summary th {
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
