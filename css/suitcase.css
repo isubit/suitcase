@@ -1181,6 +1181,10 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin: 0;
 }
 
+.panel-panel .views-view-grid {
+    border: none;
+}
+
 .panel-pane > h2.pane-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #333;
