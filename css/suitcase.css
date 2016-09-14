@@ -313,6 +313,12 @@ tr:hover td {
       display: inline;
       border: none;
     }
+
+    .nameplate img {
+      filter: invert(1);
+      filter: invert(100%);
+      -webkit-filter: invert(1);
+    }
 }
 
 .node ol,
