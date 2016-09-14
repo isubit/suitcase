@@ -15,7 +15,6 @@ html {
 body {
     text-rendering: optimizeSpeed;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-touch-callout: none;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
 }
@@ -211,6 +210,10 @@ sup {
     vertical-align: super;
 }
 
+a, p, li, span, strong, em {
+    color: #333;
+}
+
 ul {
     list-style-type: disc;
 }
@@ -227,9 +230,9 @@ tr:hover td {
     background-color: transparent;
 }
 
-img {
+.field-type-text-long img, .field-type-text-with-summary img {
     max-width: 100%;
-    height: auto;
+    height: auto !important;
 }
 
 @media print {
@@ -314,7 +317,7 @@ img {
 
 .node ol,
 .node ul {
-  padding-left: 1.7em;
+  padding-left: 3.5em;
 }
 
 .node {
@@ -1140,6 +1143,16 @@ nav.navigation .secondary-menu>li a.active-trail {
 .node-biblio .content h3 {
     color: #444;
 }
+
+.node-people .field-name-field-people-position {
+  color: #990000;
+}
+
+.page-node-add .fieldset-legend,
+.page-node-edit .fieldset-legend{
+    font-weight: bold;
+}
+
 /*////////////////////////////////////*/
 /* A Tag Mobile Styling */
 .item-list ul li.leaf {
@@ -1713,6 +1726,28 @@ html.js input.form-autocomplete {
     margin: 10px;
 }
 
+
+
+/*////////////////////////////////////*/
+/* Comments */
+.comment-new header::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.comment-new header>h3,
+.comment-new header>.new {
+  float: left;
+}
+
+.comment-new header>.new {
+  color: red;
+  margin-left: 10px;
+}
+
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
 /* GLOBAL STYLING END */
@@ -1889,4 +1924,12 @@ html.js input.form-autocomplete {
         margin-top: 0.5em;
         height: 1em;
     }
+}
+
+figure figcaption {
+    color: #818a91;
+}
+
+figure .insert-default-image-styling + figcaption {
+    margin: 0 10px;
 }
