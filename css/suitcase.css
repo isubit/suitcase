@@ -1859,3 +1859,28 @@ figure figcaption {
 figure .insert-default-image-styling + figcaption {
     margin: 0 10px;
 }
+
+/*------- Grid for views -------*/
+.luggage-grid .views-row {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    margin: 0.25em;
+    padding: 0.5em;
+    height: auto;
+    float: left;
+    width: 49%;
+    overflow: hidden;
+}
+
+.views-field-title {
+    padding: 10px 0px 0px 10px;
+}
+
+.views-field img {
+    float: left;
+    padding: 5px 15px;
+}
+
+@media all and (max-width: 739px) {
+    .luggage-grid .views-row { width: 100%; }
+}
