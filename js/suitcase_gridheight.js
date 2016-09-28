@@ -10,7 +10,7 @@ Drupal.behaviors.suitcaseGridHeight = {
 				if (window.matchMedia('(min-width: 739px)').matches) {
 				var maxHeight = 0;
 				$('.luggage-grid,.views-row').each(function () {
-					if ($(this).outerHeight() > tallest) {
+					if ($(this).height() > maxHeight) {
 						maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();									
 					}
 					});
