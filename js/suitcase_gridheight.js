@@ -9,10 +9,11 @@ Drupal.behaviors.suitcaseGridHeight = {
 			$(window).load(function () {
 				if (window.matchMedia('(min-width: 739px)').matches) {
 					var maxHeight = 0;
-					$('.luggage-gridrow').each(function () {
-						maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();									
-						$(this).height(maxHeight);
-					});
+					for (var i = 1; i < $('.luggage-gridrow').length; i += 2) {
+						var even = i + 1;
+						maxHeight = $('.views-row-' + i).outerHeight() > $('.views-row-' + even).outerHeight() ? $('.views-row-' + i).outerHeight() : $('.views-row-' + even).outerHeight();									
+						$('.views-row-' + i + ', .views-row-' + even).height(maxHeight);
+					};
 				}
 			});
 		});		  
