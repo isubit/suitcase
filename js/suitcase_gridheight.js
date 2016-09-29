@@ -7,8 +7,8 @@ Drupal.behaviors.suitcaseGridHeight = {
 	attach: function (context, settings) {
 		$('body', context).once('suitcaseGridHeight', function () {
 			$(window).bind('load resize', function () {
-				// Check to make sure this isn't happening on mobile
-				if (window.matchMedia('(min-width: 739px)').matches) {
+				// Check to make sure this isn't happening on mobile and that it isn't happening on views without the luggage-gridrow class
+				if (window.matchMedia('(min-width: 739px)').matches && $('.luggage-gridrow')[0]) {
 					var maxHeight = 0;
 					for (var i = 1; i < $('.luggage-gridrow').length; i += 2) {
 						var even = i + 1;
