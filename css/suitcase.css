@@ -1848,9 +1848,9 @@ figure .insert-default-image-styling + figcaption {
     padding: 10px 0px 0px 10px;
 }
 
-.views-field img {
+.luggage-grid .views-field img {
     float: left;
-    padding: 5px 15px;
+    margin: 5px 15px;
 }
 
 @media all and (max-width: 739px) {
