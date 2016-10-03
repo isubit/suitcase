@@ -1865,3 +1865,7 @@ figure .insert-default-image-styling + figcaption {
     color: rgb(36, 109, 73);
     margin-bottom: 1em;
 }
+
+.luggage-grid p {
+    margin-top: 1em;
+}
