@@ -1838,7 +1838,7 @@ figure .insert-default-image-styling + figcaption {
     border: 1px solid #ddd;
     margin: 0.25em;
     margin-bottom: 0.55555em;
-    padding: 0.5em;
+    padding: 1em;
     height: auto;
     float: left;
     width: 49%;
@@ -1846,7 +1846,6 @@ figure .insert-default-image-styling + figcaption {
 }
 
 .luggage-grid .views-field-title {
-    padding: 10px 0px 0px 10px;
     font-size: 1.1em;
     font-weight: bold;
 }
@@ -1869,3 +1868,9 @@ figure .insert-default-image-styling + figcaption {
     .luggage-grid .views-row { width: 100%; }
 }
 
+
+.luggage-grid .luggage-gridgreen, .luggage-grid .luggage-gridgreen a {
+    font-style: italic;
+    color: rgb(36, 109, 73);
+    margin-bottom: 1em;
+}
