@@ -1850,15 +1850,6 @@ figure .insert-default-image-styling + figcaption {
     font-weight: bold;
 }
 
-.luggage-grid .views-field-title {
-    -ms-word-break: break-word;
-    word-break: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-}
-
 .luggage-grid .views-field img {
     float: left;
     margin: 2.5px 15px 2.5px 2.5px;
