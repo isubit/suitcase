@@ -319,6 +319,11 @@ tr:hover td {
       filter: invert(100%);
       -webkit-filter: invert(1);
     }
+
+    table.views-view-grid td {
+      vertical-align: top;
+    }
+
 }
 
 .node ol,
