@@ -254,13 +254,19 @@ tr:hover td {
 
     /* Font colors */
     div.page .site-slogan a,
+    div.page .site-slogan a:link,
+    div.page .site-slogan a:visited,
     div.page .site-name a,
+    div.page .site-name a:link,
+    div.page .site-name a:visited,
     div.page .title {
         color: #000;
         text-shadow: none;
     }
 
+    div.page a,
     div.page a:link,
+    div.page a:visited,
     body div.page .node {
         color: #333;
     }
