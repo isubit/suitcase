@@ -289,9 +289,11 @@ tr:hover td {
     .zone-side-menu-wrapper,
     #breadcrumb,
     .pwrapper,
-    div.page .tabs,
+    .block-apachesolr-search,
     .section-footer,
+    div.page .tabs,
     .content-type-indicator,
+    .read-more,
     aside {
         display: none;
     }
@@ -324,6 +326,15 @@ tr:hover td {
       vertical-align: top;
     }
 
+    .views-row,
+    img {
+        page-break-inside: avoid;
+    }
+
+    /* Break up lists of nodes a bit better */
+    div.page .views-row .node-title {
+        margin-top: 1.5em;
+    }
 }
 
 .node ol,
