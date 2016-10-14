@@ -8,6 +8,7 @@ sites/*/files
 sites/*/private
 .svn
 */.svn
+.idea
 
 # Ignore default text files
 .htaccess
