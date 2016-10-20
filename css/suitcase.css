@@ -215,7 +215,7 @@ a, p, li, span, strong, em {
 }
 
 a strong, a:link strong, a:hover strong, a:visited strong,
-a em, a:link em, a:hover em, a:visited strong {
+a em, a:link em, a:hover em, a:visited em {
     color: inherit;
 }
 
