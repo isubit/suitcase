@@ -214,6 +214,11 @@ a, p, li, span, strong, em {
     color: #333;
 }
 
+a strong, a:link strong, a:hover strong, a:visited strong,
+a em, a:link em, a:hover em, a:visited em {
+    color: inherit;
+}
+
 ul {
     list-style-type: disc;
 }
@@ -236,8 +241,110 @@ tr:hover td {
 }
 
 @media print {
-    a {
-        color: blue;
+    /* Set background colors */
+    body,
+    div.page .section-header {
+        background-color: #fff;
+    }
+
+    div.page .node {
+        background-color: transparent;
+    }
+
+    /* Fonts */
+    body div.page .node {
+        font-family: Georgia, Palatino, Times, "Times New Roman", serif;
+        line-height: 24px;
+    }
+
+    /* Font colors */
+    div.page .site-slogan a,
+    div.page .site-slogan a:link,
+    div.page .site-slogan a:visited,
+    div.page .site-name a,
+    div.page .site-name a:link,
+    div.page .site-name a:visited,
+    div.page .title {
+        color: #000;
+        text-shadow: none;
+    }
+
+    div.page a,
+    div.page a:link,
+    div.page a:visited,
+    body div.page .node {
+        color: #333;
+    }
+
+    /* Font sizes */
+    body div.page .node {
+        font-size: 14px;
+    }
+
+    a, p, ul, ol, li, img, span, strong, em {
+        font-size: 18px;
+    }
+
+    /* Borders */
+    div.page .section-header,
+    div.page .zone-branding-wrapper,
+    div.page .title,
+    div.page .node {
+        border: none;
+    }
+
+    /* Hide elements */
+    .zone-menu-wrapper,
+    .zone-header-wrapper,
+    .zone-preface-wrapper,
+    .zone-side-menu-wrapper,
+    #breadcrumb,
+    .pwrapper,
+    .block-apachesolr-search,
+    .section-footer,
+    div.page .tabs,
+    .content-type-indicator,
+    .read-more,
+    aside {
+        display: none;
+    }
+
+    /* Box shadows */
+    div.page .node {
+        -webkit-box-shadow: transparent;
+        box-shadow: none;
+    }
+
+    /* Padding */
+    div.page .node {
+        padding: 0;
+    }
+
+    /* Field resets */
+    .field.field-type-taxonomy-term-reference .field-items>.field-item>a {
+      padding: 0;
+      display: inline;
+      border: none;
+    }
+
+    .nameplate img {
+      filter: invert(1);
+      filter: invert(100%);
+      -webkit-filter: invert(1);
+    }
+
+    table.views-view-grid td {
+      vertical-align: top;
+    }
+
+    .views-row,
+    img {
+        page-break-inside: avoid;
+    }
+
+    /* Break up lists of nodes a bit better */
+    div.page .views-row .node-title {
+        margin-top: 1.5em;
     }
 }
 
