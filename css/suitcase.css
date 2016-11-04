@@ -1739,7 +1739,7 @@ html.js input.form-autocomplete {
 /*////////////////////////////////////*/
 /* Views */
 /* - People */
-.view-display-id-people_grid .view-content > h3 {
+.luggage-grid .view-content > h3 {
     color: #fff;
     background: #524747;
     border-bottom: 4px solid #dfbd00;
