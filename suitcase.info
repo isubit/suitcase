@@ -5,6 +5,7 @@ engine = 'phptemplate'
 screenshot = 'screenshot.png'
 base theme = 'omega'
 version = '2.3'
+plugins[panels][layouts] = panels/layouts
 regions[page_top] = 'Page Top'
 regions[page_bottom] = 'Page Bottom'
 regions[content] = 'Content'
