@@ -1985,3 +1985,11 @@ figure figcaption {
 figure .insert-default-image-styling + figcaption {
     margin: 0 10px;
 }
+
+/*-----Help Text-----*/
+
+.filter-guidelines-wysiwyg .tips,
+.form-item .description {
+  font-size: 1em;
+  color: #000;
+}
