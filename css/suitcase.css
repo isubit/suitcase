@@ -1993,3 +1993,15 @@ figure .insert-default-image-styling + figcaption {
   font-size: 1em;
   color: #000;
 }
+
+/*-----Font Awesome-----*/
+
+a > .fa {
+    margin-right: 10px;
+}
+
+.menu a > i {
+    font-size: 24px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
