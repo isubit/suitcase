@@ -1280,9 +1280,16 @@ nav.navigation .secondary-menu>li a.active-trail {
   border-radius: 3px;
 }
 
+/* Enable overflow on panes specifically set to have it */
 .panel-pane-overflow .pane-content {
   height: 350px;
   overflow-y: auto;
+}
+
+/* Enable overflow on front panel panes of width 4 unless specifically disabled */
+.front .grid-4 .panel-pane:not(.panel-pane-fluidheight) .pane-content {
+    height: 350px;
+    overflow-y: auto;
 }
 
 .front .panel-display .panel-panel:first-child {
@@ -1311,6 +1318,10 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin: 0;
 }
 
+.panel-panel .views-view-grid {
+    border: none;
+}
+
 .panel-pane > h2.pane-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #333;
@@ -1319,45 +1330,45 @@ nav.navigation .secondary-menu>li a.active-trail {
     border-bottom: 4px solid #DFBD00;
 }
 
-.panel-panel.grid-4 .pane-content .views-row,
-.panel-panel.grid-4 .pane-content .node {
+.panel-panel .pane-content .views-row,
+.panel-panel .pane-content .node {
     padding: 10px;
 }
 
-.panel-panel.grid-4 .pane-content .node {
+.panel-panel .pane-content .node {
     background: none;
     border: none;
     box-shadow: none;
     -webkit-box-shadow: none;
 }
 
-.panel-panel.grid-4 .pane-content .views-row:not(.views-row-last) {
+.panel-panel .pane-content .views-row:not(.views-row-last) {
     border-bottom: 1px solid #ddd;
 }
 
-.panel-panel.grid-4 .pane-content li {
+.panel-panel .pane-content li {
     padding: 0;
     margin: 0;
 }
 
-.panel-panel.grid-4 .pane-content li > a {
+.panel-panel .pane-content li > a {
     padding: 10px;
     display: block;
 }
 
-.panel-panel.grid-4 .pane-content li:not(:last-child) > a {
+.panel-panel .pane-content li:not(:last-child) > a {
     border-bottom: 1px solid #ddd;
 }
 
-.panel-panel.grid-4 .more-link {
+.panel-panel .more-link {
     text-align: left;
 }
 
-.panel-panel.grid-4 .more-link > a {
+.panel-panel .more-link > a {
     padding: 10px 16px;
 }
 
-.panel-panel.grid-4 .views-field-title {
+.panel-panel .views-field-title {
     font-weight: bold;
 }
 
@@ -1367,11 +1378,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .front .view-about-front-page .field-content li {
     margin-left: 20px;
-}
-
-.front .grid-4 .pane-content {
-  height: 350px;
-  overflow-y: auto;
 }
 
 .panel-panel iframe {
@@ -1724,7 +1730,7 @@ html.js input.form-autocomplete {
     background: #f4f3e8;
 }
 
-.iecomp .panel-panel.grid-4 {
+.iecomp .panel-panel {
     background: #fcfcf9;
 }
 
@@ -2005,3 +2011,10 @@ a > .fa {
     vertical-align: bottom;
     margin-right: 10px;
 }
+
+/*-----Read More-----*/
+
+.read-more {
+    display: block;
+}
+
