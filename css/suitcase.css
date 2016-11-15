@@ -1985,3 +1985,15 @@ figure .insert-default-image-styling + figcaption {
 .read-more {
     display: block;
 }
+
+/*-----Font Awesome-----*/
+
+a > .fa {
+    margin-right: 10px;
+}
+
+.menu a > i {
+    font-size: 24px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
