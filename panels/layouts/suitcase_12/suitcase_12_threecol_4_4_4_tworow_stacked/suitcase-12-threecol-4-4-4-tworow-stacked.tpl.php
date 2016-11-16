@@ -2,23 +2,27 @@
   <div class="panel-panel grid-12">
     <div class="inside"><?php print $content['top']; ?></div>
   </div>
-  <div class="panel-panel grid-4">
-    <div class="inside"><?php print $content['upper_left']; ?></div>
+  <div class="clearfix">
+    <div class="panel-panel grid-4">
+      <div class="inside"><?php print $content['upper_left']; ?></div>
+    </div>
+    <div class="panel-panel grid-4">
+      <div class="inside"><?php print $content['upper_middle']; ?></div>
+    </div>
+    <div class="panel-panel grid-4">
+      <div class="inside"><?php print $content['upper_right']; ?></div>
+    </div>
   </div>
-  <div class="panel-panel grid-4">
-    <div class="inside"><?php print $content['upper_middle']; ?></div>
-  </div>
-  <div class="panel-panel grid-4">
-    <div class="inside"><?php print $content['upper_right']; ?></div>
-  </div>
-  <div class="panel-panel grid-4">
-    <div class="inside"><?php print $content['lower_left']; ?></div>
-  </div>
-  <div class="panel-panel grid-4">
-    <div class="inside"><?php print $content['lower_middle']; ?></div>
-  </div>
-  <div class="panel-panel grid-4">
-    <div class="inside"><?php print $content['lower_right']; ?></div>
+  <div class="clearfix">
+    <div class="panel-panel grid-4">
+      <div class="inside"><?php print $content['lower_left']; ?></div>
+    </div>
+    <div class="panel-panel grid-4">
+      <div class="inside"><?php print $content['lower_middle']; ?></div>
+    </div>
+    <div class="panel-panel grid-4">
+      <div class="inside"><?php print $content['lower_right']; ?></div>
+    </div>
   </div>
   <div class="panel-panel grid-12">
     <div class="inside"><?php print $content['bottom']; ?></div>
