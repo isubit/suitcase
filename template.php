@@ -63,3 +63,20 @@ function suitcase_preprocess_panels_pane(&$variables) {
     unset($variables['attributes_array']['class']);
   }
 }
+
+/* Hero */
+
+function suitcase_alpha_preprocess_zone(&$vars) {
+  if (strpos($vars['elements']['#zone'], 'hero') === 0) {
+    unset($vars['elements']['#grid']);
+    unset($vars['elements']['#grid_container']);
+  }
+}
+
+function suitcase_alpha_preprocess_region(&$vars) {
+  if (strpos($vars['elements']['#region'], 'hero') === 0) {
+    $vars['content_attributes_array']['class'][] = 'region-hero-inner';
+    unset($vars['elements']['#grid']);
+    unset($vars['elements']['#grid_container']);
+  }
+}

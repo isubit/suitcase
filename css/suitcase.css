@@ -2018,3 +2018,14 @@ a > .fa {
     display: block;
 }
 
+/*----- Hero Regions -----*/
+
+#zone-menu-wrapper + .zone-hero-header .region-hero-header,
+#zone-menu + .zone-hero-header .region-hero-header {
+    margin-top: -16px;
+}
+
+.region-hero {
+    padding-bottom: 16px;
+}
+
