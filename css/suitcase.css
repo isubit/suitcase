@@ -1342,10 +1342,6 @@ nav.navigation .secondary-menu>li a.active-trail {
     -webkit-box-shadow: none;
 }
 
-.panel-panel .pane-content .views-row:not(.views-row-last) {
-    border-bottom: 1px solid #ddd;
-}
-
 .panel-panel.grid-4 .pane-content li {
     padding: 0;
     margin: 0;
@@ -1354,10 +1350,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 .panel-panel.grid-4 .pane-content li > a {
     padding: 10px;
     display: block;
-}
-
-.panel-panel .pane-content li:not(:last-child) > a {
-    border-bottom: 1px solid #ddd;
 }
 
 .panel-panel .more-link {
