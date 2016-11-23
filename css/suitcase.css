@@ -235,6 +235,10 @@ tr:hover td {
     background-color: transparent;
 }
 
+.field-item td {
+    min-width: 100px;
+}
+
 .field-type-text-long img, .field-type-text-with-summary img {
     max-width: 100%;
     height: auto !important;
