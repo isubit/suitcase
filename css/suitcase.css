@@ -1185,9 +1185,28 @@ nav.navigation .secondary-menu>li a.active-trail {
   color: #990000;
 }
 
-.page-node-add .fieldset-legend,
-.page-node-edit .fieldset-legend{
+.page-node .fieldset-legend {
     font-weight: bold;
+}
+
+.page-node .field-group-fieldset legend:first-of-type {
+    margin-bottom: 10px;
+}
+
+.page-node .field-group-fieldset > .fieldset-wrapper {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #ddd;
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    padding: 15px;
+    font-size: 14px;
+}
+
+.page-node .field-group-fieldset .fieldset-wrapper .fieldset-wrapper {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #ddd;
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
 /*////////////////////////////////////*/
