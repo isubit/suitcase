@@ -1248,7 +1248,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 .flexslider {
     display: none;
     border: none;
-    margin: 0 0 1em;
+    margin: 0;
 }
 
 .flexslider .flex-caption {
