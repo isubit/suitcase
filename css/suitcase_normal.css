@@ -81,10 +81,6 @@
         border-bottom: none;
     }
 
-    .view-display-id-people_grid .views-row {
-        width: 47.55%;
-    }
-
     nav.navigation .main-menu>li a {
         line-height: 40px;
         font-size: 1.2em;
@@ -108,9 +104,5 @@
         max-width: 1220px;
         margin-left: auto !important;
         margin-right: auto !important;
-    }
-
-    .view-display-id-people_grid .views-row {
-        width: 48%;
     }
 }
