@@ -1757,19 +1757,6 @@ html.js input.form-autocomplete {
     margin-bottom: 0;
 }
 
-/*////////////////////////////////////*/
-/* Views */
-/* - People */
-.luggage-grid .view-content > h3 {
-    color: #fff;
-    background: #524747;
-    border-bottom: 4px solid #dfbd00;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    display: block;
-    clear: both;
-}
 
 /*////////////////////////////////////*/
 /* Helper classes */
@@ -2017,6 +2004,18 @@ a > .fa {
 }
 
 /*------- Grid for views -------*/
+
+.luggage-grid .view-content > h3 {
+    color: #fff;
+    background: #524747;
+    border-bottom: 4px solid #dfbd00;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    display: block;
+    clear: both;
+}
+
 .luggage-grid .views-row {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid #ddd;
