@@ -2016,39 +2016,40 @@ a > .fa {
     clear: both;
 }
 
-.luggage-grid .views-row {
+.luggage-grid .luggage-gridrow {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid #ddd;
-    margin: 0.25em;
-    margin-bottom: 0.55555em;
+    margin: 0px 0.25% 8px 0.25%;
     padding: 1em;
     height: auto;
     float: left;
-    width: 49%;
+    width: 49.5%;
     overflow: hidden;
 }
 
-.luggage-grid .views-field-title {
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-.luggage-grid .views-field img {
+.luggage-grid .luggage-gridrow .views-field img {
     float: left;
     margin: 2.5px 15px 2.5px 2.5px;
 }
 
-@media all and (max-width: 739px) {
-    .luggage-grid .views-row { width: 100%; }
+.luggage-grid .luggage-gridrow .views-field-title {
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
+.luggage-grid .luggage-gridrow .luggage-gridgreen {
+    margin-bottom: 16px;
+}
 
-.luggage-grid .luggage-gridgreen, .luggage-grid .luggage-gridgreen a {
+.luggage-grid .luggage-gridrow .luggage-gridgreen,
+.luggage-grid .luggage-gridrow .luggage-gridgreen a {
     font-style: italic;
     color: rgb(36, 109, 73);
-    margin-bottom: 1em;
+
 }
 
-.luggage-grid p {
-    margin-top: 1em;
+@media all and (max-width: 739px) {
+    .luggage-grid .luggage-gridrow {
+        width: 100%;
+    }
 }
