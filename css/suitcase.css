@@ -235,6 +235,10 @@ tr:hover td {
     background-color: transparent;
 }
 
+.field-item td {
+    min-width: 100px;
+}
+
 .field-type-text-long img, .field-type-text-with-summary img {
     max-width: 100%;
     height: auto !important;
@@ -1177,9 +1181,28 @@ nav.navigation .secondary-menu>li a.active-trail {
   color: #990000;
 }
 
-.page-node-add .fieldset-legend,
-.page-node-edit .fieldset-legend{
+.page-node .fieldset-legend {
     font-weight: bold;
+}
+
+.page-node .field-group-fieldset legend:first-of-type {
+    margin-bottom: 10px;
+}
+
+.page-node .field-group-fieldset > .fieldset-wrapper {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #ddd;
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    padding: 15px;
+    font-size: 14px;
+}
+
+.page-node .field-group-fieldset .fieldset-wrapper .fieldset-wrapper {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #ddd;
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
 /*////////////////////////////////////*/
@@ -1273,9 +1296,16 @@ nav.navigation .secondary-menu>li a.active-trail {
   border-radius: 3px;
 }
 
+/* Enable overflow on panes specifically set to have it */
 .panel-pane-overflow .pane-content {
   height: 350px;
   overflow-y: auto;
+}
+
+/* Enable overflow on front panel panes of width 4 unless specifically disabled */
+.front .grid-4 .panel-pane:not(.panel-pane-fluidheight) .pane-content {
+    height: 350px;
+    overflow-y: auto;
 }
 
 .front .panel-display .panel-panel:first-child {
@@ -1304,6 +1334,10 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin: 0;
 }
 
+.panel-panel .views-view-grid {
+    border: none;
+}
+
 .panel-pane > h2.pane-title {
     color: rgba(255, 255, 255, 0.9);
     background-color: #333;
@@ -1312,20 +1346,16 @@ nav.navigation .secondary-menu>li a.active-trail {
     border-bottom: 4px solid #DFBD00;
 }
 
-.panel-panel.grid-4 .pane-content .views-row,
-.panel-panel.grid-4 .pane-content .node {
+.panel-panel .pane-content .views-row,
+.panel-panel .pane-content .node {
     padding: 10px;
 }
 
-.panel-panel.grid-4 .pane-content .node {
+.panel-panel .pane-content .node {
     background: none;
     border: none;
     box-shadow: none;
     -webkit-box-shadow: none;
-}
-
-.panel-panel.grid-4 .pane-content .views-row:not(.views-row-last) {
-    border-bottom: 1px solid #ddd;
 }
 
 .panel-panel.grid-4 .pane-content li {
@@ -1338,19 +1368,15 @@ nav.navigation .secondary-menu>li a.active-trail {
     display: block;
 }
 
-.panel-panel.grid-4 .pane-content li:not(:last-child) > a {
-    border-bottom: 1px solid #ddd;
-}
-
-.panel-panel.grid-4 .more-link {
+.panel-panel .more-link {
     text-align: left;
 }
 
-.panel-panel.grid-4 .more-link > a {
+.panel-panel .more-link > a {
     padding: 10px 16px;
 }
 
-.panel-panel.grid-4 .views-field-title {
+.panel-panel .views-field-title {
     font-weight: bold;
 }
 
@@ -1360,11 +1386,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .front .view-about-front-page .field-content li {
     margin-left: 20px;
-}
-
-.front .grid-4 .pane-content {
-  height: 350px;
-  overflow-y: auto;
 }
 
 .panel-panel iframe {
@@ -1706,7 +1727,7 @@ html.js input.form-autocomplete {
     background: #f4f3e8;
 }
 
-.iecomp .panel-panel.grid-4 {
+.iecomp .panel-panel {
     background: #fcfcf9;
 }
 
@@ -1956,6 +1977,43 @@ figure figcaption {
 
 figure .insert-default-image-styling + figcaption {
     margin: 0 10px;
+}
+
+/*-----Help Text-----*/
+
+.filter-guidelines-wysiwyg .tips,
+.form-item .description {
+  font-size: 1em;
+  color: #000;
+}
+
+/*-----Font Awesome-----*/
+
+a > .fa {
+    margin-right: 10px;
+}
+
+.menu a > i {
+    font-size: 24px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+/*-----Read More-----*/
+
+.read-more {
+    display: block;
+}
+
+/*----- Hero Regions -----*/
+
+#zone-menu-wrapper + .zone-hero-header .region-hero-header,
+#zone-menu + .zone-hero-header .region-hero-header {
+    margin-top: -16px;
+}
+
+.region-hero {
+    padding-bottom: 16px;
 }
 
 /*------- Grid for views -------*/

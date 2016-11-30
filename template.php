@@ -36,9 +36,16 @@ function suitcase_preprocess_region(&$vars) {
     $vars['suitcase_config_logo'] = FALSE;
     $logo = variable_get('suitcase_config_logo');
     $vars['site_name'] = variable_get('site_name');
+
+    // TODO: Add this as a field in suitcase_config. Otherwise the only way to
+    // set this is 'drush vset suitcase_config_logo_url "http://example.com"'
+    // and 'drush vset suitcase_config_logo_alt "Go to example.com"'.
+    $url = variable_get('suitcase_config_logo_url', $GLOBALS['base_url']);;
+    $logo_alt = variable_get('suitcase_config_logo_alt', 'Go to ' . $vars['site_name'] . ' home');
+
     if ($logo) {
       $logo_url = file_create_url($logo['uri']);
-      $vars['suitcase_config_logo'] = '<div class="logo-img"><a href="' . $GLOBALS['base_url'] . '" rel="home" title="' . $vars['site_name'] . '" class="active"><img src="' . $logo_url . '" alt="Go to ' . $vars['site_name'] . ' home" id="logo" /></a></div>';
+      $vars['suitcase_config_logo'] = '<div class="logo-img"><a href="' . $url . '" rel="home" class="active"><img src="' . $logo_url . '" alt="' . $logo_alt . '" title="' . $logo_alt . '" id="logo" /></a></div>';
     }
 
     $vars['dept_url'] = variable_get('dept_url', $default = NULL);
@@ -54,4 +61,29 @@ function suitcase_preprocess_section(&$vars) {
 
 function suitcase_preprocess_content(&$vars) {
   $vars['categories'] = variable_get('field_people_category', $default = NULL);
+}
+
+function suitcase_preprocess_panels_pane(&$variables) {
+  if (isset($variables['classes_array']) && isset($variables['attributes_array']['class']) && !empty($variables['classes_array']) && !empty($variables['attributes_array']['class'])) {
+    $merge = array_unique(array_merge($variables['classes_array'], $variables['attributes_array']['class']));
+    $variables['classes_array'] = $merge;
+    unset($variables['attributes_array']['class']);
+  }
+}
+
+/* Hero */
+
+function suitcase_alpha_preprocess_zone(&$vars) {
+  if (strpos($vars['elements']['#zone'], 'hero') === 0) {
+    unset($vars['elements']['#grid']);
+    unset($vars['elements']['#grid_container']);
+  }
+}
+
+function suitcase_alpha_preprocess_region(&$vars) {
+  if (strpos($vars['elements']['#region'], 'hero') === 0) {
+    $vars['content_attributes_array']['class'][] = 'region-hero-inner';
+    unset($vars['elements']['#grid']);
+    unset($vars['elements']['#grid_container']);
+  }
 }
