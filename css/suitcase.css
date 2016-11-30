@@ -1167,10 +1167,6 @@ nav.navigation .secondary-menu>li a.active-trail {
     text-decoration: none;
 }
 
-/*.views-field-title a {
-    font-weight: bold;
-}*/
-
 .field-name-field-people-title-category a,
 .field-name-field-people-title-category div {
     color: #336599;
@@ -1252,9 +1248,6 @@ nav.navigation .secondary-menu>li a.active-trail {
 .flexslider {
     display: none;
     border: none;
-    /*-webkit-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
-    /*-moz-box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
-    /*box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);*/
     margin: 0;
 }
 
@@ -1511,13 +1504,6 @@ html.js input.form-autocomplete {
     border-color: #ebccd1;
 }
 
-/*////////////////////////////////////*/
-/* Book Outline Sidebar Block */
-/*.zone-content .block .book-outline-sidebar-block > .view-content > .views-row a {*/
-    /*font-family: "Overpass","Open Sans","Helvetica Neue",sans-serif;*/
-    /*color: #333;*/
-/*}*/
-
 .section-content .block .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
     border-bottom: 1px solid #ddd;
 }
@@ -1583,12 +1569,6 @@ html.js input.form-autocomplete {
 .zone-content .block-menu:hover {
     box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
 }
-
-/*.block-apachesolr-search:hover {*/
-    /*cursor: pointer;
-    /*border: solid 1px rgba(223, 189, 0, 0.9);*/
-    /*box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);*/
-/*}*/
 
 .field-item a:hover {
     text-decoration: underline;
@@ -1956,16 +1936,6 @@ html.js input.form-autocomplete {
         word-break: break-all;
         word-break: break-word;
     }
-
-    /*.field-items a {
-        display: inline-block;
-        padding: 0.5em;
-        margin: 0.2em;
-        word-wrap: break-word;
-        -ms-word-break: break-all;
-        word-break: break-all;
-        word-break: break-word;
-    }*/
 
     .view .field-content a {
         display: block;
