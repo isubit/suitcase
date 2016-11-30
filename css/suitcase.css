@@ -1504,6 +1504,8 @@ html.js input.form-autocomplete {
     border-color: #ebccd1;
 }
 
+/*////////////////////////////////////*/
+/* Book Outline Sidebar Block */
 .section-content .block .book-outline-sidebar-block > .view-content > .views-row.indent-level-1 {
     border-bottom: 1px solid #ddd;
 }
