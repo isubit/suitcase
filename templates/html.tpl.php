@@ -4,8 +4,8 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>  
   <?php print $styles; ?>
-  <?php print $scripts; ?>
   <!--[if lt IE 9]><script src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'suitcase') . '/js/html5shiv.min.js' ?>"></script><![endif]-->
+  <?php print $scripts; ?>
 </head>
 <body<?php print $attributes;?>>
 	<!--[if lt IE 9]><div class="iecomp"><![endif]-->
