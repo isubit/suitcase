@@ -1605,7 +1605,9 @@ html.js input.form-autocomplete {
 a:focus,
 a img:focus,
 nav.navigation .main-menu > li a:focus {
-    border: 2px solid #DFBD00;
+    outline-style: solid;
+    outline-color: #DFBD00;
+    outline-width: 2px;
 }
 
 a img:focus {
