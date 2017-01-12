@@ -930,6 +930,14 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-bottom: 1em;
 }
 
+.js-suitcase-facet.block-views {
+    margin-top: 1rem;
+}
+
+.js-suitcase-facet .block-inner {
+    padding: 1rem;
+}
+
 .js-suitcase-facet .block-title:hover {
     cursor: pointer;
 }
