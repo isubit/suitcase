@@ -934,10 +934,6 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-top: 1rem;
 }
 
-.js-suitcase-facet .block-inner {
-    padding: 1rem;
-}
-
 .js-suitcase-facet .block-title:hover {
     cursor: pointer;
 }
@@ -960,7 +956,7 @@ nav.navigation .secondary-menu>li a.active-trail {
     color: rgba(255, 255, 255, 0.9);
     background-color: #524747;
     margin-bottom: 0;
-    padding: 0.25em 0.5em;
+    padding: 1rem;
     border-bottom: 4px solid #DFBD00;
     -webkit-user-select: none;
     -moz-user-select: none;
