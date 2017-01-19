@@ -540,7 +540,8 @@ a, a:link, a:visited {
     text-decoration: none;
 }
 
-a:link:hover {
+a:link:hover,
+a:link:focus {
     text-decoration: underline;
 }
 
@@ -704,6 +705,7 @@ nav.navigation .secondary-menu>li a {
 }
 
 nav.navigation .main-menu>li a:hover,
+nav.navigation .main-menu>li a:focus,
 nav.navigation .main-menu>li a.active-trail {
     /*box-shadow: 0 0 0.1em rgba(255, 255, 255, 0.3);*/
     background-color: rgba(0, 0, 0, 0.1);
@@ -712,6 +714,7 @@ nav.navigation .main-menu>li a.active-trail {
 }
 
 nav.navigation .secondary-menu>li a:hover,
+nav.navigation .secondary-menu>li a:focus,
 nav.navigation .secondary-menu>li a.active-trail {
     background-color: rgba(255,255,255,0.1);
     cursor: pointer;
@@ -835,7 +838,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     transition: background-color 0.3s ease;
 }
 
-#zone-side-menu-wrapper .content a:hover {
+#zone-side-menu-wrapper .content a:hover,
+#zone-side-menu-wrapper .content a:focus {
     text-decoration: underline;
     cursor: pointer;
     background-color: #67645d;
@@ -1542,32 +1546,38 @@ html.js input.form-autocomplete {
 /*///////////////////////////////////////////////////////////*/
 /*/////////////////// Hover Events //////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
-.isu-dark-ribbon .wd-ribbon-menu li a:hover {
+.isu-dark-ribbon .wd-ribbon-menu li a:hover,
+.isu-dark-ribbon .wd-ribbon-menu li a:focus {
     text-decoration: underline;
 }
 
-.isu-dark-ribbon .isu-alpha-index li a:hover {
+.isu-dark-ribbon .isu-alpha-index li a:hover,
+.isu-dark-ribbon .isu-alpha-index li a:focus {
     background: #777;
     text-decoration: none;
 }
 
-.isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a:hover {
+.isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a:hover,
+.isu-dark-ribbon .isu-alpha-index .wd-ribbon-menu li a:focus {
     background: #777;
     text-decoration: none;
 }
 
-.site-name a:hover {
+.site-name a:hover,
+.site-name a:focus {
     color: #fff;
     text-decoration: underline;
 }
 
-.site-slogan a:hover {
+.site-slogan a:hover,
+.site-slogan a:focus {
     color: #FFFFFF;
     font-weight: normal;
     text-decoration: underline;
 }
 
-.item-list a:hover {
+.item-list a:hover,
+.item-list a:focus {
     text-decoration: underline;
 }
 
@@ -1581,20 +1591,36 @@ html.js input.form-autocomplete {
     box-shadow: 0 0 5px rgba(223, 189, 0, 0.3);
 }
 
-.field-item a:hover {
+.field-item a:hover,
+.field-item a:focus {
     text-decoration: underline;
 }
 
-.zone-footer a:hover {
+.zone-footer a:hover,
+.zone-footer a:focus {
     text-decoration: underline;
 }
 
-#block-menu-menu-footer .leaf a:hover {
+#block-menu-menu-footer .leaf a:hover,
+#block-menu-menu-footer .leaf a:focus {
     background: rgba(52, 52, 52, 0.8);
 }
 
 .form-item input[type="submit"]:hover {
     background: #fff;
+}
+
+/*------------ Focus -------------*/
+a:focus,
+a img:focus,
+nav.navigation .main-menu > li a:focus {
+    outline-style: solid;
+    outline-color: #DFBD00;
+    outline-width: 2px;
+}
+
+a img:focus {
+    padding : 2px;
 }
 
 /*////////////////////////////////////*/
