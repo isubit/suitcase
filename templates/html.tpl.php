@@ -4,9 +4,8 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>  
   <?php print $styles; ?>
+  <!--[if lt IE 9]><script src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'suitcase') . '/js/html5shiv.min.js' ?>"></script><![endif]-->
   <?php print $scripts; ?>
-<!--  [if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--  <script >/* html5shiv */ (function(){var t='abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video'.split(' ');for(var i=t.length;i--;)document.createElement(t[i])})();</script>-->
 </head>
 <body<?php print $attributes;?>>
 	<!--[if lt IE 9]><div class="iecomp"><![endif]-->

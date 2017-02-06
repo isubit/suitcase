@@ -9,7 +9,7 @@
     }
 
     .region-banner#region-banner {
-        width: 100%;
+        width: 98%;
     }
 
     .flexslider {
@@ -33,18 +33,5 @@
 
     #suitcase-main-menu-dropdown-toggle {
         display: none;
-    }
-
-    .view-display-id-people_grid h3 {
-        width: 99%;
-    }
-
-    .view-display-id-people_grid .views-row {
-        float: left;
-        width: 49%;
-    }
-
-    .view-display-id-people_grid .views-field-title span a {
-        font-size: 16px;
     }
 }

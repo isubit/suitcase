@@ -22,49 +22,32 @@ Twitter:        http://twitter.com/Omeglicon
 
 Any custom CSS files should be placed in this folder.
 
-Five CSS files are provided by default. These files will be loaded according to the 
-media queries established in your theme's settings. The default values are provided below.
-
-To use these stylesheets, rename the files and suitcase with the name of your theme.
-For example, if your theme is named beta, the files would be named:
-  global.css (this file does not get renamed)
-  beta-alpha-default.css  
-  beta-alpha-default-narrow.css  
-  beta-alpha-default-normal.css
-  beta-alpha-default-wide.css
-
-global.css 
+suitcase.css
   * Loaded all for all layouts, including mobile.
   * Default media query: n/a. Always applied.
   * By default, this is the only stylesheet loaded for the mobile version of your site.
-  * This layout does not use the 960gs for its layout. It provides a linearized 
-    view of your site's content. 
+  * This layout does not use the 960gs for its layout. It provides a linearized
+    view of your site's content.
 
-suitcase-alpha-default.css
+suitcase_default.css
   * Loaded for all layouts using the alpha grid (i.e. not the mobile layout).
   * Default media query: n/a. Applied to all layouts using the alpha grid.
-  * By default the alpha grid is applied when the device width is at least 
+  * By default the alpha grid is applied when the device width is at least
     740px wide.
 
-suitcase-alpha-default-narrow.css  
-  * Loaded for all layouts using the alpha grid. Styles will "cascade" to 
-    wider layouts. You may overwrite any styles in the normal or wide 
+suitcase_narrow.css
+  * Loaded for all layouts using the alpha grid. Styles will "cascade" to
+    wider layouts. You may overwrite any styles in the normal or wide
     layout-specific CSS files if you wish.
-  * Default media query for the narrow layout is: 
-      all and (min-width: 740px) and (min-device-width: 740px), 
-      (max-device-width: 800px) and (min-width: 740px) 
+  * Default media query for the narrow layout is:
+      all and (min-width: 740px) and (min-device-width: 740px),
+      (max-device-width: 800px) and (min-width: 740px)
       and (orientation:landscape)
 
-suitcase-alpha-default-normal.css
-  * By default this style sheet will be loaded for the normal and wide layouts 
-  * Styles will "cascade" to the wide layout as well. 
-  * Default media query for the normal layout is: 
-      all and (min-width: 980px) and (min-device-width: 980px), 
-      all and (max-device-width: 1024px) and (min-width: 1024px) 
+suitcase_normal.css
+  * By default this style sheet will be loaded for the normal and wide layouts
+  * Styles will "cascade" to the wide layout as well.
+  * Default media query for the normal layout is:
+      all and (min-width: 980px) and (min-device-width: 980px),
+      all and (max-device-width: 1024px) and (min-width: 1024px)
       and (orientation:landscape)
-
-suitcase-alpha-default-wide.css
-  * By default this style sheet will apply only to the widescreen layout.
-  * Default media query for the wide layout is: 
-      all and (min-width: 1220px)
-

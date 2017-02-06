@@ -1,18 +1,12 @@
 <?php
 
 /**
- * Implementation of themehook_settings().
+ * Implements hook_form_system_theme_settings_alter()
  */
-function suitcase_form_system_theme_settings_alter(&$form, $form_state) {
-  $form['suitcase'] = array(
-    '#type' => 'fieldset',
-    '#title' => t('Suitcase Settings'),
-  );
-  $form['suitcase']['breadcrumb_delimiter'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Breadcrumb delimiter'),
-    '#size' => 4,
-    '#default_value' => theme_get_setting('breadcrumb_delimiter'),
-    '#description' => t("Don't forget spaces at either end... if you're into that sort of thing."),
-  );
+function suitcase_form_system_theme_settings_alter(&$form, &$form_state) {
+
+  if ($GLOBALS['theme_key'] == $form_state['build_info']['args'][0]) {
+    drupal_add_css(drupal_get_path('theme', 'suitcase') . '/css/suitcase_theme_settings.css', array('group' => CSS_THEME, 'weight' => 100));
+  }
+
 }
