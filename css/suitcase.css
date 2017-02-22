@@ -244,6 +244,11 @@ tr:hover td {
     height: auto !important;
 }
 
+/* Floated Images */
+
+img.floated-left { margin: 0.25rem 1rem 0.25rem 0; }
+img.floated-right { margin: 0.25rem 0 0.25rem 1rem; }
+
 @media print {
     /* Set background colors */
     body,
