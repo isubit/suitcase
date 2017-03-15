@@ -1367,12 +1367,12 @@ nav.navigation .secondary-menu>li a.active-trail {
     -webkit-box-shadow: none;
 }
 
-.panel-panel.grid-4 .pane-content li {
+.panel-panel .grid-4 .pane-content li {
     padding: 0;
     margin: 0;
 }
 
-.panel-panel.grid-4 .pane-content li > a {
+.panel-panel .grid-4 .pane-content li > a {
     padding: 10px;
     display: block;
 }
