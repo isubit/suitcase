@@ -5,6 +5,18 @@
 
 (function($) {
   $(document).ready( function() {
+    $('figure.image')
+      .filter(function() {
+        return $(this).css('float') == 'left';
+      })
+      .addClass('floated-left');
+
+    $('figure.image')
+      .filter(function() {
+        return $(this).css('float') =='right';
+      })
+      .addClass('floated-right');
+
     $('.content img')
       .filter(function() {
         return $(this).css('float') == 'left';
