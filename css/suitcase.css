@@ -244,6 +244,11 @@ tr:hover td {
     height: auto !important;
 }
 
+/* Floated Images */
+
+img.floated-left { margin: 0.25rem 1rem 0.25rem 0; }
+img.floated-right { margin: 0.25rem 0 0.25rem 1rem; }
+
 @media print {
     /* Set background colors */
     body,
@@ -1367,16 +1372,6 @@ nav.navigation .secondary-menu>li a.active-trail {
     -webkit-box-shadow: none;
 }
 
-.panel-panel.grid-4 .pane-content li {
-    padding: 0;
-    margin: 0;
-}
-
-.panel-panel.grid-4 .pane-content li > a {
-    padding: 10px;
-    display: block;
-}
-
 .panel-panel .more-link {
     text-align: left;
 }
@@ -1931,7 +1926,6 @@ html.js input.form-autocomplete {
         /*display: block;*/
         word-wrap: break-word;
         -ms-word-break: break-all;
-        word-break: break-all;
         word-break: break-word;
     }
 
@@ -2062,3 +2056,4 @@ a > .fa {
         width: 100%;
     }
 }
+ 
