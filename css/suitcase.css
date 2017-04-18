@@ -1150,7 +1150,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 .content-type-indicator {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
 }
 
 .content-type-indicator.ct-search {
