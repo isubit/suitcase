@@ -2074,19 +2074,19 @@ a > .fa {
     .luggage-gridrow,
     .luggage-gridrow3,
     .luggage-gridrow4 {
-        flex-basis: calc(50% - 20px);
+        flex-basis: calc(50% - 51px);
         min-width: 48.6%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .luggage-gridrow3 {
-        flex-basis: calc(33% - 10px);
+        flex-basis: calc(33% - 51px);
         min-width: 31.3%;
     }
 
     .luggage-gridrow4 {
-        flex-basis: calc(25% - 5px);
+        flex-basis: calc(25% - 51px);
         min-width: 23.5%;
     }
 
