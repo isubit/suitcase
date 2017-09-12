@@ -1143,20 +1143,30 @@ nav.navigation .secondary-menu>li a.active-trail {
 /*////////////////////////////////////*/
 /* Content Type Indicators */
 
-.content-type-indicator {
+.content-type-indicator.ct-search,
+.content-type-indicator.ct-node {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem; right: 1rem;
+    margin-bottom: 1rem;
+    padding: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    color: #676767;
+    text-align: inherit;
+    border: 0;
+    opacity: inherit;
 }
 
-.content-type-indicator.ct-search {
-    margin-top: 5px;
-    margin-right: 5px;
+/* On page */
+
+.content-type-indicator.ct-node {
+    top: 0.25rem;
 }
 
-.page-node:not(.node-type-people) h1#page-title {
-    /* Make Room */
-    padding-right: 4em;
+#page-title {
+    /* Steer clear of the content-type-indicator */
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /*////////////////////////////////////*/
@@ -2088,4 +2098,4 @@ a > .fa {
         width: 100%;
     }
 }
- 
+
