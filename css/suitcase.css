@@ -2072,17 +2072,6 @@ a > .fa {
     font-weight: bold;
 }
 
-.luggage-grid .luggage-gridrow .luggage-gridgreen {
-    margin-bottom: 16px;
-}
-
-.luggage-grid .luggage-gridrow .luggage-gridgreen,
-.luggage-grid .luggage-gridrow .luggage-gridgreen a {
-    font-style: italic;
-    color: rgb(36, 109, 73);
-
-}
-
 @media all and (max-width: 739px) {
     .luggage-grid .luggage-gridrow {
         width: 100%;
