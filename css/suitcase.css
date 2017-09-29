@@ -643,6 +643,7 @@ h2.site-name {
 
 .zone-content .views-row {
     margin-bottom: 0.5em;
+    clear: both;
 }
 
 /*////////////////////////////////////*/
