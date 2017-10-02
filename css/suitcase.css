@@ -1132,10 +1132,31 @@ nav.navigation .secondary-menu>li a.active-trail {
     webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
     padding: 15px;
+    padding-top: 30px;
+    position: relative;
 }
 
 .page-search .content article footer {
     padding-top: 0;
+}
+
+/*////////////////////////////////////*/
+/* Content Type Indicators */
+
+.content-type-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content-type-indicator.ct-search {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.page-node:not(.node-type-people) h1#page-title {
+    /* Make Room */
+    padding-right: 4em;
 }
 
 /*////////////////////////////////////*/
@@ -1447,6 +1468,17 @@ footer.section-footer {
 
 .field-name-field-people-title-category {
     margin-left: 0;
+}
+
+@media (max-width: 739px) {
+    .node-type-people h1.title,
+    .field-name-field-people-title-category {
+        float: none;
+    }
+
+    .node-type-people h1.title {
+        margin-right: 4em;
+    }
 }
 
 .node-people-form .field-multiple-table thead th {
@@ -2008,52 +2040,70 @@ a > .fa {
 
 /*------- Grid for views -------*/
 
+/* -------------------- */
+/* ## GRID
+/* -------------------- */
+
+.luggage-grid .view-content {
+    display: flex;
+    flex-flow: wrap;
+}
+
 .luggage-grid .view-content > h3 {
-    color: #fff;
-    background: #524747;
-    border-bottom: 4px solid #dfbd00;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    display: block;
-    clear: both;
+    width: 100%;
+    padding: 0.5rem;
 }
 
-.luggage-grid .luggage-gridrow {
-    background: rgba(255, 255, 255, 0.7);
+.luggage-gridrow img,
+.luggage-gridrow3 img,
+.luggage-gridrow4 img {
+    float: left;
+}
+
+.luggage-gridrow,
+.luggage-gridrow3,
+.luggage-gridrow4 {
+    flex: 0 0 100%;
+    margin: 0 0.7%;
+    padding: 1rem;
     border: 1px solid #ddd;
-    margin: 0px 0.25% 8px 0.25%;
-    padding: 1em;
-    height: auto;
-    float: left;
-    width: 49.5%;
-    overflow: hidden;
+    background-color: #fff;
 }
 
-.luggage-grid .luggage-gridrow .views-field img {
-    float: left;
-    margin: 2.5px 15px 2.5px 2.5px;
-}
-
-.luggage-grid .luggage-gridrow .views-field-title {
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-.luggage-grid .luggage-gridrow .luggage-gridgreen {
-    margin-bottom: 16px;
-}
-
-.luggage-grid .luggage-gridrow .luggage-gridgreen,
-.luggage-grid .luggage-gridrow .luggage-gridgreen a {
-    font-style: italic;
-    color: rgb(36, 109, 73);
-
-}
-
-@media all and (max-width: 739px) {
-    .luggage-grid .luggage-gridrow {
-        width: 100%;
+@media only screen and (min-width: 769px) {
+    .luggage-gridrow,
+    .luggage-gridrow3,
+    .luggage-gridrow4 {
+        flex-basis: calc(50% - 51px);
+        min-width: 48.6%;
     }
 }
- 
+
+@media only screen and (min-width: 1024px) {
+    .luggage-gridrow3 {
+        flex-basis: calc(33% - 51px);
+        min-width: 31.3%;
+    }
+
+    .luggage-gridrow4 {
+        flex-basis: calc(25% - 51px);
+        min-width: 23.5%;
+    }
+
+    .luggage-gridrow3 .views-field-field-uri-1,
+    .luggage-gridrow4 .views-field-field-uri-1 {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+}
+
+.view-display-id-people_grid .views-field-title span a {
+      font-size: 1.36rem;
+}
+
+.views-field.views-field-field-people-position {
+      margin-bottom: 1rem;
+      color: #616161;
+      font-style: normal;
+}
