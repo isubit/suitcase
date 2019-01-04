@@ -1224,7 +1224,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-bottom: 10px;
 }
 
-.page-node .field-group-fieldset > .fieldset-wrapper {
+.page-node .node-form .field-group-fieldset > .fieldset-wrapper,
+.page-node .node-webform .field-group-fieldset > .fieldset-wrapper {
     background: rgba(255,255,255,0.8);
     border: 1px solid #ddd;
     webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
@@ -1233,7 +1234,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     font-size: 14px;
 }
 
-.page-node .field-group-fieldset .fieldset-wrapper .fieldset-wrapper {
+.page-node .node-form .field-group-fieldset .fieldset-wrapper .fieldset-wrapper,
+.page-node .node-webform .field-group-fieldset .fieldset-wrapper .fieldset-wrapper {
     background: rgba(255,255,255,0.8);
     border: 1px solid #ddd;
     webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
